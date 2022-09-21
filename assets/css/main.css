@@ -3219,3 +3219,8 @@ input, select, textarea {
 			}
 
 	}
+
+	.skills {
+		width: 5em;
+		padding: 0.5em;
+	}
