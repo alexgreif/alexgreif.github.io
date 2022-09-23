@@ -4,6 +4,16 @@
 
 <head>
 
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ECW2R8C7JF"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-ECW2R8C7JF');
+</script>
+
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
@@ -1907,45 +1917,45 @@ into the actual data to see whether there are any missing values or
 invalid observations. We can compute some summary statistics using base
 R’s <code>summary()</code>.</p>
 <pre class="r"><code>summary(data)</code></pre>
-<pre><code>##     ride_id              rideable_type       started_at                    
-##  Min.   :      1   classic_bike :3250691   Min.   :2021-04-01 00:03:18.00  
-##  1st Qu.:1430884   docked_bike  : 303989   1st Qu.:2021-06-22 15:20:26.50  
-##  Median :2861766   electric_bike:2168852   Median :2021-08-17 18:25:49.00  
-##  Mean   :2861766                           Mean   :2021-08-26 22:25:18.39  
-##  3rd Qu.:4292649                           3rd Qu.:2021-10-14 19:48:10.50  
-##  Max.   :5723532                           Max.   :2022-03-31 23:59:47.00  
-##                                                                            
-##     ended_at                                    start_station_name 
-##  Min.   :2021-04-01 00:14:29.00   Streeter Dr &amp; Grand Ave:  84011  
-##  1st Qu.:2021-06-22 15:47:37.00   Michigan Ave &amp; Oak St  :  44260  
-##  Median :2021-08-17 18:44:32.50   Wells St &amp; Concord Ln  :  44031  
-##  Mean   :2021-08-26 22:46:50.94   Millennium Park        :  42287  
-##  3rd Qu.:2021-10-14 20:03:28.50   Clark St &amp; Elm St      :  41215  
-##  Max.   :2022-04-01 22:10:12.00   (Other)                :4722352  
-##                                   NA&#39;s                   : 745376  
-##      start_station_id                  end_station_name  
-##  13022       :  84011   Streeter Dr &amp; Grand Ave:  84694  
-##  LF-005      :  47763   Michigan Ave &amp; Oak St  :  44635  
-##  13300       :  45592   Wells St &amp; Concord Ln  :  44124  
-##  13042       :  44260   Millennium Park        :  42895  
-##  TA1308000050:  44031   Clark St &amp; Elm St      :  40469  
-##  (Other)     :4712502   (Other)                :4670468  
-##  NA&#39;s        : 745373   NA&#39;s                   : 796247  
-##       end_station_id      start_lat       start_lng         end_lat     
-##  13022       :  84694   Min.   :41.64   Min.   :-87.84   Min.   :41.39  
-##  LF-005      :  53819   1st Qu.:41.88   1st Qu.:-87.66   1st Qu.:41.88  
-##  13042       :  44635   Median :41.90   Median :-87.64   Median :41.90  
-##  TA1308000050:  44124   Mean   :41.90   Mean   :-87.65   Mean   :41.90  
-##  13300       :  43781   3rd Qu.:41.93   3rd Qu.:-87.63   3rd Qu.:41.93  
-##  (Other)     :4656232   Max.   :45.64   Max.   :-73.80   Max.   :42.17  
-##  NA&#39;s        : 796247                                    NA&#39;s   :4716   
-##     end_lng       member_casual    ride_duration     
-##  Min.   :-88.97   casual:2546542   Min.   :  -58.03  
-##  1st Qu.:-87.66   member:3176990   1st Qu.:    6.57  
-##  Median :-87.64                    Median :   11.72  
-##  Mean   :-87.65                    Mean   :   21.54  
-##  3rd Qu.:-87.63                    3rd Qu.:   21.33  
-##  Max.   :-87.49                    Max.   :55944.15  
+<pre><code>##     ride_id              rideable_type       started_at
+##  Min.   :      1   classic_bike :3250691   Min.   :2021-04-01 00:03:18.00
+##  1st Qu.:1430884   docked_bike  : 303989   1st Qu.:2021-06-22 15:20:26.50
+##  Median :2861766   electric_bike:2168852   Median :2021-08-17 18:25:49.00
+##  Mean   :2861766                           Mean   :2021-08-26 22:25:18.39
+##  3rd Qu.:4292649                           3rd Qu.:2021-10-14 19:48:10.50
+##  Max.   :5723532                           Max.   :2022-03-31 23:59:47.00
+##
+##     ended_at                                    start_station_name
+##  Min.   :2021-04-01 00:14:29.00   Streeter Dr &amp; Grand Ave:  84011
+##  1st Qu.:2021-06-22 15:47:37.00   Michigan Ave &amp; Oak St  :  44260
+##  Median :2021-08-17 18:44:32.50   Wells St &amp; Concord Ln  :  44031
+##  Mean   :2021-08-26 22:46:50.94   Millennium Park        :  42287
+##  3rd Qu.:2021-10-14 20:03:28.50   Clark St &amp; Elm St      :  41215
+##  Max.   :2022-04-01 22:10:12.00   (Other)                :4722352
+##                                   NA&#39;s                   : 745376
+##      start_station_id                  end_station_name
+##  13022       :  84011   Streeter Dr &amp; Grand Ave:  84694
+##  LF-005      :  47763   Michigan Ave &amp; Oak St  :  44635
+##  13300       :  45592   Wells St &amp; Concord Ln  :  44124
+##  13042       :  44260   Millennium Park        :  42895
+##  TA1308000050:  44031   Clark St &amp; Elm St      :  40469
+##  (Other)     :4712502   (Other)                :4670468
+##  NA&#39;s        : 745373   NA&#39;s                   : 796247
+##       end_station_id      start_lat       start_lng         end_lat
+##  13022       :  84694   Min.   :41.64   Min.   :-87.84   Min.   :41.39
+##  LF-005      :  53819   1st Qu.:41.88   1st Qu.:-87.66   1st Qu.:41.88
+##  13042       :  44635   Median :41.90   Median :-87.64   Median :41.90
+##  TA1308000050:  44124   Mean   :41.90   Mean   :-87.65   Mean   :41.90
+##  13300       :  43781   3rd Qu.:41.93   3rd Qu.:-87.63   3rd Qu.:41.93
+##  (Other)     :4656232   Max.   :45.64   Max.   :-73.80   Max.   :42.17
+##  NA&#39;s        : 796247                                    NA&#39;s   :4716
+##     end_lng       member_casual    ride_duration
+##  Min.   :-88.97   casual:2546542   Min.   :  -58.03
+##  1st Qu.:-87.66   member:3176990   1st Qu.:    6.57
+##  Median :-87.64                    Median :   11.72
+##  Mean   :-87.65                    Mean   :   21.54
+##  3rd Qu.:-87.63                    3rd Qu.:   21.33
+##  Max.   :-87.49                    Max.   :55944.15
 ##  NA&#39;s   :4716</code></pre>
 <p>Here is what I see:</p>
 <ul>
@@ -2237,7 +2247,7 @@ track_changes &lt;- function (data, data_old, changelog, type, reason) {
     select(ride_id, member_casual, rideable_type) %&gt;%
     add_column(type = type, reason = reason) %&gt;% # add type and reason
     distinct() # select only distinct observations for long format
-  
+
   # Bind to existing entries
   bind_rows(changelog, cl_temp)
 }
@@ -2450,45 +2460,45 @@ summarize these data points to see whether there is a connection.</p>
 data %&gt;%
   filter(is.na(end_lat) &amp; is.na(end_lng)) %&gt;%
   summary()</code></pre>
-<pre><code>##     ride_id              rideable_type    started_at                    
-##  Min.   :   5630   classic_bike :4221   Min.   :2021-04-01 11:15:46.00  
-##  1st Qu.:1230585   electric_bike:   0   1st Qu.:2021-06-13 21:57:48.00  
-##  Median :2181890                        Median :2021-07-30 20:58:15.00  
-##  Mean   :2560832                        Mean   :2021-08-08 21:45:40.11  
-##  3rd Qu.:3891815                        3rd Qu.:2021-09-17 13:01:17.00  
-##  Max.   :5707838                        Max.   :2022-03-31 13:52:51.00  
-##                                                                         
+<pre><code>##     ride_id              rideable_type    started_at
+##  Min.   :   5630   classic_bike :4221   Min.   :2021-04-01 11:15:46.00
+##  1st Qu.:1230585   electric_bike:   0   1st Qu.:2021-06-13 21:57:48.00
+##  Median :2181890                        Median :2021-07-30 20:58:15.00
+##  Mean   :2560832                        Mean   :2021-08-08 21:45:40.11
+##  3rd Qu.:3891815                        3rd Qu.:2021-09-17 13:01:17.00
+##  Max.   :5707838                        Max.   :2022-03-31 13:52:51.00
+##
 ##     ended_at                                    start_station_name
-##  Min.   :2021-04-01 18:36:18.00   Streeter Dr &amp; Grand Ave:  80    
-##  1st Qu.:2021-06-14 20:50:47.00   Millennium Park        :  73    
-##  Median :2021-07-31 17:33:55.00   Wabash Ave &amp; Grand Ave :  37    
-##  Mean   :2021-08-09 15:04:25.91   Michigan Ave &amp; 8th St  :  36    
-##  3rd Qu.:2021-09-17 18:22:37.00   Michigan Ave &amp; Oak St  :  33    
-##  Max.   :2022-04-01 14:52:43.00   Dearborn St &amp; Erie St  :  29    
-##                                   (Other)                :3933    
+##  Min.   :2021-04-01 18:36:18.00   Streeter Dr &amp; Grand Ave:  80
+##  1st Qu.:2021-06-14 20:50:47.00   Millennium Park        :  73
+##  Median :2021-07-31 17:33:55.00   Wabash Ave &amp; Grand Ave :  37
+##  Mean   :2021-08-09 15:04:25.91   Michigan Ave &amp; 8th St  :  36
+##  3rd Qu.:2021-09-17 18:22:37.00   Michigan Ave &amp; Oak St  :  33
+##  Max.   :2022-04-01 14:52:43.00   Dearborn St &amp; Erie St  :  29
+##                                   (Other)                :3933
 ##      start_station_id                   end_station_name end_station_id
-##  13022       :  80    2112 W Peterson Ave       :   0    13001  :   0  
-##  13008       :  73    63rd St Beach             :   0    13006  :   0  
-##  13300       :  47    900 W Harrison St         :   0    13008  :   0  
-##  TA1307000117:  37    Aberdeen St &amp; Jackson Blvd:   0    13011  :   0  
-##  623         :  36    Aberdeen St &amp; Monroe St   :   0    13016  :   0  
-##  13042       :  33    (Other)                   :   0    (Other):   0  
-##  (Other)     :3915    NA&#39;s                      :4221    NA&#39;s   :4221  
+##  13022       :  80    2112 W Peterson Ave       :   0    13001  :   0
+##  13008       :  73    63rd St Beach             :   0    13006  :   0
+##  13300       :  47    900 W Harrison St         :   0    13008  :   0
+##  TA1307000117:  37    Aberdeen St &amp; Jackson Blvd:   0    13011  :   0
+##  623         :  36    Aberdeen St &amp; Monroe St   :   0    13016  :   0
+##  13042       :  33    (Other)                   :   0    (Other):   0
+##  (Other)     :3915    NA&#39;s                      :4221    NA&#39;s   :4221
 ##    start_lat       start_lng         end_lat        end_lng     member_casual
-##  Min.   :41.65   Min.   :-87.77   Min.   : NA    Min.   : NA    casual:3169  
-##  1st Qu.:41.87   1st Qu.:-87.66   1st Qu.: NA    1st Qu.: NA    member:1052  
-##  Median :41.89   Median :-87.64   Median : NA    Median : NA                 
-##  Mean   :41.88   Mean   :-87.64   Mean   :NaN    Mean   :NaN                 
-##  3rd Qu.:41.92   3rd Qu.:-87.62   3rd Qu.: NA    3rd Qu.: NA                 
-##  Max.   :42.06   Max.   :-87.53   Max.   : NA    Max.   : NA                 
-##                                   NA&#39;s   :4221   NA&#39;s   :4221                
-##  ride_duration   
-##  Min.   :   1.0  
-##  1st Qu.: 225.2  
-##  Median :1499.8  
-##  Mean   :1038.8  
-##  3rd Qu.:1499.9  
-##  Max.   :1559.9  
+##  Min.   :41.65   Min.   :-87.77   Min.   : NA    Min.   : NA    casual:3169
+##  1st Qu.:41.87   1st Qu.:-87.66   1st Qu.: NA    1st Qu.: NA    member:1052
+##  Median :41.89   Median :-87.64   Median : NA    Median : NA
+##  Mean   :41.88   Mean   :-87.64   Mean   :NaN    Mean   :NaN
+##  3rd Qu.:41.92   3rd Qu.:-87.62   3rd Qu.: NA    3rd Qu.: NA
+##  Max.   :42.06   Max.   :-87.53   Max.   : NA    Max.   : NA
+##                                   NA&#39;s   :4221   NA&#39;s   :4221
+##  ride_duration
+##  Min.   :   1.0
+##  1st Qu.: 225.2
+##  Median :1499.8
+##  Mean   :1038.8
+##  3rd Qu.:1499.9
+##  Max.   :1559.9
 ## </code></pre>
 <p>None of the observations with missing <code>end_lat</code> and
 <code>end_lng</code> have data for station name or ID that could be used
@@ -2515,45 +2525,45 @@ IDs. Let’s look at the summary statistics of those observations.</p>
 <pre class="r"><code>data %&gt;%
   filter((is.na(end_station_id) &amp; rideable_type == &quot;classic_bike&quot;)) %&gt;%
   summary()</code></pre>
-<pre><code>##     ride_id              rideable_type    started_at                    
-##  Min.   :   5746   classic_bike :4263   Min.   :2021-04-01 10:41:01.00  
-##  1st Qu.:2126199   electric_bike:   0   1st Qu.:2021-07-04 18:21:15.00  
-##  Median :3372609                        Median :2021-09-04 22:01:52.00  
-##  Mean   :3186632                        Mean   :2021-09-05 06:17:35.26  
-##  3rd Qu.:4601606                        3rd Qu.:2021-10-26 05:32:42.50  
-##  Max.   :5703180                        Max.   :2022-03-31 18:03:24.00  
-##                                                                         
+<pre><code>##     ride_id              rideable_type    started_at
+##  Min.   :   5746   classic_bike :4263   Min.   :2021-04-01 10:41:01.00
+##  1st Qu.:2126199   electric_bike:   0   1st Qu.:2021-07-04 18:21:15.00
+##  Median :3372609                        Median :2021-09-04 22:01:52.00
+##  Mean   :3186632                        Mean   :2021-09-05 06:17:35.26
+##  3rd Qu.:4601606                        3rd Qu.:2021-10-26 05:32:42.50
+##  Max.   :5703180                        Max.   :2022-03-31 18:03:24.00
+##
 ##     ended_at                                         start_station_name
-##  Min.   :2021-04-01 10:47:45.00   Streeter Dr &amp; Grand Ave     :  71    
-##  1st Qu.:2021-07-04 20:16:18.00   Clark St &amp; Elm St           :  45    
-##  Median :2021-09-05 08:13:54.00   Wabash Ave &amp; Grand Ave      :  41    
-##  Mean   :2021-09-05 09:40:08.64   Fairbanks Ct &amp; Grand Ave    :  37    
-##  3rd Qu.:2021-10-26 07:42:41.00   Clinton St &amp; Washington Blvd:  35    
-##  Max.   :2022-03-31 19:52:43.00   Michigan Ave &amp; Washington St:  34    
-##                                   (Other)                     :4000    
+##  Min.   :2021-04-01 10:47:45.00   Streeter Dr &amp; Grand Ave     :  71
+##  1st Qu.:2021-07-04 20:16:18.00   Clark St &amp; Elm St           :  45
+##  Median :2021-09-05 08:13:54.00   Wabash Ave &amp; Grand Ave      :  41
+##  Mean   :2021-09-05 09:40:08.64   Fairbanks Ct &amp; Grand Ave    :  37
+##  3rd Qu.:2021-10-26 07:42:41.00   Clinton St &amp; Washington Blvd:  35
+##  Max.   :2022-03-31 19:52:43.00   Michigan Ave &amp; Washington St:  34
+##                                   (Other)                     :4000
 ##      start_station_id                   end_station_name end_station_id
-##  13022       :  71    2112 W Peterson Ave       :   0    13001  :   0  
-##  13300       :  48    63rd St Beach             :   0    13006  :   0  
-##  TA1307000039:  45    900 W Harrison St         :   0    13008  :   0  
-##  TA1307000117:  41    Aberdeen St &amp; Jackson Blvd:   0    13011  :   0  
-##  TA1305000003:  37    Aberdeen St &amp; Monroe St   :   0    13016  :   0  
-##  WL-012      :  35    (Other)                   :   0    (Other):   0  
-##  (Other)     :3986    NA&#39;s                      :4263    NA&#39;s   :4263  
-##    start_lat       start_lng         end_lat         end_lng      
-##  Min.   :41.65   Min.   :-87.77   Min.   :41.65   Min.   :-87.77  
-##  1st Qu.:41.88   1st Qu.:-87.66   1st Qu.:41.88   1st Qu.:-87.66  
-##  Median :41.90   Median :-87.64   Median :41.89   Median :-87.64  
-##  Mean   :41.90   Mean   :-87.64   Mean   :41.90   Mean   :-87.64  
-##  3rd Qu.:41.93   3rd Qu.:-87.63   3rd Qu.:41.93   3rd Qu.:-87.63  
-##  Max.   :42.06   Max.   :-87.54   Max.   :42.06   Max.   :-87.54  
-##                                                                   
-##  member_casual ride_duration     
-##  casual:1724   Min.   :   1.017  
-##  member:2539   1st Qu.:  16.983  
-##                Median :  49.083  
-##                Mean   : 202.556  
-##                3rd Qu.: 196.292  
-##                Max.   :1559.683  
+##  13022       :  71    2112 W Peterson Ave       :   0    13001  :   0
+##  13300       :  48    63rd St Beach             :   0    13006  :   0
+##  TA1307000039:  45    900 W Harrison St         :   0    13008  :   0
+##  TA1307000117:  41    Aberdeen St &amp; Jackson Blvd:   0    13011  :   0
+##  TA1305000003:  37    Aberdeen St &amp; Monroe St   :   0    13016  :   0
+##  WL-012      :  35    (Other)                   :   0    (Other):   0
+##  (Other)     :3986    NA&#39;s                      :4263    NA&#39;s   :4263
+##    start_lat       start_lng         end_lat         end_lng
+##  Min.   :41.65   Min.   :-87.77   Min.   :41.65   Min.   :-87.77
+##  1st Qu.:41.88   1st Qu.:-87.66   1st Qu.:41.88   1st Qu.:-87.66
+##  Median :41.90   Median :-87.64   Median :41.89   Median :-87.64
+##  Mean   :41.90   Mean   :-87.64   Mean   :41.90   Mean   :-87.64
+##  3rd Qu.:41.93   3rd Qu.:-87.63   3rd Qu.:41.93   3rd Qu.:-87.63
+##  Max.   :42.06   Max.   :-87.54   Max.   :42.06   Max.   :-87.54
+##
+##  member_casual ride_duration
+##  casual:1724   Min.   :   1.017
+##  member:2539   1st Qu.:  16.983
+##                Median :  49.083
+##                Mean   : 202.556
+##                3rd Qu.: 196.292
+##                Max.   :1559.683
 ## </code></pre>
 <p>Apparently, these values are not missing at random, as their ride
 durations are highly different from the rest of the observations. I
@@ -4421,7 +4431,7 @@ that allow us to identify invalid observations. In order to do so, we
 can look at the stations that are associated with the highest mean ride
 durations. If any stations are only associated with unrealistically long
 rides, we could remove all observations from those stations.</p>
-<pre class="r"><code># Top six start station IDs with highest mean ride duration 
+<pre class="r"><code># Top six start station IDs with highest mean ride duration
 data %&gt;%
   group_by(start_station_id) %&gt;%
   summarize(mean_duration = mean(ride_duration),
@@ -4860,61 +4870,61 @@ Changelog</h2>
 <p>Now we can summarize the resulting data set…</p>
 <pre class="r"><code># Summarize final data set
 summary(data)</code></pre>
-<pre><code>##     ride_id              rideable_type       started_at                   
-##  Min.   :      1   classic_bike :3194662   Min.   :2021-04-01 00:03:18.0  
-##  1st Qu.:1465136   electric_bike:2121520   1st Qu.:2021-06-23 21:16:06.0  
-##  Median :2913560                           Median :2021-08-19 20:51:46.5  
-##  Mean   :2896478                           Mean   :2021-08-28 15:30:50.2  
-##  3rd Qu.:4333891                           3rd Qu.:2021-10-16 16:39:39.0  
-##  Max.   :5723532                           Max.   :2022-03-31 23:59:47.0  
-##                                                                           
-##     ended_at                                    start_station_name 
-##  Min.   :2021-04-01 00:14:29.00   Streeter Dr &amp; Grand Ave:  64425  
-##  1st Qu.:2021-06-23 21:35:18.25   Wells St &amp; Concord Ln  :  41950  
-##  Median :2021-08-19 21:10:19.00   Clark St &amp; Elm St      :  39352  
-##  Mean   :2021-08-28 15:47:39.69   Michigan Ave &amp; Oak St  :  36958  
-##  3rd Qu.:2021-10-16 16:58:19.50   Wells St &amp; Elm St      :  36304  
-##  Max.   :2022-04-01 00:27:32.00   (Other)                :4375139  
-##                                   NA&#39;s                   : 722054  
-##      start_station_id                  end_station_name  
-##  13022       :  64425   Streeter Dr &amp; Grand Ave:  63326  
-##  TA1308000050:  41950   Wells St &amp; Concord Ln  :  42280  
-##  LF-005      :  41657   Clark St &amp; Elm St      :  38784  
-##  TA1307000039:  39352   Michigan Ave &amp; Oak St  :  37074  
-##  13042       :  36958   Wells St &amp; Elm St      :  36215  
-##  (Other)     :4369786   (Other)                :4339249  
-##  NA&#39;s        : 722054   NA&#39;s                   : 759254  
-##       end_station_id      start_lat       start_lng         end_lat     
-##  13022       :  63326   Min.   :41.64   Min.   :-87.84   Min.   :41.39  
-##  LF-005      :  47484   1st Qu.:41.88   1st Qu.:-87.66   1st Qu.:41.88  
-##  TA1308000050:  42280   Median :41.90   Median :-87.64   Median :41.90  
-##  TA1307000039:  38784   Mean   :41.90   Mean   :-87.65   Mean   :41.90  
-##  13042       :  37074   3rd Qu.:41.93   3rd Qu.:-87.63   3rd Qu.:41.93  
-##  (Other)     :4327980   Max.   :42.07   Max.   :-87.52   Max.   :42.17  
-##  NA&#39;s        : 759254                                                   
-##     end_lng       member_casual    ride_duration     day_of_week 
-##  Min.   :-88.97   casual:2199527   Min.   :  1.000   Mon:683543  
-##  1st Qu.:-87.66   member:3116655   1st Qu.:  6.567   Tue:724709  
-##  Median :-87.64                    Median : 11.400   Wed:744932  
-##  Mean   :-87.65                    Mean   : 16.825   Thu:727881  
-##  3rd Qu.:-87.63                    3rd Qu.: 20.150   Fri:761306  
-##  Max.   :-87.49                    Max.   :239.967   Sat:888503  
-##                                                      Sun:785308  
-##     weekend             week          month              hour      
-##  weekday:3642371   Min.   : 1.0   Jul    : 749866   Min.   : 0.00  
-##  weekend:1673811   1st Qu.:22.0   Aug    : 745893   1st Qu.:11.00  
-##                    Median :30.0   Sep    : 707872   Median :15.00  
-##                    Mean   :29.6   Jun    : 663994   Mean   :14.21  
-##                    3rd Qu.:38.0   Oct    : 596885   3rd Qu.:18.00  
-##                    Max.   :52.0   May    : 478734   Max.   :23.00  
-##                                   (Other):1372938                  
-##      minute          second           date           
-##  Min.   : 0.00   Min.   : 0.00   Min.   :2021-04-01  
-##  1st Qu.:11.42   1st Qu.:11.43   1st Qu.:2021-06-23  
-##  Median :15.55   Median :15.55   Median :2021-08-19  
-##  Mean   :14.70   Mean   :14.71   Mean   :2021-08-28  
-##  3rd Qu.:18.37   3rd Qu.:18.37   3rd Qu.:2021-10-16  
-##  Max.   :23.98   Max.   :24.00   Max.   :2022-03-31  
+<pre><code>##     ride_id              rideable_type       started_at
+##  Min.   :      1   classic_bike :3194662   Min.   :2021-04-01 00:03:18.0
+##  1st Qu.:1465136   electric_bike:2121520   1st Qu.:2021-06-23 21:16:06.0
+##  Median :2913560                           Median :2021-08-19 20:51:46.5
+##  Mean   :2896478                           Mean   :2021-08-28 15:30:50.2
+##  3rd Qu.:4333891                           3rd Qu.:2021-10-16 16:39:39.0
+##  Max.   :5723532                           Max.   :2022-03-31 23:59:47.0
+##
+##     ended_at                                    start_station_name
+##  Min.   :2021-04-01 00:14:29.00   Streeter Dr &amp; Grand Ave:  64425
+##  1st Qu.:2021-06-23 21:35:18.25   Wells St &amp; Concord Ln  :  41950
+##  Median :2021-08-19 21:10:19.00   Clark St &amp; Elm St      :  39352
+##  Mean   :2021-08-28 15:47:39.69   Michigan Ave &amp; Oak St  :  36958
+##  3rd Qu.:2021-10-16 16:58:19.50   Wells St &amp; Elm St      :  36304
+##  Max.   :2022-04-01 00:27:32.00   (Other)                :4375139
+##                                   NA&#39;s                   : 722054
+##      start_station_id                  end_station_name
+##  13022       :  64425   Streeter Dr &amp; Grand Ave:  63326
+##  TA1308000050:  41950   Wells St &amp; Concord Ln  :  42280
+##  LF-005      :  41657   Clark St &amp; Elm St      :  38784
+##  TA1307000039:  39352   Michigan Ave &amp; Oak St  :  37074
+##  13042       :  36958   Wells St &amp; Elm St      :  36215
+##  (Other)     :4369786   (Other)                :4339249
+##  NA&#39;s        : 722054   NA&#39;s                   : 759254
+##       end_station_id      start_lat       start_lng         end_lat
+##  13022       :  63326   Min.   :41.64   Min.   :-87.84   Min.   :41.39
+##  LF-005      :  47484   1st Qu.:41.88   1st Qu.:-87.66   1st Qu.:41.88
+##  TA1308000050:  42280   Median :41.90   Median :-87.64   Median :41.90
+##  TA1307000039:  38784   Mean   :41.90   Mean   :-87.65   Mean   :41.90
+##  13042       :  37074   3rd Qu.:41.93   3rd Qu.:-87.63   3rd Qu.:41.93
+##  (Other)     :4327980   Max.   :42.07   Max.   :-87.52   Max.   :42.17
+##  NA&#39;s        : 759254
+##     end_lng       member_casual    ride_duration     day_of_week
+##  Min.   :-88.97   casual:2199527   Min.   :  1.000   Mon:683543
+##  1st Qu.:-87.66   member:3116655   1st Qu.:  6.567   Tue:724709
+##  Median :-87.64                    Median : 11.400   Wed:744932
+##  Mean   :-87.65                    Mean   : 16.825   Thu:727881
+##  3rd Qu.:-87.63                    3rd Qu.: 20.150   Fri:761306
+##  Max.   :-87.49                    Max.   :239.967   Sat:888503
+##                                                      Sun:785308
+##     weekend             week          month              hour
+##  weekday:3642371   Min.   : 1.0   Jul    : 749866   Min.   : 0.00
+##  weekend:1673811   1st Qu.:22.0   Aug    : 745893   1st Qu.:11.00
+##                    Median :30.0   Sep    : 707872   Median :15.00
+##                    Mean   :29.6   Jun    : 663994   Mean   :14.21
+##                    3rd Qu.:38.0   Oct    : 596885   3rd Qu.:18.00
+##                    Max.   :52.0   May    : 478734   Max.   :23.00
+##                                   (Other):1372938
+##      minute          second           date
+##  Min.   : 0.00   Min.   : 0.00   Min.   :2021-04-01
+##  1st Qu.:11.42   1st Qu.:11.43   1st Qu.:2021-06-23
+##  Median :15.55   Median :15.55   Median :2021-08-19
+##  Mean   :14.70   Mean   :14.71   Mean   :2021-08-28
+##  3rd Qu.:18.37   3rd Qu.:18.37   3rd Qu.:2021-10-16
+##  Max.   :23.98   Max.   :24.00   Max.   :2022-03-31
 ## </code></pre>
 <p>… and examine the changelog.</p>
 <pre class="r"><code># Changelog by type and membership
