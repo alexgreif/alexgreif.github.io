@@ -1,0 +1,55 @@
+/* Isolated design review: regular pages and main.css remain unchanged. */
+body.review-experiment .project-return { max-width: 70ch; }
+body.review-experiment #header h1,
+body.review-experiment #header .project-context { text-wrap: balance; }
+body.review-experiment #one > p,
+body.review-experiment .project-links li,
+body.review-experiment #one .major .project-tools,
+body.review-experiment #two .work-item p,
+body.review-experiment #publication p { color: #757575; }
+body.review-experiment #main a { color: #267d67; }
+body.review-experiment #main a:hover,
+body.review-experiment #main a:focus-visible { color: #195c4c; }
+body.review-experiment #main a:focus-visible,
+body.review-experiment #header a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+body.review-experiment #header .project-context { color: rgba(255,255,255,.8); }
+body.review-experiment #footer .copyright,
+body.review-experiment #footer .copyright a { color: rgba(255,255,255,.7); }
+body.review-experiment.brownian-project #header {
+ background-size: auto, auto 160%;
+ background-position: center, center !important;
+}
+body.review-plain #header,
+body.review-list #header { background: #29343c !important; }
+.review-project-list { display: none; }
+@media screen and (min-width: 981px) {
+ body.review-list .review-project-list { display: block; margin-top: 1.75em; font-size: .85em; line-height: 1.5; }
+ body.review-list .review-project-list .list-heading { margin: 0 0 .75em; }
+ body.review-list .review-project-list .list-heading a { color: #ffffff; }
+ body.review-list .review-project-list ul { list-style: none; padding: 0; margin: 0; }
+ body.review-list .review-project-list li { padding: 0; margin: 0 0 .5em; }
+ body.review-list .review-project-list li a { display: block; padding: .25em .4em; border: 0; color: #c0c8cc; }
+ body.review-list .review-project-list a[aria-current="page"] { color: #ffffff; background: #364149; border-radius: .2em; }
+ body.review-list .project-return,
+ body.review-list .project-back { display: none; }
+}
+@media screen and (max-width: 980px) {
+ body.review-experiment.brownian-project #header { background-size: auto, 180% auto; }
+ body.review-experiment:not(.review-home) #footer { padding: 1.5em; }
+ body.review-experiment:not(.review-home) #footer .copyright,
+ body.review-experiment:not(.review-home) #footer .copyright a { color: #757575; }
+ body.review-experiment #footer .credits + .copyright { margin-top: .75em; }
+}
+body.review-particles.brownian-project #header {
+ background-image: url("../../images/backgrounds/brownian-particles.svg");
+ background-color: #29343c;
+ background-size: cover;
+ background-position: center !important;
+ background-repeat: no-repeat;
+}
+
+/* Landscape illustration keeps the main particle inside the short mobile header. */
+@media screen and (max-width: 980px) {
+ body.review-particles.brownian-project #header { background-image: url("../../images/backgrounds/brownian-particles-wide.svg"); background-size: cover; }
+}
+body.review-experiment .project-neighbour a { display: inline-block; padding: .25em 0; }
