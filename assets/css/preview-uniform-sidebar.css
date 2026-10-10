@@ -1,0 +1,89 @@
+/* Complete preview sets: uniform sidebar and desktop project list. */
+body.preview-uniform-sidebar #header {
+    background-color: #29343c;
+    background-image: none !important;
+    background-position: center !important;
+}
+body.preview-uniform-sidebar.preview-subtle-pattern #header {
+    background-image: repeating-linear-gradient(135deg,
+        rgba(255, 255, 255, 0.025) 0,
+        rgba(255, 255, 255, 0.025) 1px,
+        transparent 1px, transparent 9px) !important;
+    background-size: auto;
+}
+body.preview-uniform-sidebar #footer {
+    background-image: none;
+}
+.sidebar-projects {
+    display: none;
+}
+@media screen and (min-width: 981px) {
+    body.preview-uniform-sidebar #header .sidebar-projects {
+        display: block;
+        margin-top: 2.25em;
+        font-size: 0.8em;
+        line-height: 1.5;
+    }
+    .sidebar-projects .sidebar-project-label {
+        color: rgba(255, 255, 255, 0.45);
+        margin: 0 0 0.7em;
+    }
+    .sidebar-projects ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .sidebar-projects li {
+        margin: 0 0 0.45em;
+        padding: 0;
+    }
+    body.preview-uniform-sidebar .sidebar-projects a {
+        display: block;
+        padding: 0.3em 0.5em;
+        border-bottom: 0;
+        color: rgba(255, 255, 255, 0.65);
+    }
+    body.preview-uniform-sidebar .sidebar-projects a[aria-current="page"] {
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 0.2em;
+    }
+    body.preview-uniform-sidebar .sidebar-projects a:hover,
+    body.preview-uniform-sidebar .sidebar-projects a:focus-visible {
+        color: #49bf9d;
+    }
+}
+body .project-navigation-preview {
+    max-width: 70ch;
+}
+.project-neighbours {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1em 2em;
+}
+.project-neighbour {
+    min-width: 0;
+    line-height: 1.5;
+}
+.project-neighbour.next {
+    grid-column: 2;
+    text-align: right;
+}
+.project-neighbour.previous {
+    grid-column: 1;
+}
+.project-neighbour .neighbour-label {
+    display: block;
+    color: #888888;
+    font-size: 0.8em;
+    margin-bottom: 0.2em;
+}
+.project-neighbour .arrow-word {
+    white-space: nowrap;
+}
+@media screen and (max-width: 480px) {
+    .project-neighbours {
+        gap: 1em;
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,107 @@
+/* Styles retained for earlier design comparisons only. */
+/* Compact project overview with methods and tools */
+body.portfolio-project #main .project-detail {
+    max-width: 70ch;
+}
+
+body.portfolio-project .project-detail h2 {
+    margin-bottom: 0.35em;
+}
+
+body.portfolio-project .project-context {
+    color: #888888;
+    font-size: 0.9em;
+    margin-bottom: 1.5em;
+}
+
+body.portfolio-project .project-detail > p:not(.project-context) {
+    color: #808080;
+    margin-bottom: 1em;
+}
+
+body.portfolio-project .project-facts {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    gap: 0.35em 1em;
+    color: #808080;
+    font-size: 0.9em;
+    margin: 1.5em 0;
+}
+
+body.portfolio-project .project-facts dt {
+    color: #787878;
+    font-weight: 600;
+}
+
+body.portfolio-project .project-facts dd {
+    margin: 0;
+}
+
+body.portfolio-project .project-detail .actions {
+    flex-wrap: wrap;
+    row-gap: 0.75em;
+    margin-bottom: 0;
+}
+
+/* Compare footer contacts adjacent to the copyright */
+body.footer-contact-comparison #footer .copyright,
+body.footer-contact-comparison #footer .copyright.credits,
+body.footer-contact-comparison #footer .contact-links {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body.footer-contact-comparison #footer .credits + ul {
+    margin-top: 1.5em;
+}
+
+body.footer-contact-comparison #footer .contact-links + .copyright,
+body.footer-contact-comparison #footer .copyright:not(.credits) + .contact-links {
+    margin-top: 0.75em;
+}
+
+/* Footer preview: personal details together, compact credits below */
+body.footer-grouped #footer .footer-personal .contact-links {
+    margin: 0;
+}
+
+body.footer-grouped #footer .footer-personal .copyright {
+    margin: 0.4em 0 0;
+}
+
+body.portfolio-home.footer-grouped #footer .copyright.credits {
+    font-size: 0.7em;
+    margin: 1.25em 0 0;
+}
+
+body.portfolio-home.footer-grouped #footer .copyright.credits li {
+    line-height: 1.5em;
+}
+
+body.footer-grouped #footer .credits span {
+    margin: 0 0.3em;
+}
+
+/* Reverse the two footer groups for comparison */
+body.portfolio-home.footer-grouped-reversed #footer .copyright.credits {
+    margin-top: 0;
+}
+
+body.footer-grouped-reversed #footer .footer-personal {
+    margin-top: 1.25em;
+}
+
+/* Quiet contact links in the reversed grouping preview */
+body.footer-grouped-reversed #footer .footer-personal .contact-links {
+    font-size: 0.8em;
+}
+
+body.footer-grouped-reversed #footer .footer-personal .contact-links a {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+body.footer-grouped-reversed #footer .footer-personal .contact-links a:hover,
+body.footer-grouped-reversed #footer .footer-personal .contact-links a:focus-visible {
+    color: #49bf9d;
+}
+

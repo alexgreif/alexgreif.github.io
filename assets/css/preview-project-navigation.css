@@ -1,0 +1,37 @@
+/* Preview only: project-to-project navigation and plain sidebars. */
+body.preview-plain-sidebar #header {
+    background-image: none;
+    background-color: #29343c;
+}
+body .project-navigation-preview {
+    max-width: 70ch;
+}
+.project-neighbours {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1em 2em;
+    margin-bottom: 1.5em;
+}
+.project-neighbour {
+    min-width: 0;
+    line-height: 1.5;
+}
+.project-neighbour.next {
+    grid-column: 2;
+    text-align: right;
+}
+.project-neighbour.previous {
+    grid-column: 1;
+}
+.project-neighbour span {
+    display: block;
+    color: #888888;
+    font-size: 0.8em;
+    margin-bottom: 0.2em;
+}
+@media screen and (max-width: 480px) {
+    .project-neighbours {
+        gap: 1em;
+        font-size: 0.9em;
+    }
+}
