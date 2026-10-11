@@ -1,6 +1,17 @@
 // Optional layout comparisons, propagated when browsing review pages.
 const reviewOptions = new URLSearchParams(location.search);
 const sidebarWidth = reviewOptions.get('sidebar');
+const studyPreview = reviewOptions.get('article');
+const studyPreviews = {
+ title: ['study-satisfaction-title.svg', 'Title and authors of the co-authored journal article on study satisfaction'],
+ anova: ['study-satisfaction-anova.svg', 'Detail of the factorial ANOVA results table'],
+ comparisons: ['study-satisfaction-comparisons.svg', 'Detail of the estimated marginal means comparison table']
+};
+const studyImage = document.querySelector('[data-study-preview]');
+if (studyImage && Object.hasOwn(studyPreviews, studyPreview)) {
+ studyImage.src = `images/thumbs/${studyPreviews[studyPreview][0]}`;
+ studyImage.alt = studyPreviews[studyPreview][1];
+}
 if (['25', '28', '30'].includes(sidebarWidth)) {
  document.body.classList.add('review-sidebar-sized');
  document.body.style.setProperty('--review-sidebar-width', `${sidebarWidth}%`);
@@ -11,6 +22,7 @@ document.querySelectorAll('a[href]').forEach(link => {
  if (url.origin === location.origin && /\/review-(row|subtle|photos)-[^/]+\.html$/.test(url.pathname)) {
   if (['25', '28', '30'].includes(sidebarWidth)) url.searchParams.set('sidebar', sidebarWidth);
   if (reviewOptions.get('text') === '80') url.searchParams.set('text', '80');
+  if (Object.hasOwn(studyPreviews, studyPreview)) url.searchParams.set('article', studyPreview);
   link.href = url.href;
  }
 });

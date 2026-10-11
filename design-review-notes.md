@@ -204,3 +204,14 @@ Firefox-Screenshots bei 1866 × 1200 und 390 × 2300 wurden geprüft: Titel und 
 ### Startseite ohne sichtbare Projects-Überschrift
 
 Nach Zustimmung des Nutzers entfällt die sichtbare Projects-Zeile auf beiden bevorzugten Startseiten. Die Überschrift bleibt visuell verborgen für Screenreader erhalten; sie belegt keinen Platz im Layout. Die erste Bildreihe beginnt entsprechend weiter oben, ohne zusätzliche Anpassung der Seitenabstände. Firefox-Sichtprüfung: beide Varianten bei 1866 × 947 sowie schlichte Variante bei 390 × 1600. Keine Überlappungen; Aufnahmen unter `/tmp/portfolio-no-heading`. Die reguläre Startseite bleibt unverändert.
+
+
+### Tabellen-Ausschnitte als zusätzliche Artikelvorschauen
+
+Die beiden vom Nutzer bereitgestellten Tabellenbilder werden in unveränderten PNG-Daten innerhalb zweier SVG-Rahmen verwendet: `study-satisfaction-anova.svg` (viewBox 25 42 480 184) und `study-satisfaction-comparisons.svg` (viewBox 42 49 562 265). Sie zeigen ausdrücklich nur Ausschnitte; vollständige Lesbarkeit ist nicht das Ziel. Die bisherige Titel-/Autorenvorschau bleibt der Standard. In beiden bevorzugten Übersichten lassen sich die Varianten mit `article=title`, `article=anova` oder `article=comparisons` vergleichen. Der Designvergleich bietet dafür eine Auswahl. Die Auswahl bleibt beim Wechsel zwischen bevorzugten Vorschauseiten erhalten. Keine Änderung der regulären Website oder der PDF-Quelle.
+
+Die Idee eines eigenständigen Tabellenbilds innerhalb der schlichten Projekt-Sidebar bleibt vorgemerkt. Kein Tabellenbild als Hintergrund hinter Projekttitel oder Navigation eingebaut, da die übereinanderliegenden Textstrukturen zu unruhig wären.
+
+Der mobile Footer der schlichten Startseite hatte weiterhin den Sternenhimmel aus der regulären Vorlage geerbt. Für `review-subtle` gilt unterhalb des Sidebar-Breakpoints nun durchgängig derselbe helle Hintergrund ohne Bild, mit grauem Text und dezentem Rand wie auf den Projektseiten. Die Bildvariante bleibt davon unberührt.
+
+Firefox-Sichtprüfung der beiden Tabellenvarianten bei 1866 × 947 und 390 × 2900 einschließlich des gesamten mobilen Footers. Beide Ausschnitte laden korrekt; der helle Footer hat keinen Sternenhimmel und die Credits sind lesbar. JavaScript-Syntax und SVG-XML geprüft. Screenshots: `/tmp/portfolio-table-previews`.

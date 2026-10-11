@@ -206,3 +206,15 @@ body.review-experiment .review-visually-hidden {
  white-space: nowrap;
  border: 0;
 }
+
+/* The plain design keeps its neutral footer when the sidebar becomes a header. */
+@media screen and (max-width: 980px) {
+ body.review-subtle #footer {
+  background: #f6f6f6;
+  border-top: 1px solid #e8e8e8;
+ }
+ body.review-subtle #footer .copyright,
+ body.review-subtle #footer .copyright a { color: #757575; }
+ body.review-subtle #footer .copyright a:hover,
+ body.review-subtle #footer .copyright a:focus-visible { color: #267d67; }
+}
