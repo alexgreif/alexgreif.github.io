@@ -369,3 +369,14 @@ body.review-photos.survival-project #header { background-position: center, 35% c
  body.review-hybrid.survival-project .hybrid-image img { object-position: 34% center; }
  body.review-hybrid.study-project.review-hybrid-sport .hybrid-image img { object-position: 68% center; }
 }
+
+/* Refine the two remaining semicircle focal points without changing other layouts. */
+@media (min-width: 981px) {
+ body.review-hybrid:not(.review-rectangle).thesis-project .hybrid-image img {
+  object-position: 45% center;
+  transform: scale(1.2);
+ }
+ body.review-hybrid:not(.review-rectangle).anguilla-project .hybrid-image img {
+  object-position: 20% center;
+ }
+}

@@ -347,3 +347,10 @@ Survival-Fokus im Halbkreis nach links verschoben, damit Gesicht und Feuer gemei
 Survival-Quelle erneut geprüft: Wikimedia Commons, Defense.gov News Photo 081014-F-4127S-200, Jonathan Snyder/U.S. Air Force, PD US Air Force. Bevorzugte Foto-/Hybrid-/Rechteckseiten ersetzen den falschen Unsplash-Credit durch direkten Quellenlink und Fotograf. Sportfoto erhält Ludo Poiré/Unsplash-Credit. Brownian-Autor, Änderungen und Lizenz bleiben. Schlichte Projektseiten ohne Bild verlieren ihren Unsplash-Credit; Übersichten behalten ihn wegen ihrer Foto-Thumbnails. Optionales Tabellenbild entfernt den Sportcredit und ist über die vorhandene Veröffentlichung belegt. Bestehende Fußball-, Fahrrad- und Lupenbilder behalten Unsplash als bisherigen Quellencredit; genaue Fotografen-Metadaten noch nicht wiedergefunden. Quellenprüfung und Bearbeitungen in images/source/design-review-image-sources.md dokumentiert.
 
 Firefox-Prüfung aller sechs Halbkreis-Projektmotive bei 1280×720, Survival zusätzlich bei 1866×947 und 390×1500, Sportfoto bei 390×1500 sowie Survival-Rechteck bei 1280×720. Keine Überlappungen in den geprüften Ansichten. Screenshots /tmp/muted-*.png. Alle lokalen Ziele der 28 bevorzugten Vorschauseiten und JavaScript-Syntax geprüft. Reguläre Website und Hauptbranch unverändert.
+
+
+### Fußballfeld und Lupe gezielt im Desktop-Halbkreis ausgerichtet
+
+Auf Nutzerfeedback verbleibende zwei Motive nachjustiert: Fußballfeld 20% näher gezoomt, Fokus 45% horizontal/mittig vertikal; Mittelpunkt des Felds liegt zentral im Ausschnitt, weniger dunkle Umgebung. Lupe horizontal auf 20% statt 35% verschoben, damit mehr vom Lupenkopf und Ansatz des Griffs sichtbar wird. Regeln gelten nur für Desktop-Halbkreis, nicht für die Rechteck-/Vollbildvariante oder schmalen Header. Die anderen Motive bleiben wie zuvor.
+
+Firefox-Sichtprüfung beider Seiten bei 1866×947 und 390×1500. Im schmalen Header bleiben Feld und Lupe erkennbar, Text und Randmotiv getrennt. Screenshots /tmp/focal-thesis-wide.png, /tmp/focal-lens-wide.png, /tmp/focal-thesis-mobile.png und /tmp/focal-lens-mobile.png. Reine CSS-Änderung, ausschließlich feature/design-review.
