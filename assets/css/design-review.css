@@ -297,14 +297,14 @@ body.review-photos.brownian-project #header {
  }
 }
 
-/* Hybrid: larger desktop semicircle, side-by-side mobile image and text. */
+/* Hybrid: desktop semicircle and centered mobile header with a corner image. */
 .hybrid-image { display: none; }
 body.review-hybrid .hybrid-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
 body.review-hybrid.study-project .hybrid-image { background: #f3f1ed; }
 body.review-hybrid.study-project .hybrid-image img { object-position: 54% center; }
 body.review-hybrid.anguilla-project .hybrid-image img { object-position: 35% center; }
 body.review-hybrid.study-project.review-hybrid-sport .hybrid-image img { object-position: 68% center; }
-body.review-hybrid.brownian-project .hybrid-image img { object-fit: contain; padding: .5em; }
+body.review-hybrid.brownian-project .hybrid-image img { object-fit: cover; padding: 0; transform: scale(1.35); }
 @media (min-width: 981px) {
  body.review-hybrid #header { overflow: hidden; }
  body.review-hybrid #header .hybrid-image {
@@ -322,30 +322,35 @@ body.review-hybrid.brownian-project .hybrid-image img { object-fit: contain; pad
  }
 }
 @media (max-width: 980px) {
- body.review-hybrid:not(.review-home) #header { padding: 2em clamp(1.5rem, 4vw, 3rem); }
- body.review-hybrid:not(.review-home) #header > .inner {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) clamp(100px, 25vw, 180px);
-  column-gap: clamp(1rem, 3vw, 2rem);
-  align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
- }
- body.review-hybrid #header h1,
- body.review-hybrid #header .project-context,
- body.review-hybrid #header .project-back { grid-column: 1; text-wrap: initial; }
- body.review-hybrid #header h1 { margin: 0; }
- body.review-hybrid #header .project-context { margin: .5em 0 0; }
- body.review-hybrid #header .project-back { margin: 1em 0 0; }
- body.review-hybrid #header .hybrid-image {
-  display: block;
-  grid-column: 2;
-  grid-row: 1 / 4;
-  width: 100%;
-  aspect-ratio: 1;
-  border-radius: 50%;
+ body.review-hybrid:not(.review-home) #header {
+  padding: 2em clamp(1.5rem, 4vw, 3rem) 6.5em;
   overflow: hidden;
  }
- body.review-hybrid #header h1 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+ body.review-hybrid:not(.review-home) #header > .inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+ }
+ body.review-hybrid #header .hybrid-image {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: clamp(110px, 18vw, 170px);
+  height: clamp(80px, 12vw, 110px);
+  border-radius: 100% 0 0 0;
+  overflow: hidden;
+  pointer-events: none;
+ }
+}
+/* Separate rectangular inset experiment; mobile keeps the same corner treatment. */
+@media (min-width: 981px) {
+ body.review-rectangle #header .hybrid-image {
+  left: 1.25em;
+  right: 1.25em;
+  width: auto;
+  height: clamp(120px, calc(100svh - 440px), 300px);
+  border-radius: 0;
+ }
+ body.review-rectangle.brownian-project .hybrid-image img { transform: scale(1.15); }
 }

@@ -29,7 +29,7 @@ if (['70', '80', '96', 'full'].includes(textWidth)) {
 if (reviewOptions.get('align') === 'center') document.body.classList.add('review-centered-content');
 document.querySelectorAll('a[href]').forEach(link => {
  const url = new URL(link.href, location.href);
- if (url.origin === location.origin && /\/review-(row|subtle|photos|hybrid)-[^/]+\.html$/.test(url.pathname)) {
+ if (url.origin === location.origin && /\/review-(row|subtle|photos|hybrid|rectangle)-[^/]+\.html$/.test(url.pathname)) {
   if (['25', '28', '30'].includes(sidebarWidth)) url.searchParams.set('sidebar', sidebarWidth);
   if (['70', '80', '96', 'full'].includes(textWidth)) url.searchParams.set('text', textWidth);
   if (reviewOptions.get('visual') === 'sport') url.searchParams.set('visual', 'sport');

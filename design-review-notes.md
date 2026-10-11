@@ -311,3 +311,12 @@ Firefox-Prüfung: alle vier neuen Desktopdarstellungen bei 1866 × 947, Hybrid-L
 Hybrid auf Startseite und alle sechs Projekte erweitert. Alle Projektkarten, Rücklinks und Nachbarlinks bleiben innerhalb derselben Variante. Größerer Desktop-Halbkreis bis Radius 260px; CSS begrenzt ihn zusätzlich anhand der verfügbaren Höhe, um Titel und Credits freizulassen. Schmale Ansicht: Text links, rundes Bild rechts, 100-180px abhängig von der Breite. Kein Bild zwischen Untertitel und Rücklink und keine Textüberlagerung. Startseite behält das vorhandene persönliche Porträt; kein zusätzliches Projektbild neben der Einleitung. Exakte Bildwahl bleibt offen; bestehende Motive und Lizenzangaben übernommen.
 
 Firefox-Sichtprüfung bei 1866×947 (größerer Halbkreis Anguilla), 1280×720 (Studienartikel Sportfoto), 390×1500 (seitliches Sportfoto) und 900×1030 (Brownian-Diagramm). Keine Überlappungen in diesen Ansichten. Alle lokalen Assets und Navigationsziele der sieben Hybridseiten geprüft. Vergleichshub erlaubt nun jede Hybridseite und verlinkt die drei vollständigen Startseiten direkt. Screenshots /tmp/hybrid-new-*.png. Nur Feature-Branch, reguläre Website unverändert.
+
+
+### Zentrierter schmaler Header mit Eckbild und Rechteckvergleich
+
+Auf Nutzerkorrektur bleibt der Text im schmalen Hybridheader vollständig zentriert. Das dekorative Bild sitzt unten rechts direkt am Header-Rand, mit einer abgerundeten inneren Kante. Reservierter unterer Abstand verhindert Überlagerung mit dem Rücklink, ohne Text seitlich einzurücken. Brownian verwendet nun object-fit cover und zusätzlichen Zoom statt contain, damit der rechteckige Gesamtrahmen der Illustration nicht sichtbar bleibt.
+
+Zusätzliche vollständige Variante review-rectangle mit Startseite und sechs Projekten: rechteckiges Bild mit seitlichem Abstand im freien Desktop-Sidebarbereich. Sie behält Navigation, Bildwahlparameter, mobile Eckdarstellung und Quellenangaben der Hybridversion. Alle sieben Seiten verlinken innerhalb der Rechteckvariante. Vergleichshub und Parameterweitergabe erweitert.
+
+Firefox-Screenshots: 390×1500 zentrierter Anguilla-Header mit Eckbild, 1866×947 vergrößerter Brownian-Ausschnitt, 1280×720 rechteckiges Anguilla-Bild. Keine Textüberlagerungen in den geprüften Ansichten. Lokale Assets und Navigationsziele aller Rechteckseiten sowie JavaScript-Syntax geprüft. Exakte Bilder weiterhin vorläufig. Aufnahmen /tmp/hybrid-corner.png, /tmp/hybrid-zoom.png und /tmp/hybrid-rectangle.png. Änderungen ausschließlich auf feature/design-review.
