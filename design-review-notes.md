@@ -101,3 +101,14 @@ Firefox-Aufnahmen bei 1866, 1280, 981 und 390 Pixeln sind geprüft. Die kompakte
 ### Etwas tiefere dezente Desktop-Navigation
 
 Der untere Innenabstand des Hauptbereichs ist in der dezenten Variante auf Desktop um 20 Pixel reduziert. Bei kurzen Seiten rückt die Navigation dadurch 20 Pixel nach unten und es steht entsprechend mehr Platz oberhalb zur Verfügung. Die reservierte Navigationshöhe bleibt gleich, damit umbrochene Projekttitel die Position nicht verändern. Bei längeren Seiten bleibt der Mindestabstand zum Inhalt maßgeblich und die Seite wächst normal. Das schmale Layout bleibt unverändert. Firefox-Aufnahmen bei 981, 1280 und 1866 Pixeln einschließlich eines 720 Pixel hohen Fensters sind geprüft.
+
+## Weitere Prüfung: Textbreite, Startseitenumbruch und Icon-Credits
+
+Die bevorzugte dezente Variante erhält folgende Anpassungen:
+
+- Der Umbruch nach „Hi, I'm Alex.“ bleibt auch im mittleren Desktopformat sichtbar. Der anschließende Satz darf natürlich umbrechen; die Sidebar hat bereits nur 1em seitlichen Innenabstand. Die rechtsbündige Ausrichtung erzeugt zusätzlich scheinbaren Leerraum links.
+- Mit `&text=80` lässt sich die Begrenzung von Projektinhalt und Navigation von 70ch auf 80ch erweitern. Der Vergleich enthält einen eigenen Schalter; die Einstellung bleibt beim Wechsel zwischen Projekten erhalten. Der Hauptbereich nutzt mit schmalerer Sidebar bereits 75 % der Fensterbreite, die Textbegrenzung ist davon unabhängig.
+- Der Desktop-Innenabstand unten ist nun insgesamt um 30 Pixel reduziert, also weitere 10 Pixel gegenüber der vorherigen Variante. Lange Seiten behalten ihren Mindestabstand zum Inhalt und wachsen normal.
+- Die Icons-Zeile entfällt in allen sechs dezenten Vorschauseiten. Die tatsächlich sichtbaren LinkedIn-, GitHub- und E-Mail-Icons stammen ausschließlich aus Font Awesome Free 5.15.4. Icons8 und Devicon werden in den aktuellen sechs regulären Seiten nicht mehr verwendet. Die eingebetteten Lizenzhinweise bleiben erhalten; zusätzlich liegt die unveränderte versionsbezogene Lizenz in `assets/webfonts/LICENSE-font-awesome.txt`. Die Lizenz erklärt ausdrücklich, dass die eingebetteten Hinweise bei normaler Verwendung ausreichen. Quelle: https://github.com/FortAwesome/Font-Awesome/blob/5.15.4/LICENSE.txt
+
+Firefox-Screenshots bei 390, 981, 1280 und 1866 Pixeln wurden geprüft, einschließlich 981 × 720 Pixeln. Startseite, breiterer Projekttext, reduzierter Footer und tiefere Navigation bleiben in den geprüften Ansichten ohne Überlappung. Aufnahmen liegen lokal in `/tmp/portfolio-layout-refinements`. Die regulären Seiten und `master` bleiben unverändert.

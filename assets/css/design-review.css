@@ -153,8 +153,14 @@ body.review-subtle #main .project-return a:focus-visible { color: #267d67; }
 
 /* A little more room above the desktop navigation, keeping space at the bottom. */
 @media screen and (min-width: 981px) {
- body.review-experiment.review-subtle #main { padding-bottom: calc(4em - 20px); }
+ body.review-experiment.review-subtle #main { padding-bottom: calc(4em - 30px); }
 }
 @media screen and (min-width: 981px) and (max-width: 1280px) {
- body.review-experiment.review-subtle #main { padding-bottom: calc(3em - 20px); }
+ body.review-experiment.review-subtle #main { padding-bottom: calc(3em - 30px); }
 }
+
+/* Restore the explicit greeting break; keep natural wrapping in the introduction. */
+body.review-subtle.review-home #header h1 br { display: block; }
+/* Optional wider reading column; keep navigation aligned with it. */
+body.review-experiment.review-wider-text #one,
+body.review-experiment.review-wider-text .project-return { max-width: 80ch; }
