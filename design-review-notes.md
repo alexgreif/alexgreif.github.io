@@ -284,3 +284,10 @@ Firefox-Prüfung Survival bei 390, 900, 981 und 1866 × 947, zusätzlich vollst�
 Nach ausdrücklicher Zustimmung entfällt im Layout ohne Sidebar das Auffüllen der Fensterhöhe für die bevorzugten Projektseiten. Body-Mindesthöhe und Wachstum des Hauptbereichs sind dort aufgehoben; die Navigation hat margin-top:0, keine Mindesthöhe und folgt nach 1.5em Abstand mit Trennlinie und 1em Innenabstand. Desktopregeln bleiben erhalten. Firefox bei 900 × 1030 für Anguilla geprüft: Materialien, Navigation und Footer folgen ohne künstlichen Leerraum aufeinander. Screenshot `/tmp/mobile-natural-nav.png`.
 
 Rücknavigation zur Diskussion: Die bevorzugten Headerlinks führen bereits direkt auf die jeweilige index-Vorschau ohne Sprungmarke. Vorschlag zur bewussten nächsten Entscheidung: einheitlich „Back to overview“ statt „Back to projects“, außerdem denselben Rücklink am freien linken Platz des ersten und freien rechten Platz des letzten Projekts. Noch nicht umgesetzt, da der Nutzer zunächst Abwägung und Benennung diskutieren möchte.
+
+
+### Rückweg zur Übersicht bestätigt
+
+Nach Zustimmung lautet der Header-/Sidebar-Rücklink auf allen zwölf bevorzugten Projektseiten „Back to overview“. Er führt weiterhin zur jeweiligen Übersicht ohne Sprungmarke. Beim ersten Projekt steht zusätzlich links unten „← Back to overview“, beim letzten rechts unten „Back to overview →“. Die tatsächlichen Nachbarlinks und die Projektreihenfolge bleiben erhalten; Übersichtsrücklinks werden nicht als prev/next ausgezeichnet.
+
+Alle zwölf Headerziele und die vier neuen Endpunktlinks strukturell geprüft. Firefox-Sichtprüfung: erstes Projekt schlichte Variante bei 1866 × 947 und letztes Projekt Bildvariante bei 390 × 1600. Rücklinks sichtbar, keine Überlappungen; mobile Navigation folgt weiterhin direkt dem Inhalt. Aufnahmen `/tmp/overview-first-wide.png` und `/tmp/overview-last-small.png`. Ausschließlich Vergleichsseiten auf feature/design-review geändert.
