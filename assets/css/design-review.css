@@ -193,3 +193,16 @@ body.study-project .publication-citation { font-size: .85em; line-height: 1.6em;
  body.study-project #header .project-context { font-size: 1.05em; }
  body.study-project #footer { background: #f6f6f6; border-top: 1px solid #e8e8e8; }
 }
+
+/* Keep the project heading available to screen readers without a visible row. */
+body.review-experiment .review-visually-hidden {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ padding: 0;
+ margin: -1px;
+ overflow: hidden;
+ clip-path: inset(50%);
+ white-space: nowrap;
+ border: 0;
+}

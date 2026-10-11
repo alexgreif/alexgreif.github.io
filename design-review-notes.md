@@ -199,3 +199,8 @@ Vorgemerkt zur Bildauswahl: Die Mischung aus illustrativen Kontextfotos (Bachelo
 Auf Nutzerwunsch verwenden die beiden bevorzugten Projektübersichten nun einen Ausschnitt der Artikelseite, der „Forschungsartikel“, den vollständigen Titel und die Autoren zeigt. `images/thumbs/study-satisfaction-title.svg` rahmt den entsprechenden Bereich der unveränderten PNG-Datei ein (viewBox 70 25 620 235). Die Originalvorschau der gesamten Seite bleibt erhalten. Keine generative Neuzeichnung des Textes und keine Änderung am PDF.
 
 Firefox-Screenshots bei 1866 × 1200 und 390 × 2300 wurden geprüft: Titel und Autoren sind vollständig im Vorschaubereich enthalten und deutlich größer als zuvor; das bestehende Kartenformat bleibt erhalten. Aufnahmen: `/tmp/portfolio-article-crop`. Der Zuschnitt gilt nur für die beiden bevorzugten Vergleichsvarianten auf dem Feature-Branch.
+
+
+### Startseite ohne sichtbare Projects-Überschrift
+
+Nach Zustimmung des Nutzers entfällt die sichtbare Projects-Zeile auf beiden bevorzugten Startseiten. Die Überschrift bleibt visuell verborgen für Screenreader erhalten; sie belegt keinen Platz im Layout. Die erste Bildreihe beginnt entsprechend weiter oben, ohne zusätzliche Anpassung der Seitenabstände. Firefox-Sichtprüfung: beide Varianten bei 1866 × 947 sowie schlichte Variante bei 390 × 1600. Keine Überlappungen; Aufnahmen unter `/tmp/portfolio-no-heading`. Die reguläre Startseite bleibt unverändert.
