@@ -224,3 +224,15 @@ body:is(.review-subtle, .review-photos) #main .project-neighbour a { display: bl
 body:is(.review-subtle, .review-photos) .project-neighbour .neighbour-name { display: block; }
 body:is(.review-subtle, .review-photos) #main .project-neighbour a:hover .neighbour-label,
 body:is(.review-subtle, .review-photos) #main .project-neighbour a:focus-visible .neighbour-label { color: inherit; }
+
+/* Explicit reading-width comparisons, including the original full-width approach. */
+body.review-experiment.review-text-width #one,
+body.review-experiment.review-text-width .project-return { max-width: var(--review-text-width); }
+
+/* Center the complete project column, without centering its text. */
+body.review-experiment.review-centered-content:not(.review-home) #main > #one,
+body.review-experiment.review-centered-content:not(.review-home) #main > .project-return {
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+}

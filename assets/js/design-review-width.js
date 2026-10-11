@@ -16,12 +16,18 @@ if (['25', '28', '30'].includes(sidebarWidth)) {
  document.body.classList.add('review-sidebar-sized');
  document.body.style.setProperty('--review-sidebar-width', `${sidebarWidth}%`);
 }
-if (reviewOptions.get('text') === '80') document.body.classList.add('review-wider-text');
+const textWidth = reviewOptions.get('text');
+if (['80', '96', 'full'].includes(textWidth)) {
+ document.body.classList.add('review-text-width');
+ document.body.style.setProperty('--review-text-width', textWidth === 'full' ? 'none' : `${textWidth}ch`);
+}
+if (reviewOptions.get('align') === 'center') document.body.classList.add('review-centered-content');
 document.querySelectorAll('a[href]').forEach(link => {
  const url = new URL(link.href, location.href);
  if (url.origin === location.origin && /\/review-(row|subtle|photos)-[^/]+\.html$/.test(url.pathname)) {
   if (['25', '28', '30'].includes(sidebarWidth)) url.searchParams.set('sidebar', sidebarWidth);
-  if (reviewOptions.get('text') === '80') url.searchParams.set('text', '80');
+  if (['80', '96', 'full'].includes(textWidth)) url.searchParams.set('text', textWidth);
+  if (reviewOptions.get('align') === 'center') url.searchParams.set('align', 'center');
   if (Object.hasOwn(studyPreviews, studyPreview)) url.searchParams.set('article', studyPreview);
   link.href = url.href;
  }
