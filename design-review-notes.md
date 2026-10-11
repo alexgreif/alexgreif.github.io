@@ -220,3 +220,10 @@ Firefox-Sichtprüfung der beiden Tabellenvarianten bei 1866 × 947 und 390 × 29
 ### ANOVA-Ausschnitt horizontal zentriert
 
 Der ANOVA-Rahmen ist auf Nutzerwunsch horizontal auf die tatsächliche Tabellenbreite zentriert: viewBox nun `66 42 480 184` statt `25 42 480 184`. Die Tabelle reicht ungefähr von x=25 bis x=587, sodass beidseitig etwa 41 Pixel entfallen. Der Ausschnitt soll als statistisches Tabellenbild wirken; vollständige Lesbarkeit ist ausdrücklich nicht erforderlich. Ausschnittgröße und vertikale Position bleiben erhalten. Firefox-Sichtprüfung bei 1866 × 947 und 390 × 1500; beide Seiten werden nun symmetrisch beschnitten. Screenshots: `/tmp/portfolio-centered-anova`.
+
+
+### Kürzerer Kartentitel und Tabellen mit Artikelkontext
+
+Die bevorzugten Übersichten verwenden nun „Satisfaction in Teacher Education“ als kürzeren Kartentitel. Projekttitel, Seitentitel und Nachbarlinks behalten die vollständige Bezeichnung mit „Study Satisfaction“ und PE. Der kürzere Kartentitel wurde bei 1866, 1280 und 390 Pixeln geprüft und passt dort jeweils in eine Zeile, ohne erzwungenes nowrap. „Teacher Education Student Satisfaction“ und „Teacher Education Study Satisfaction“ wurden zusätzlich als Optionen genannt, aber wegen der sperrigeren Aneinanderreihung von Substantiven noch nicht eingesetzt.
+
+Die beiden Tabellenvorschauen enthalten jetzt mehr Artikelkontext: ANOVA mit Tabellenüberschrift und Beginn der Fußnoten (viewBox `15 8 590 287`), paarweise Vergleiche mit Tabellenüberschrift und einem Teil der Zeilen (viewBox `24 12 595 305`). Der vorherige symmetrische Anschnitt der Tabellenränder wird dadurch abgelöst. Vollständige Lesbarkeit bleibt ausdrücklich kein Ziel; die Vorschau soll als echter Artikel-/Tabellenausschnitt erkennbar sein. Beide Varianten bei 1866 × 947 und 390 × 1500 mit Firefox geprüft. Screenshots: `/tmp/portfolio-article-table-excerpts`; Titelprüfung: `/tmp/portfolio-short-title`.
