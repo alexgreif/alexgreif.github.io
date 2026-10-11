@@ -215,3 +215,8 @@ Die Idee eines eigenständigen Tabellenbilds innerhalb der schlichten Projekt-Si
 Der mobile Footer der schlichten Startseite hatte weiterhin den Sternenhimmel aus der regulären Vorlage geerbt. Für `review-subtle` gilt unterhalb des Sidebar-Breakpoints nun durchgängig derselbe helle Hintergrund ohne Bild, mit grauem Text und dezentem Rand wie auf den Projektseiten. Die Bildvariante bleibt davon unberührt.
 
 Firefox-Sichtprüfung der beiden Tabellenvarianten bei 1866 × 947 und 390 × 2900 einschließlich des gesamten mobilen Footers. Beide Ausschnitte laden korrekt; der helle Footer hat keinen Sternenhimmel und die Credits sind lesbar. JavaScript-Syntax und SVG-XML geprüft. Screenshots: `/tmp/portfolio-table-previews`.
+
+
+### ANOVA-Ausschnitt horizontal zentriert
+
+Der ANOVA-Rahmen ist auf Nutzerwunsch horizontal auf die tatsächliche Tabellenbreite zentriert: viewBox nun `66 42 480 184` statt `25 42 480 184`. Die Tabelle reicht ungefähr von x=25 bis x=587, sodass beidseitig etwa 41 Pixel entfallen. Der Ausschnitt soll als statistisches Tabellenbild wirken; vollständige Lesbarkeit ist ausdrücklich nicht erforderlich. Ausschnittgröße und vertikale Position bleiben erhalten. Firefox-Sichtprüfung bei 1866 × 947 und 390 × 1500; beide Seiten werden nun symmetrisch beschnitten. Screenshots: `/tmp/portfolio-centered-anova`.
