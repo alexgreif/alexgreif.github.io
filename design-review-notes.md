@@ -320,3 +320,12 @@ Auf Nutzerkorrektur bleibt der Text im schmalen Hybridheader vollständig zentri
 Zusätzliche vollständige Variante review-rectangle mit Startseite und sechs Projekten: rechteckiges Bild mit seitlichem Abstand im freien Desktop-Sidebarbereich. Sie behält Navigation, Bildwahlparameter, mobile Eckdarstellung und Quellenangaben der Hybridversion. Alle sieben Seiten verlinken innerhalb der Rechteckvariante. Vergleichshub und Parameterweitergabe erweitert.
 
 Firefox-Screenshots: 390×1500 zentrierter Anguilla-Header mit Eckbild, 1866×947 vergrößerter Brownian-Ausschnitt, 1280×720 rechteckiges Anguilla-Bild. Keine Textüberlagerungen in den geprüften Ansichten. Lokale Assets und Navigationsziele aller Rechteckseiten sowie JavaScript-Syntax geprüft. Exakte Bilder weiterhin vorläufig. Aufnahmen /tmp/hybrid-corner.png, /tmp/hybrid-zoom.png und /tmp/hybrid-rectangle.png. Änderungen ausschließlich auf feature/design-review.
+
+
+### Randfüllendes Rechteck und mobiles Seitenbild ohne eigene Höhe
+
+Desktop-Halbkreis etwas kleiner: bevorzugter Radius 11vw statt 14vw, maximal 210px statt 260px; Höhenbegrenzung bleibt. Rechteckvariante füllt nun den kompletten Seitenstreifen von links bis rechts ohne Innenränder.
+
+Im schmalen Hybrid-/Rechtecklayout liegt das Bild absolut am rechten Header-Rand, über die vorhandene Headerhöhe, mit gerundeter innerer Seite. Der zuvor reservierte untere Bildabstand entfällt vollständig. Nur der Text mit seinen normalen vertikalen Abständen bestimmt die Headerhöhe. Symmetrischer horizontaler Abstand hält den Text mittig im Header und vom Bild getrennt. Umsetzung ausschließlich CSS, ohne Bildschirmabfragen in JavaScript.
+
+Firefox-Sichtprüfung: Studienartikel/Sportfoto bei 390×1500, Brownian bei 900×1030, kleinerer Halbkreis und randfüllendes Rechteck jeweils bei 1866×947. Text in beiden schmalen Ansichten zentriert und ohne Bildüberlagerung. Screenshots /tmp/hybrid-edge-390.png, /tmp/hybrid-edge-900.png, /tmp/hybrid-smaller.png und /tmp/rectangle-full.png. Nur Feature-Branch geändert.

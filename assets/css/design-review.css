@@ -297,7 +297,7 @@ body.review-photos.brownian-project #header {
  }
 }
 
-/* Hybrid: desktop semicircle and centered mobile header with a corner image. */
+/* Hybrid: desktop semicircle and centered mobile header with an image at its side. */
 .hybrid-image { display: none; }
 body.review-hybrid .hybrid-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
 body.review-hybrid.study-project .hybrid-image { background: #f3f1ed; }
@@ -308,7 +308,7 @@ body.review-hybrid.brownian-project .hybrid-image img { object-fit: cover; paddi
 @media (min-width: 981px) {
  body.review-hybrid #header { overflow: hidden; }
  body.review-hybrid #header .hybrid-image {
-  --hybrid-radius: clamp(100px, min(14vw, calc((100svh - 440px) / 2)), 260px);
+  --hybrid-radius: clamp(100px, min(11vw, calc((100svh - 460px) / 2)), 210px);
   display: block;
   position: absolute;
   right: 0;
@@ -323,7 +323,8 @@ body.review-hybrid.brownian-project .hybrid-image img { object-fit: cover; paddi
 }
 @media (max-width: 980px) {
  body.review-hybrid:not(.review-home) #header {
-  padding: 2em clamp(1.5rem, 4vw, 3rem) 6.5em;
+  --hybrid-edge-width: clamp(44px, 8vw, 80px);
+  padding: 2em calc(var(--hybrid-edge-width) + 12px);
   overflow: hidden;
  }
  body.review-hybrid:not(.review-home) #header > .inner {
@@ -335,19 +336,20 @@ body.review-hybrid.brownian-project .hybrid-image img { object-fit: cover; paddi
   display: block;
   position: absolute;
   right: 0;
+  top: 0;
   bottom: 0;
-  width: clamp(110px, 18vw, 170px);
-  height: clamp(80px, 12vw, 110px);
-  border-radius: 100% 0 0 0;
+  width: var(--hybrid-edge-width);
+  height: 100%;
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
   overflow: hidden;
   pointer-events: none;
  }
 }
-/* Separate rectangular inset experiment; mobile keeps the same corner treatment. */
+/* Full-width rectangular sidebar experiment; mobile keeps the same side treatment. */
 @media (min-width: 981px) {
  body.review-rectangle #header .hybrid-image {
-  left: 1.25em;
-  right: 1.25em;
+  left: 0;
+  right: 0;
   width: auto;
   height: clamp(120px, calc(100svh - 440px), 300px);
   border-radius: 0;
