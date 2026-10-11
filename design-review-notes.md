@@ -173,3 +173,12 @@ Nach Rückmeldung des Nutzers lautet die Formulierung nun „wrote the quantitat
 Auf der neuen Seite ersetzt „Publication“ den Abschnitt „Project materials“. Der Artikeltitel ist direkt innerhalb der Literaturangabe verlinkt; ein kurzer Hinweis erklärt, dass der Link die vollständige Zeitschriftenausgabe öffnet. Der separate zusätzliche Link entfällt. In beiden bevorzugten Varianten umgesetzt und auf Desktop (1866 × 947) sowie mobil (390 × 1400) mit Firefox geprüft; Screenshots unter `/tmp/portfolio-publication-block`.
 
 Die übrigen bevorzugten Seiten wurden bezüglich ihrer Materialien durchgesehen, aber nicht geändert: Bei Brownian, Survival und Chicago bündelt „Project materials“ mehrere Dateien und ist sinnvoll. Bei Anguilla (ein Repository) und der Bachelorarbeit (eine PDF) ist die Überschrift optional; eine einfachere Darstellung mit einem einzelnen Link kann später gemeinsam geprüft werden.
+
+
+### Journal-Link und Abgleich der Ergebnisdarstellungen
+
+Die übrigen Project-materials-Abschnitte bleiben auf ausdrücklichen Nutzerwunsch erhalten. Auf der Forschungsprojektseite liegt der DOI-Link jetzt auf dem kursiven Zeitschriftennamen mit Bandnummer statt auf dem Artikeltitel. Der zusätzliche Sprach-/Linkhinweis entfällt. Die bibliografische Angabe enthält weiter Ausgabe und Artikel-Seiten, der DOI verweist weiter auf die Gesamtausgabe.
+
+Die Skills-Zeile ist auf „R · Factorial ANOVA“ reduziert. Der veröffentlichte Artikel wurde separat auf Abbildungen und Tabellen geprüft: Tabellen 1-4 auf gedruckten Seiten 132-134 zeigen quantitative Daten/Ergebnisse. Die einzige Abbildung (S. 138) zeigt den Kurzfragebogen, keine quantitative Ergebnisgrafik. Die Beschreibung nennt deshalb nur noch die quantitativen Tabellen. Vom Nutzer bestätigte explorative Abbildungen während der Analyse werden dadurch nicht bestritten, aber nicht als Veröffentlichungsbestandteil dargestellt.
+
+Reihenfolge noch offen: Empfehlung, das Forschungsprojekt direkt nach der Bachelorarbeit einzusortieren, um angewandte Forschung und Veröffentlichung früher sichtbar zu machen. Noch keine Änderung der Projekt- oder Navigationsreihenfolge.
