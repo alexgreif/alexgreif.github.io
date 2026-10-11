@@ -23,3 +23,21 @@
 
 - Anguilla: existing Unsplash magnifier asset, images/previews/anguilla-magnifying-glass.jpg.
 - Study satisfaction: previously verified published Table 4 excerpt; source remains documented in design-review-notes.md. CSS masks only.
+
+
+## Survival training photograph
+
+- Author: Senior Airman Jonathan Snyder, U.S. Air Force.
+- Photo ID: 081014-F-4127S-200, 14 October 2008.
+- Verified source: https://commons.wikimedia.org/wiki/File:Defense.gov_News_Photo_081014-F-4127S-200.jpg (checked 2026-10-11).
+- Commons identifies the photograph as a work of the U.S. federal government, public domain in the United States (PD US Air Force).
+- Local asset: images/backgrounds/survival-analysis.png, matching the photograph supplied by the user; Manawa/Cloudinary is a redistribution, not the photographer.
+- Preferred photo, hybrid and rectangle pages now credit Jonathan Snyder / U.S. Air Force with a direct source link, replacing the incorrect Unsplash credit.
+- CSS masks, focal-point crops and gentle saturation/brightness reduction only; source pixels unchanged.
+
+## Credits by preferred layout
+
+- Plain project pages use no decorative image, so their inherited Unsplash image credit is removed. Plain overview retains Unsplash credit because its football and bicycle thumbnails remain visible.
+- Study photo/hybrid/rectangle pages use the sport photograph and credit Ludo Poiré / Unsplash directly. The optional table comparison is an excerpt from the publication cited in the project.
+- Brownian photo/hybrid/rectangle pages retain the visible author, adapted label and CC BY-SA 4.0 link.
+- Existing thesis, Chicago and magnifier photographs retain their existing Unsplash source credit. Exact photographer metadata was not recovered during this adjustment.

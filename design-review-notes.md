@@ -336,3 +336,14 @@ Firefox-Sichtprüfung: Studienartikel/Sportfoto bei 390×1500, Brownian bei 900�
 Studienartikel verwendet in Halbkreis- und Rechteckvariante standardmäßig das Sportfoto. Tabelle 4 bleibt nur als optionaler Vergleich über visual=table verfügbar; die Tabellen-Vorschau in der Projektübersicht bleibt unverändert. Bildwahl und Parameterweitergabe im Hub angepasst.
 
 Mobiler Bildrand erhält einen flacheren elliptischen Kreisabschnitt statt der bisherigen vollen Halbellipse. Dadurch bleiben insbesondere die oberen und unteren Bildbereiche sichtbar. Headerhöhe und zentrierte Textposition bleiben unverändert; kein zusätzlicher vertikaler Bildplatz. Firefox-Prüfung bei 390×1500: Sportfoto ohne Queryparameter korrekt, keine Textüberlagerung; Screenshot /tmp/hybrid-shallow.png. JavaScript-Syntax geprüft.
+
+
+### Gedämpfte Bildfarben, Motivwahl und Credits
+
+Halbkreis-/Rechteckbilder erhalten leichte Sättigungsreduktion (.72) und Abdunklung (.82) per CSS; Originaldateien unverändert. Vergleich mit tone=original möglich und beim Navigieren weitergeführt; Hub bietet Bildfarben-Auswahl. Mobiler Bildrand etwas breiter (52-90px statt 44-80px) und stärker gebogen (elliptischer Ausschnitt 125%/85% statt 160%/120%). Weiterhin keine eigene vertikale Bildfläche, zentrierter Text mit symmetrischem horizontalem Abstand.
+
+Survival-Fokus im Halbkreis nach links verschoben, damit Gesicht und Feuer gemeinsam sichtbar sind; Rechteck und schmaler Rand haben eigene Fokuswerte. Bei 390px ist nur ein schmaler Teil beider Motive sichtbar. Sportfoto mobil auf den Basketballspieler ausgerichtet; Lupe, Feld, Fahrräder und Brownian ebenfalls geprüft.
+
+Survival-Quelle erneut geprüft: Wikimedia Commons, Defense.gov News Photo 081014-F-4127S-200, Jonathan Snyder/U.S. Air Force, PD US Air Force. Bevorzugte Foto-/Hybrid-/Rechteckseiten ersetzen den falschen Unsplash-Credit durch direkten Quellenlink und Fotograf. Sportfoto erhält Ludo Poiré/Unsplash-Credit. Brownian-Autor, Änderungen und Lizenz bleiben. Schlichte Projektseiten ohne Bild verlieren ihren Unsplash-Credit; Übersichten behalten ihn wegen ihrer Foto-Thumbnails. Optionales Tabellenbild entfernt den Sportcredit und ist über die vorhandene Veröffentlichung belegt. Bestehende Fußball-, Fahrrad- und Lupenbilder behalten Unsplash als bisherigen Quellencredit; genaue Fotografen-Metadaten noch nicht wiedergefunden. Quellenprüfung und Bearbeitungen in images/source/design-review-image-sources.md dokumentiert.
+
+Firefox-Prüfung aller sechs Halbkreis-Projektmotive bei 1280×720, Survival zusätzlich bei 1866×947 und 390×1500, Sportfoto bei 390×1500 sowie Survival-Rechteck bei 1280×720. Keine Überlappungen in den geprüften Ansichten. Screenshots /tmp/muted-*.png. Alle lokalen Ziele der 28 bevorzugten Vorschauseiten und JavaScript-Syntax geprüft. Reguläre Website und Hauptbranch unverändert.

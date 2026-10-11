@@ -1,5 +1,6 @@
 // Optional layout comparisons, propagated when browsing review pages.
 const reviewOptions = new URLSearchParams(location.search);
+if (reviewOptions.get('tone') === 'original') document.body.classList.add('review-original-images');
 const sidebarWidth = reviewOptions.get('sidebar');
 const studyPreview = reviewOptions.get('article');
 const studyPreviews = {
@@ -11,6 +12,7 @@ const hybridStudyImage = document.querySelector('[data-hybrid-study]');
 if (hybridStudyImage && reviewOptions.get('visual') === 'table') {
  hybridStudyImage.src = 'images/thumbs/study-satisfaction-comparisons.svg';
  document.body.classList.remove('review-hybrid-sport');
+ document.querySelector('[data-study-image-credit]')?.remove();
 }
 const studyImage = document.querySelector('[data-study-preview]');
 if (studyImage && Object.hasOwn(studyPreviews, studyPreview)) {
@@ -32,6 +34,7 @@ document.querySelectorAll('a[href]').forEach(link => {
  if (url.origin === location.origin && /\/review-(row|subtle|photos|hybrid|rectangle)-[^/]+\.html$/.test(url.pathname)) {
   if (['25', '28', '30'].includes(sidebarWidth)) url.searchParams.set('sidebar', sidebarWidth);
   if (['70', '80', '96', 'full'].includes(textWidth)) url.searchParams.set('text', textWidth);
+  if (reviewOptions.get('tone') === 'original') url.searchParams.set('tone', 'original');
   if (['sport', 'table'].includes(reviewOptions.get('visual'))) url.searchParams.set('visual', reviewOptions.get('visual'));
   if (reviewOptions.get('align') === 'center') url.searchParams.set('align', 'center');
   if (Object.hasOwn(studyPreviews, studyPreview)) url.searchParams.set('article', studyPreview);
