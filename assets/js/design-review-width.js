@@ -8,9 +8,9 @@ const studyPreviews = {
  comparisons: ['study-satisfaction-comparisons.svg', 'Detail of the estimated marginal means comparison table']
 };
 const hybridStudyImage = document.querySelector('[data-hybrid-study]');
-if (hybridStudyImage && reviewOptions.get('visual') === 'sport') {
- hybridStudyImage.src = 'images/backgrounds/study-sport-basketball.jpg';
- document.body.classList.add('review-hybrid-sport');
+if (hybridStudyImage && reviewOptions.get('visual') === 'table') {
+ hybridStudyImage.src = 'images/thumbs/study-satisfaction-comparisons.svg';
+ document.body.classList.remove('review-hybrid-sport');
 }
 const studyImage = document.querySelector('[data-study-preview]');
 if (studyImage && Object.hasOwn(studyPreviews, studyPreview)) {
@@ -32,7 +32,7 @@ document.querySelectorAll('a[href]').forEach(link => {
  if (url.origin === location.origin && /\/review-(row|subtle|photos|hybrid|rectangle)-[^/]+\.html$/.test(url.pathname)) {
   if (['25', '28', '30'].includes(sidebarWidth)) url.searchParams.set('sidebar', sidebarWidth);
   if (['70', '80', '96', 'full'].includes(textWidth)) url.searchParams.set('text', textWidth);
-  if (reviewOptions.get('visual') === 'sport') url.searchParams.set('visual', 'sport');
+  if (['sport', 'table'].includes(reviewOptions.get('visual'))) url.searchParams.set('visual', reviewOptions.get('visual'));
   if (reviewOptions.get('align') === 'center') url.searchParams.set('align', 'center');
   if (Object.hasOwn(studyPreviews, studyPreview)) url.searchParams.set('article', studyPreview);
   link.href = url.href;

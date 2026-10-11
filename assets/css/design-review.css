@@ -340,7 +340,8 @@ body.review-hybrid.brownian-project .hybrid-image img { object-fit: cover; paddi
   bottom: 0;
   width: var(--hybrid-edge-width);
   height: 100%;
-  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  border-radius: 0;
+  clip-path: ellipse(160% 120% at 160% 50%);
   overflow: hidden;
   pointer-events: none;
  }

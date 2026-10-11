@@ -329,3 +329,10 @@ Desktop-Halbkreis etwas kleiner: bevorzugter Radius 11vw statt 14vw, maximal 210
 Im schmalen Hybrid-/Rechtecklayout liegt das Bild absolut am rechten Header-Rand, über die vorhandene Headerhöhe, mit gerundeter innerer Seite. Der zuvor reservierte untere Bildabstand entfällt vollständig. Nur der Text mit seinen normalen vertikalen Abständen bestimmt die Headerhöhe. Symmetrischer horizontaler Abstand hält den Text mittig im Header und vom Bild getrennt. Umsetzung ausschließlich CSS, ohne Bildschirmabfragen in JavaScript.
 
 Firefox-Sichtprüfung: Studienartikel/Sportfoto bei 390×1500, Brownian bei 900×1030, kleinerer Halbkreis und randfüllendes Rechteck jeweils bei 1866×947. Text in beiden schmalen Ansichten zentriert und ohne Bildüberlagerung. Screenshots /tmp/hybrid-edge-390.png, /tmp/hybrid-edge-900.png, /tmp/hybrid-smaller.png und /tmp/rectangle-full.png. Nur Feature-Branch geändert.
+
+
+### Sportfoto als Standard und flacherer mobiler Bogen
+
+Studienartikel verwendet in Halbkreis- und Rechteckvariante standardmäßig das Sportfoto. Tabelle 4 bleibt nur als optionaler Vergleich über visual=table verfügbar; die Tabellen-Vorschau in der Projektübersicht bleibt unverändert. Bildwahl und Parameterweitergabe im Hub angepasst.
+
+Mobiler Bildrand erhält einen flacheren elliptischen Kreisabschnitt statt der bisherigen vollen Halbellipse. Dadurch bleiben insbesondere die oberen und unteren Bildbereiche sichtbar. Headerhöhe und zentrierte Textposition bleiben unverändert; kein zusätzlicher vertikaler Bildplatz. Firefox-Prüfung bei 390×1500: Sportfoto ohne Queryparameter korrekt, keine Textüberlagerung; Screenshot /tmp/hybrid-shallow.png. JavaScript-Syntax geprüft.
