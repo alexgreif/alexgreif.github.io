@@ -354,3 +354,8 @@ Firefox-Prüfung aller sechs Halbkreis-Projektmotive bei 1280×720, Survival zus
 Auf Nutzerfeedback verbleibende zwei Motive nachjustiert: Fußballfeld 20% näher gezoomt, Fokus 45% horizontal/mittig vertikal; Mittelpunkt des Felds liegt zentral im Ausschnitt, weniger dunkle Umgebung. Lupe horizontal auf 20% statt 35% verschoben, damit mehr vom Lupenkopf und Ansatz des Griffs sichtbar wird. Regeln gelten nur für Desktop-Halbkreis, nicht für die Rechteck-/Vollbildvariante oder schmalen Header. Die anderen Motive bleiben wie zuvor.
 
 Firefox-Sichtprüfung beider Seiten bei 1866×947 und 390×1500. Im schmalen Header bleiben Feld und Lupe erkennbar, Text und Randmotiv getrennt. Screenshots /tmp/focal-thesis-wide.png, /tmp/focal-lens-wide.png, /tmp/focal-thesis-mobile.png und /tmp/focal-lens-mobile.png. Reine CSS-Änderung, ausschließlich feature/design-review.
+
+
+### Eigene schmale Ausschnitte für Feld und Lupe
+
+Mobile Header in Hybrid und Rechteck erhalten separate Fokuswerte: Fußballbild 30% näher gezoomt bei zentralem Fokus, sodass weniger dunkler Rand und mehr Mittelkreis/Rasen sichtbar sind. Lupenfokus auf 25% horizontal verschoben; Glas und Übergang zum Griff sind besser gemeinsam zu erkennen. Desktopregeln unverändert. Firefox-Screenshots beider Seiten bei 390×1500 und 900×1030 geprüft: keine Überlagerung, Text weiterhin zentriert, keine zusätzliche Headerhöhe. Aufnahmen /tmp/mobile-focal-field.png, /tmp/mobile-focal-lens.png und /tmp/mobile-focal-*-900.png. Reine CSS-Anpassung auf feature/design-review.
