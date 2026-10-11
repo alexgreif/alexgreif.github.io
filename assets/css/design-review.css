@@ -115,3 +115,38 @@ body.review-sidebar #header { background: #29343c !important; }
  body.review-sidebar .sidebar-project-navigation a:hover,
  body.review-sidebar .sidebar-project-navigation a:focus-visible { color: white; }
 }
+
+/* Compact directional links, with no neighbouring titles in the sidebar. */
+body.review-row #header,
+body.review-subtle #header { background: #29343c !important; }
+.sidebar-row-navigation { display: none; }
+@media screen and (min-width: 981px) {
+ body.review-row .project-back,
+ body.review-row .project-return { display: none; }
+ body.review-row .sidebar-row-navigation {
+  display: block;
+  position: absolute;
+  top: 16em;
+  left: 1.5em;
+  right: 1.5em;
+  font-size: .85em;
+ }
+ body.review-row .sidebar-row-navigation p { margin: 0 0 1em; }
+ body.review-row .sidebar-row-navigation a { color: #c0c8cc; }
+ .sidebar-neighbours { display: flex; justify-content: space-between; gap: .5em; font-size: 1em; }
+ .sidebar-neighbours > * { flex: 1; }
+ .sidebar-neighbours .previous { text-align: left; }
+ .sidebar-neighbours .next { text-align: right; }
+ .sidebar-neighbours a { padding: .4em 0; border: 0; white-space: nowrap; }
+ body.review-row .sidebar-row-navigation a:hover,
+ body.review-row .sidebar-row-navigation a:focus-visible { color: white; }
+ body.review-narrow #header { width: 25%; padding-left: 1em; padding-right: 1em; }
+ body.review-narrow #main { margin-left: 25%; width: 75%; }
+ body.review-narrow .sidebar-row-navigation { left: 1em; right: 1em; }
+}
+/* Muted bottom navigation: materials keep the stronger link treatment. */
+body.review-subtle .project-return .project-neighbours { font-size: .9em; }
+body.review-subtle #main .project-return a { color: #757575; border: 0; }
+body.review-subtle .project-return .neighbour-label { color: #858585; }
+body.review-subtle #main .project-return a:hover,
+body.review-subtle #main .project-return a:focus-visible { color: #267d67; }

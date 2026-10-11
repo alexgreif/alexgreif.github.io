@@ -86,3 +86,14 @@ Alle fünf Projekte wurden mit Firefox bei 1280 × 720 Pixeln aufgenommen; ergä
 ### Kompaktere Gestaltung der Sidebar-Navigation
 
 Der Navigationsblock ist jetzt linksbündig, während Projekttitel und Kontext rechtsbündig bleiben. Pfeile stehen vor den Labels Previous/Next; die Projektnamen folgen eingerückt darunter. Label und Projektname bilden gemeinsam einen anklickbaren Link. Kleinere Abstände und eine einheitliche dezente Linkfarbe verbinden die drei Navigationsziele optisch. Reservierte Nachbarplätze halten die Positionen auch auf der ersten und letzten Projektseite konstant. Die mobile Navigation bleibt unverändert. Screenshots bei 981, 1280, 1866 und 390 Pixeln zeigen keine Überlappungen.
+
+## Alternative nach Feedback zur gemischten Ausrichtung
+
+Zwei weitere Varianten ergänzen den Vergleich:
+
+- `review-row-*.html`: Previous und Next stehen auf Desktop als eine Zeile links/rechts in der Sidebar, ohne sichtbare Nachbarprojektnamen. Der Übersichtslink und die übrige Sidebar bleiben rechtsbündig. Die Nachbarprojektnamen sind als Linktitel hinterlegt. Im schmalen Layout bleibt die bisherige untere Navigation erhalten.
+- `review-subtle-*.html`: Previous/Next bleiben unten im Hauptbereich, mit etwas kleinerer Schrift und grauen Links ohne Unterstreichung. Materialien behalten ihre grüne Linkfarbe. Trennlinie, Abstand und die Ausrichtung unten bei kurzen Seiten bleiben erhalten.
+
+Beide Varianten lassen sich mit `?sidebar=25` auf 25 % Sidebar-Breite statt 30 % umschalten; die Einstellung wird beim Wechsel zwischen Projekten und Übersicht mitgenommen. Im Vergleich gibt es dafür einen separaten Schalter. Unterhalb von 981 Pixeln ändert die Option das Layout nicht.
+
+Firefox-Aufnahmen bei 1866, 1280, 981 und 390 Pixeln sind geprüft. Die kompakte Zeile passt auch bei 981 Pixeln und 25 % Sidebar. Der Bachelorarbeitstitel bricht dort auf zwei Zeilen um, während das Jahr zusammen mit Kontexttext bleibt. In der schmaleren Startseiten-Sidebar stehen die Kontaktlinks teilweise auf zwei Zeilen; auch Credits umbrechen früher. Die schmalere Leiste ist daher eine eigenständige Abwägung. Lokale Links, Assets und Fragmente aller zwölf neuen Seiten sowie die Syntax des Breiten-Skripts sind geprüft.
