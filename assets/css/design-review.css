@@ -174,3 +174,22 @@ body:is(.review-subtle, .review-photos).review-home #header h1 br { display: blo
 /* Optional wider reading column; keep navigation aligned with it. */
 body.review-experiment.review-wider-text #one,
 body.review-experiment.review-wider-text .project-return { max-width: 80ch; }
+
+/* New research project, kept isolated from the saved site's stylesheet. */
+body.study-project #one { max-width: 70ch; }
+body.study-project #header .project-context { font-size: .85em; line-height: 1.6em; margin: .5em 0 0; }
+body.study-project #header .project-back { margin: 1.25em 0 0; }
+body.study-project #header .project-back a { color: rgba(255,255,255,.7); }
+body.study-project #one > .major { margin-bottom: 1.5em; }
+body.study-project #one > .major .project-summary { font-size: 1.25em; line-height: 1.5em; margin-bottom: 0; }
+body.study-project .project-tools { color: #757575; font-size: .85em; line-height: 1.5em; margin: .45em 0 0; }
+body.study-project #one > p { margin-bottom: 1.5em; }
+body.study-project .project-links { margin-top: 1.5em; }
+body.study-project .project-links h3 { margin-bottom: .5em; }
+body.study-project .project-links ul { margin-bottom: 0; }
+body.study-project .project-links li { padding-bottom: .4em; }
+body.study-project .publication-citation { font-size: .85em; line-height: 1.6em; color: #757575; margin: .75em 0 0; }
+@media screen and (max-width: 980px) {
+ body.study-project #header .project-context { font-size: 1.05em; }
+ body.study-project #footer { background: #f6f6f6; border-top: 1px solid #e8e8e8; }
+}
