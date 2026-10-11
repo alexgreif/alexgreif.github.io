@@ -158,6 +158,7 @@ body:is(.review-subtle, .review-photos) #main .project-return a:focus-visible { 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  min-height: 0;
  }
  body:is(.review-subtle, .review-photos) .project-neighbours { width: 100%; align-items: end; }
 }
