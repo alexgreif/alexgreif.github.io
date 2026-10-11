@@ -112,3 +112,13 @@ Die bevorzugte dezente Variante erhält folgende Anpassungen:
 - Die Icons-Zeile entfällt in allen sechs dezenten Vorschauseiten. Die tatsächlich sichtbaren LinkedIn-, GitHub- und E-Mail-Icons stammen ausschließlich aus Font Awesome Free 5.15.4. Icons8 und Devicon werden in den aktuellen sechs regulären Seiten nicht mehr verwendet. Die eingebetteten Lizenzhinweise bleiben erhalten; zusätzlich liegt die unveränderte versionsbezogene Lizenz in `assets/webfonts/LICENSE-font-awesome.txt`. Die Lizenz erklärt ausdrücklich, dass die eingebetteten Hinweise bei normaler Verwendung ausreichen. Quelle: https://github.com/FortAwesome/Font-Awesome/blob/5.15.4/LICENSE.txt
 
 Firefox-Screenshots bei 390, 981, 1280 und 1866 Pixeln wurden geprüft, einschließlich 981 × 720 Pixeln. Startseite, breiterer Projekttext, reduzierter Footer und tiefere Navigation bleiben in den geprüften Ansichten ohne Überlappung. Aufnahmen liegen lokal in `/tmp/portfolio-layout-refinements`. Die regulären Seiten und `master` bleiben unverändert.
+
+## Gleiche Verbesserungen mit Bildhintergründen
+
+Die sechs `review-photos-*.html` verwenden jetzt ebenfalls die dezente untere Navigation, den wiederhergestellten Startseitenumbruch und den reduzierten Footer ohne Icons-Zeile. Sidebar 25 % und Textbreite 80ch sind für diese Variante im Vergleich auswählbar und bleiben beim Navigieren erhalten. Design- und Unsplash-Credits bleiben sichtbar. Die bisherigen Bildhintergründe bleiben erhalten; ihre Auswahl wird durch diesen Layoutvergleich nicht abschließend entschieden.
+
+Auf Desktop werden die Navigationszeilen in der Bild- und dezenten Variante innerhalb des reservierten Bereichs unten ausgerichtet. Die beiden Nachbarlinks richten sich auch bei unterschiedlichen Zeilenumbrüchen am unteren Rand aus. 2em Innenabstand halten sie vom Fensterrand entfernt. Inhalt und Navigation bleiben im normalen Dokumentfluss, sodass lange Seiten scrollen. Mobile Positionierung bleibt unverändert.
+
+Firefox-Aufnahmen der Bachelorarbeit und Survival bei 1280 × 1030 zeigen jetzt dieselbe Höhe der Links. Zusätzlich geprüft: Bildvariante Anguilla bei 1280, Startseite bei 1866, Bachelorarbeit bei 390 sowie Survival bei 981 × 720 (Inhalt wächst über die Fensterhöhe und scrollt). Aufnahmen: `/tmp/portfolio-bottom-nav`.
+
+Unsplash empfiehlt freiwillige sichtbare Fotografennennung mit Link; Quelltextkommentare oder Metadaten bieten keine vergleichbare Sichtbarkeit. Für normale Unsplash-Lizenzbilder bleibt die Nennung freiwillig; API-Nutzung hat eigene verpflichtende Regeln. Quellen: https://unsplash.com/license und https://help.unsplash.com/en/articles/2612337-do-i-have-to-give-credit-to-a-contributor-when-i-use-their-image

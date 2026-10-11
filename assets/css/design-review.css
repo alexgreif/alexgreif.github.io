@@ -145,22 +145,25 @@ body.review-subtle #header { background: #29343c !important; }
  body.review-narrow .sidebar-row-navigation { left: 1em; right: 1em; }
 }
 /* Muted bottom navigation: materials keep the stronger link treatment. */
-body.review-subtle .project-return .project-neighbours { font-size: .9em; }
-body.review-subtle #main .project-return a { color: #757575; border: 0; }
-body.review-subtle .project-return .neighbour-label { color: #858585; }
-body.review-subtle #main .project-return a:hover,
-body.review-subtle #main .project-return a:focus-visible { color: #267d67; }
+body:is(.review-subtle, .review-photos) .project-return .project-neighbours { font-size: .9em; }
+body:is(.review-subtle, .review-photos) #main .project-return a { color: #757575; border: 0; }
+body:is(.review-subtle, .review-photos) .project-return .neighbour-label { color: #858585; }
+body:is(.review-subtle, .review-photos) #main .project-return a:hover,
+body:is(.review-subtle, .review-photos) #main .project-return a:focus-visible { color: #267d67; }
 
-/* A little more room above the desktop navigation, keeping space at the bottom. */
+/* Bottom-align the link rows, retaining room for wrapped project names. */
 @media screen and (min-width: 981px) {
- body.review-experiment.review-subtle #main { padding-bottom: calc(4em - 30px); }
-}
-@media screen and (min-width: 981px) and (max-width: 1280px) {
- body.review-experiment.review-subtle #main { padding-bottom: calc(3em - 30px); }
+ body.review-experiment:is(.review-subtle, .review-photos) #main { padding-bottom: 2em; }
+ body.review-experiment:is(.review-subtle, .review-photos) .project-return {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+ }
+ body:is(.review-subtle, .review-photos) .project-neighbours { width: 100%; align-items: end; }
 }
 
 /* Restore the explicit greeting break; keep natural wrapping in the introduction. */
-body.review-subtle.review-home #header h1 br { display: block; }
+body:is(.review-subtle, .review-photos).review-home #header h1 br { display: block; }
 /* Optional wider reading column; keep navigation aligned with it. */
 body.review-experiment.review-wider-text #one,
 body.review-experiment.review-wider-text .project-return { max-width: 80ch; }
