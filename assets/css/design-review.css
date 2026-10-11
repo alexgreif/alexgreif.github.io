@@ -153,12 +153,17 @@ body:is(.review-subtle, .review-photos) #main .project-return a:focus-visible { 
 
 /* Bottom-align the link rows, retaining room for wrapped project names. */
 @media screen and (min-width: 981px) {
- body.review-experiment:is(.review-subtle, .review-photos) #main { padding-bottom: 2em; }
+ body.review-experiment:is(.review-subtle, .review-photos):not(.review-home) #main {
+  padding-top: 3em;
+  padding-bottom: 1.25em;
+  gap: 1em;
+ }
  body.review-experiment:is(.review-subtle, .review-photos) .project-return {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   min-height: 0;
+  padding-top: .75em;
  }
  body:is(.review-subtle, .review-photos) .project-neighbours { width: 100%; align-items: end; }
 }
