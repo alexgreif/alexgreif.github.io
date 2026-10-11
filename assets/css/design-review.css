@@ -297,12 +297,18 @@ body.review-photos.brownian-project #header {
  }
 }
 
-/* Hybrid experiment: a left semicircle enters the quiet sidebar from its right edge. */
+/* Hybrid: larger desktop semicircle, side-by-side mobile image and text. */
 .hybrid-image { display: none; }
-@media screen and (min-width: 981px) {
+body.review-hybrid .hybrid-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+body.review-hybrid.study-project .hybrid-image { background: #f3f1ed; }
+body.review-hybrid.study-project .hybrid-image img { object-position: 54% center; }
+body.review-hybrid.anguilla-project .hybrid-image img { object-position: 35% center; }
+body.review-hybrid.study-project.review-hybrid-sport .hybrid-image img { object-position: 68% center; }
+body.review-hybrid.brownian-project .hybrid-image img { object-fit: contain; padding: .5em; }
+@media (min-width: 981px) {
  body.review-hybrid #header { overflow: hidden; }
- body.review-hybrid #header > .hybrid-image {
-  --hybrid-radius: clamp(120px, 10vw, 180px);
+ body.review-hybrid #header .hybrid-image {
+  --hybrid-radius: clamp(100px, min(14vw, calc((100svh - 440px) / 2)), 260px);
   display: block;
   position: absolute;
   right: 0;
@@ -314,10 +320,32 @@ body.review-photos.brownian-project #header {
   overflow: hidden;
   pointer-events: none;
  }
- body.review-hybrid .hybrid-image img { width: 100%; height: 100%; object-fit: cover; }
- body.review-hybrid.study-project #header > .hybrid-image { background: #f3f1ed; }
- body.review-hybrid.study-project .hybrid-image img { object-position: 54% center; }
 }
-
-body.review-hybrid.anguilla-project .hybrid-image img { object-position: 35% center; }
-body.review-hybrid.study-project.review-hybrid-sport .hybrid-image img { object-position: 68% center; }
+@media (max-width: 980px) {
+ body.review-hybrid:not(.review-home) #header { padding: 2em clamp(1.5rem, 4vw, 3rem); }
+ body.review-hybrid:not(.review-home) #header > .inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(100px, 25vw, 180px);
+  column-gap: clamp(1rem, 3vw, 2rem);
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+ }
+ body.review-hybrid #header h1,
+ body.review-hybrid #header .project-context,
+ body.review-hybrid #header .project-back { grid-column: 1; text-wrap: initial; }
+ body.review-hybrid #header h1 { margin: 0; }
+ body.review-hybrid #header .project-context { margin: .5em 0 0; }
+ body.review-hybrid #header .project-back { margin: 1em 0 0; }
+ body.review-hybrid #header .hybrid-image {
+  display: block;
+  grid-column: 2;
+  grid-row: 1 / 4;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+ }
+ body.review-hybrid #header h1 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+}
