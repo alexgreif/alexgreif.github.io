@@ -182,3 +182,13 @@ Die übrigen Project-materials-Abschnitte bleiben auf ausdrücklichen Nutzerwuns
 Die Skills-Zeile ist auf „R · Factorial ANOVA“ reduziert. Der veröffentlichte Artikel wurde separat auf Abbildungen und Tabellen geprüft: Tabellen 1-4 auf gedruckten Seiten 132-134 zeigen quantitative Daten/Ergebnisse. Die einzige Abbildung (S. 138) zeigt den Kurzfragebogen, keine quantitative Ergebnisgrafik. Die Beschreibung nennt deshalb nur noch die quantitativen Tabellen. Vom Nutzer bestätigte explorative Abbildungen während der Analyse werden dadurch nicht bestritten, aber nicht als Veröffentlichungsbestandteil dargestellt.
 
 Reihenfolge noch offen: Empfehlung, das Forschungsprojekt direkt nach der Bachelorarbeit einzusortieren, um angewandte Forschung und Veröffentlichung früher sichtbar zu machen. Noch keine Änderung der Projekt- oder Navigationsreihenfolge.
+
+
+### Forschungsprojekt auf Platz zwei
+
+Nach Zustimmung des Nutzers steht das Forschungsprojekt in beiden bevorzugten Übersichten direkt nach der Bachelorarbeit. Die Reihenfolge lautet: Bachelorarbeit, Studienzufriedenheit, Anguilla Search, Survival Analysis, Brownian Motion, Chicago Bike Share Analysis. Die Previous-/Next-Verknüpfungen folgen derselben Reihenfolge; Chicago ist wieder das letzte Projekt ohne Next-Link. Die regulären Seiten und historischen anderen Designvarianten bleiben unverändert.
+
+
+Beide Übersichten und alle zwölf Previous-/Next-Verknüpfungen wurden auf Reihenfolge und Gegenverlinkung geprüft. Firefox-Sichtprüfung: schlichte Übersicht bei 1866 × 1200, Forschungsprojekt bei 1866 × 947 und 390 × 1400. Keine Überlappungen; beide Nachbarlinks sichtbar. Screenshots: `/tmp/portfolio-project-order`.
+
+Vorgemerkt zur Bildauswahl: Die Mischung aus illustrativen Kontextfotos (Bachelorarbeit/Chicago) und sachlichen Arbeitsdarstellungen (Graphen/Artikel) ist dem Nutzer aufgefallen, aber nicht grundsätzlich abgelehnt. Artikelvorschau vorerst behalten; ein engerer Ausschnitt auf Titel und Autoren könnte die Wiedererkennung in der kleinen Karte verbessern. Noch keine neue Bildvariante erstellt.
