@@ -140,9 +140,9 @@ body.review-subtle #header { background: #29343c !important; }
  .sidebar-neighbours a { padding: .4em 0; border: 0; white-space: nowrap; }
  body.review-row .sidebar-row-navigation a:hover,
  body.review-row .sidebar-row-navigation a:focus-visible { color: white; }
- body.review-narrow #header { width: 25%; padding-left: 1em; padding-right: 1em; }
- body.review-narrow #main { margin-left: 25%; width: 75%; }
- body.review-narrow .sidebar-row-navigation { left: 1em; right: 1em; }
+ body.review-sidebar-sized #header { width: var(--review-sidebar-width); padding-left: 1em; padding-right: 1em; }
+ body.review-sidebar-sized #main { margin-left: var(--review-sidebar-width); width: calc(100% - var(--review-sidebar-width)); }
+ body.review-sidebar-sized .sidebar-row-navigation { left: 1em; right: 1em; }
 }
 /* Muted bottom navigation: materials keep the stronger link treatment. */
 body:is(.review-subtle, .review-photos) .project-return .project-neighbours { font-size: .9em; }
