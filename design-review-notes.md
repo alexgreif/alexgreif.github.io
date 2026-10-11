@@ -263,3 +263,8 @@ Korrektur des früheren Vergleichs: Die regulären lokalen Seiten enthielten ber
 Designvergleich bietet jetzt 70ch, 80ch, 96ch und volle verfügbare Breite (URL text=80|96|full) sowie optional Zentrierung (align=center). Zentriert wird die gesamte Inhaltsspalte einschließlich Materialien und Navigation, nicht die Textausrichtung. Beide Optionen bleiben beim Wechsel zwischen bevorzugten Projektseiten erhalten. Kein neuer Standard gewählt; keine regulären Seiten geändert.
 
 Firefox-Screenshots bei 900 × 947 (80ch, volle Breite, 70ch zentriert) und 1866 × 947 (96ch, volle Breite, 96ch zentriert), jeweils Survival. Alle Optionen ohne Überlappungen. Auf dem breiten Desktop wirkt unbegrenzte Breite sehr langzeilig; bei 900 Pixeln nutzt sie den vorhandenen Platz plausibel. Zentrierte 70ch bei 900 Pixeln verteilt den bisher asymmetrischen Weißraum gleichmäßig; 96ch zentriert nutzt Desktopfläche stärker. Screenshots /tmp/text-width-*.png und /tmp/text-centered-*.png. JavaScript-Syntax beider Dateien geprüft.
+
+
+### Zentrierung getrennt nach Layout
+
+Nach Nutzerfeedback sind Ausrichtung mit Sidebar und ohne Sidebar ausdrücklich getrennte Entscheidungen. Die Option align=center zentriert die Inhaltsspalte jetzt ausschließlich bis zum bestehenden Sidebar-Breakpoint von 980px. Im Desktoplayout mit Sidebar bleibt der Inhalt am linken Rand des gepolsterten Hauptbereichs. Der Vergleichsschalter benennt den Geltungsbereich ausdrücklich. Textbreitenoptionen bleiben unabhängig. Keine neue Standardbreite oder Schriftgröße festgelegt.

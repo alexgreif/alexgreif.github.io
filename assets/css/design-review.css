@@ -229,10 +229,12 @@ body:is(.review-subtle, .review-photos) #main .project-neighbour a:focus-visible
 body.review-experiment.review-text-width #one,
 body.review-experiment.review-text-width .project-return { max-width: var(--review-text-width); }
 
-/* Center the complete project column, without centering its text. */
-body.review-experiment.review-centered-content:not(.review-home) #main > #one,
-body.review-experiment.review-centered-content:not(.review-home) #main > .project-return {
- width: 100%;
- margin-left: auto;
- margin-right: auto;
+/* Center the complete project column only when the sidebar becomes a header. */
+@media screen and (max-width: 980px) {
+ body.review-experiment.review-centered-content:not(.review-home) #main > #one,
+ body.review-experiment.review-centered-content:not(.review-home) #main > .project-return {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+ }
 }
