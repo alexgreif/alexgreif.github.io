@@ -53,3 +53,31 @@ body.review-particles.brownian-project #header {
  body.review-particles.brownian-project #header { background-image: url("../../images/backgrounds/brownian-particles-wide.svg"); background-size: cover; }
 }
 body.review-experiment .project-neighbour a { display: inline-block; padding: .25em 0; }
+
+/* Keep navigation at a consistent height on short project pages. */
+body.review-experiment:not(.review-home) {
+ display: flex;
+ flex-direction: column;
+ min-height: 100svh;
+}
+body.review-experiment:not(.review-home) #main {
+ display: flex;
+ flex-direction: column;
+ flex: 1 0 auto;
+ gap: 2em;
+}
+body.review-experiment:not(.review-home) #main > section { flex: 0 0 auto; }
+body.review-experiment:not(.review-home) .project-return {
+ flex: 0 0 auto;
+ margin-top: auto;
+ padding-top: 1.25em;
+ border-top: 1px solid #e5e5e5;
+ min-height: 7em;
+ width: 100%;
+}
+@media screen and (min-width: 981px) {
+ body.review-experiment:not(.review-home) #main { min-height: 100svh; }
+}
+@media screen and (max-width: 980px) {
+ body.review-experiment:not(.review-home) .project-return { min-height: 8em; }
+}

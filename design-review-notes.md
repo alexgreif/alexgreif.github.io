@@ -70,3 +70,9 @@ Die Dateien liegen derzeit lokal in `/tmp/portfolio-design-review`; sie sind nic
 - [Schlichte Survival-Seite, schmal](</tmp/portfolio-design-review/review-plain-survival-analysis-390-final.png>)
 - [Projektliste, Laptopformat](</tmp/portfolio-design-review/review-list-thesis-1280-laptop.png>)
 - [Aktuelle Startseite, schmal](</tmp/portfolio-design-review/index-390-flow.png>)
+
+## Nachtrag vom 11. Oktober: Position der Projektnavigation
+
+Die Review-Varianten richten die untere Projektnavigation bei kurzen Desktopseiten am unteren Rand eines mindestens fensterhohen Hauptbereichs aus. Eine gleichbleibende Mindesthöhe der Navigation berücksichtigt umbrochene Projekttitel. Eine dezente Trennlinie und Mindestabstand grenzen sie von den Project Materials ab. Auf schmalen Seiten verteilt sich freie Höhe zwischen Kopfbereich und Footer; lange Seiten wachsen mit dem Inhalt, ohne feste oder überlagernde Navigation.
+
+Firefox-Screenshots aller fünf Projektseiten bei 1280 Pixeln sowie zusätzliche Aufnahmen bei 900 und 390 Pixeln wurden geprüft. Im abschließenden Vergleich sitzen Anguilla- und Cyclistic-Navigation trotz unterschiedlich langer Titel auf derselben Höhe. Survival bei 720 Pixeln Fensterhöhe sowie mobile Seiten bei 844 Pixeln wachsen über das Fenster hinaus und lassen sich normal scrollen. Die Projektlisten-Variante behält auf Desktop ihre Navigation in der Sidebar. Die regulären Seiten bleiben unverändert.
