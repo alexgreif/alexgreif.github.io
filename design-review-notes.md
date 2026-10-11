@@ -192,3 +192,10 @@ Nach Zustimmung des Nutzers steht das Forschungsprojekt in beiden bevorzugten Ü
 Beide Übersichten und alle zwölf Previous-/Next-Verknüpfungen wurden auf Reihenfolge und Gegenverlinkung geprüft. Firefox-Sichtprüfung: schlichte Übersicht bei 1866 × 1200, Forschungsprojekt bei 1866 × 947 und 390 × 1400. Keine Überlappungen; beide Nachbarlinks sichtbar. Screenshots: `/tmp/portfolio-project-order`.
 
 Vorgemerkt zur Bildauswahl: Die Mischung aus illustrativen Kontextfotos (Bachelorarbeit/Chicago) und sachlichen Arbeitsdarstellungen (Graphen/Artikel) ist dem Nutzer aufgefallen, aber nicht grundsätzlich abgelehnt. Artikelvorschau vorerst behalten; ein engerer Ausschnitt auf Titel und Autoren könnte die Wiedererkennung in der kleinen Karte verbessern. Noch keine neue Bildvariante erstellt.
+
+
+### Engerer Ausschnitt der Artikelvorschau
+
+Auf Nutzerwunsch verwenden die beiden bevorzugten Projektübersichten nun einen Ausschnitt der Artikelseite, der „Forschungsartikel“, den vollständigen Titel und die Autoren zeigt. `images/thumbs/study-satisfaction-title.svg` rahmt den entsprechenden Bereich der unveränderten PNG-Datei ein (viewBox 70 25 620 235). Die Originalvorschau der gesamten Seite bleibt erhalten. Keine generative Neuzeichnung des Textes und keine Änderung am PDF.
+
+Firefox-Screenshots bei 1866 × 1200 und 390 × 2300 wurden geprüft: Titel und Autoren sind vollständig im Vorschaubereich enthalten und deutlich größer als zuvor; das bestehende Kartenformat bleibt erhalten. Aufnahmen: `/tmp/portfolio-article-crop`. Der Zuschnitt gilt nur für die beiden bevorzugten Vergleichsvarianten auf dem Feature-Branch.
