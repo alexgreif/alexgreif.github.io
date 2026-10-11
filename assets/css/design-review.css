@@ -151,8 +151,9 @@ body:is(.review-subtle, .review-photos) .project-return .neighbour-label { color
 body:is(.review-subtle, .review-photos) #main .project-return a:hover,
 body:is(.review-subtle, .review-photos) #main .project-return a:focus-visible { color: #267d67; }
 
-/* Bottom-align the link rows, retaining room for wrapped project names. */
+/* Align project headings and keep navigation near the bottom. */
 @media screen and (min-width: 981px) {
+ body.review-experiment:is(.review-subtle, .review-photos):not(.review-home) #header { padding-top: 3em; }
  body.review-experiment:is(.review-subtle, .review-photos):not(.review-home) #main {
   padding-top: 3em;
   padding-bottom: 1.25em;
