@@ -7,6 +7,11 @@ const studyPreviews = {
  anova: ['study-satisfaction-anova.svg', 'Detail of the factorial ANOVA results table'],
  comparisons: ['study-satisfaction-comparisons.svg', 'Detail of the estimated marginal means comparison table']
 };
+const hybridStudyImage = document.querySelector('[data-hybrid-study]');
+if (hybridStudyImage && reviewOptions.get('visual') === 'sport') {
+ hybridStudyImage.src = 'images/backgrounds/study-sport-basketball.jpg';
+ document.body.classList.add('review-hybrid-sport');
+}
 const studyImage = document.querySelector('[data-study-preview]');
 if (studyImage && Object.hasOwn(studyPreviews, studyPreview)) {
  studyImage.src = `images/thumbs/${studyPreviews[studyPreview][0]}`;
@@ -24,9 +29,10 @@ if (['70', '80', '96', 'full'].includes(textWidth)) {
 if (reviewOptions.get('align') === 'center') document.body.classList.add('review-centered-content');
 document.querySelectorAll('a[href]').forEach(link => {
  const url = new URL(link.href, location.href);
- if (url.origin === location.origin && /\/review-(row|subtle|photos)-[^/]+\.html$/.test(url.pathname)) {
+ if (url.origin === location.origin && /\/review-(row|subtle|photos|hybrid)-[^/]+\.html$/.test(url.pathname)) {
   if (['25', '28', '30'].includes(sidebarWidth)) url.searchParams.set('sidebar', sidebarWidth);
   if (['70', '80', '96', 'full'].includes(textWidth)) url.searchParams.set('text', textWidth);
+  if (reviewOptions.get('visual') === 'sport') url.searchParams.set('visual', 'sport');
   if (reviewOptions.get('align') === 'center') url.searchParams.set('align', 'center');
   if (Object.hasOwn(studyPreviews, studyPreview)) url.searchParams.set('article', studyPreview);
   link.href = url.href;

@@ -273,3 +273,51 @@ body.review-experiment.review-text-width .project-return { max-width: var(--revi
   padding-top: 1em;
  }
 }
+
+/* Illustrative source photos and a more explicit Brownian particle diagram. */
+body.review-photos.study-project #header {
+ background-attachment: scroll;
+ background-color: #29343c;
+ background-image: linear-gradient(rgba(17,27,35,.52), rgba(17,27,35,.52)), url("../../images/backgrounds/study-sport-basketball.jpg");
+ background-size: cover;
+ background-position: center, 70% center !important;
+}
+body.review-photos.brownian-project #header {
+ background-attachment: scroll;
+ background-color: #29343c;
+ background-image: url("../../images/backgrounds/brownian-molecules-portrait.svg");
+ background-size: cover;
+ background-position: center !important;
+}
+@media screen and (max-width: 980px) {
+ body.review-photos.study-project #header { background-position: center, center 40% !important; }
+ body.review-photos.brownian-project #header {
+  background-image: url("../../images/backgrounds/brownian-molecules-wide.svg");
+  background-size: cover;
+ }
+}
+
+/* Hybrid experiment: a left semicircle enters the quiet sidebar from its right edge. */
+.hybrid-image { display: none; }
+@media screen and (min-width: 981px) {
+ body.review-hybrid #header { overflow: hidden; }
+ body.review-hybrid #header > .hybrid-image {
+  --hybrid-radius: clamp(120px, 10vw, 180px);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--hybrid-radius);
+  height: calc(2 * var(--hybrid-radius));
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  overflow: hidden;
+  pointer-events: none;
+ }
+ body.review-hybrid .hybrid-image img { width: 100%; height: 100%; object-fit: cover; }
+ body.review-hybrid.study-project #header > .hybrid-image { background: #f3f1ed; }
+ body.review-hybrid.study-project .hybrid-image img { object-position: 54% center; }
+}
+
+body.review-hybrid.anguilla-project .hybrid-image img { object-position: 35% center; }
+body.review-hybrid.study-project.review-hybrid-sport .hybrid-image img { object-position: 68% center; }
