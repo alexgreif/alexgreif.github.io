@@ -225,6 +225,27 @@ body:is(.review-subtle, .review-photos) .project-neighbour .neighbour-name { dis
 body:is(.review-subtle, .review-photos) #main .project-neighbour a:hover .neighbour-label,
 body:is(.review-subtle, .review-photos) #main .project-neighbour a:focus-visible .neighbour-label { color: inherit; }
 
+/* Coordinated project typography: gradual sizing and a roomier reading column. */
+body.review-experiment:is(.review-subtle, .review-photos):not(.review-home) #main {
+ font-size: clamp(1rem, .75rem + .5vw, 1.25rem);
+}
+body.review-experiment:is(.review-subtle, .review-photos):not(.review-home):not(.review-text-width) #one,
+body.review-experiment:is(.review-subtle, .review-photos):not(.review-home):not(.review-text-width) .project-return {
+ max-width: 80ch;
+}
+@media screen and (max-width: 980px) {
+ body.review-experiment:is(.review-subtle, .review-photos):not(.review-home) #main {
+  padding-left: clamp(1.5rem, 4vw, 3rem);
+  padding-right: clamp(1.5rem, 4vw, 3rem);
+ }
+ body.review-experiment:is(.review-subtle, .review-photos):not(.review-home) #main > #one,
+ body.review-experiment:is(.review-subtle, .review-photos):not(.review-home) #main > .project-return {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+}
+
 /* Explicit reading-width comparisons, including the original full-width approach. */
 body.review-experiment.review-text-width #one,
 body.review-experiment.review-text-width .project-return { max-width: var(--review-text-width); }

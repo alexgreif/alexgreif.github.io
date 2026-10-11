@@ -268,3 +268,12 @@ Firefox-Screenshots bei 900 × 947 (80ch, volle Breite, 70ch zentriert) und 1866
 ### Zentrierung getrennt nach Layout
 
 Nach Nutzerfeedback sind Ausrichtung mit Sidebar und ohne Sidebar ausdrücklich getrennte Entscheidungen. Die Option align=center zentriert die Inhaltsspalte jetzt ausschließlich bis zum bestehenden Sidebar-Breakpoint von 980px. Im Desktoplayout mit Sidebar bleibt der Inhalt am linken Rand des gepolsterten Hauptbereichs. Der Vergleichsschalter benennt den Geltungsbereich ausdrücklich. Textbreitenoptionen bleiben unabhängig. Keine neue Standardbreite oder Schriftgröße festgelegt.
+
+
+### Abgestimmte Standarddarstellung der bevorzugten Projektseiten
+
+Nach Auftrag des Nutzers ist die verbesserte Abstimmung nun Standard für review-subtle und review-photos auf den Projektseiten: Hauptbereich-Schriftgröße fließend von 16 bis 20 Pixeln per `clamp(1rem, .75rem + .5vw, 1.25rem)`, normale maximale Lesebreite 80ch statt 70ch. Bestehende Vergleichsoptionen 70/80/96ch/volle Breite überschreiben weiterhin die Breite gezielt. Der Designvergleich benennt den neuen Standard als „Abgestimmt (80ch)“. Startseiten-Typografie bleibt unverändert.
+
+Ohne Sidebar (bis einschließlich 980px) sind Projektbeschreibung, Materialien und Navigation standardmäßig als gemeinsame Spalte zentriert. Seitliche Innenabstände reichen von 24 bis 48 Pixeln, statt im mittelbreiten Headerlayout pauschal 4em zu verwenden. Mit Sidebar bleibt die Spalte links im gepolsterten Hauptbereich. Keine JavaScript-Abfrage der Fensterhöhe oder Positionsberechnung; Layout und fließende Schrift werden ausschließlich per CSS geregelt. Der redundant gewordene Zentrierungsschalter im Vergleich entfällt.
+
+Firefox-Prüfung Survival bei 390, 900, 981 und 1866 × 947, zusätzlich vollständige mobile Darstellung bei 390 × 1700, Bild-Anguilla bei 1280 × 947 und Studienartikel bei 900 × 1030. Keine Überlappungen; Materialien und Navigation haben dieselben Spaltenränder. Am Desktop und direkt oberhalb des Sidebar-Breakpoints bleiben beide Survival-Nachbarlinks vollständig sichtbar. Auf dem Handy füllt der Text den Bereich zwischen normalen Seitenabständen, längere Seiten scrollen regulär. Mittelbreite Ansicht nutzt eine großzügigere, symmetrisch platzierte Spalte; Desktop bleibt begrenzt und links angeordnet. Aufnahmen `/tmp/coordinated-*.png`. JavaScript-Syntax von Vergleich und Optionsskript geprüft. Reguläre Seiten und main.css unverändert.

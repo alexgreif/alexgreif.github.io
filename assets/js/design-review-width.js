@@ -17,7 +17,7 @@ if (['25', '28', '30'].includes(sidebarWidth)) {
  document.body.style.setProperty('--review-sidebar-width', `${sidebarWidth}%`);
 }
 const textWidth = reviewOptions.get('text');
-if (['80', '96', 'full'].includes(textWidth)) {
+if (['70', '80', '96', 'full'].includes(textWidth)) {
  document.body.classList.add('review-text-width');
  document.body.style.setProperty('--review-text-width', textWidth === 'full' ? 'none' : `${textWidth}ch`);
 }
@@ -26,7 +26,7 @@ document.querySelectorAll('a[href]').forEach(link => {
  const url = new URL(link.href, location.href);
  if (url.origin === location.origin && /\/review-(row|subtle|photos)-[^/]+\.html$/.test(url.pathname)) {
   if (['25', '28', '30'].includes(sidebarWidth)) url.searchParams.set('sidebar', sidebarWidth);
-  if (['80', '96', 'full'].includes(textWidth)) url.searchParams.set('text', textWidth);
+  if (['70', '80', '96', 'full'].includes(textWidth)) url.searchParams.set('text', textWidth);
   if (reviewOptions.get('align') === 'center') url.searchParams.set('align', 'center');
   if (Object.hasOwn(studyPreviews, studyPreview)) url.searchParams.set('article', studyPreview);
   link.href = url.href;
