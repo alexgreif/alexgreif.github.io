@@ -97,16 +97,19 @@ body.review-sidebar #header { background: #29343c !important; }
   font-size: .85em;
   line-height: 1.5;
  }
- body.review-sidebar .sidebar-overview { margin: 0 0 1.5em; }
+ body.review-sidebar .sidebar-project-navigation { text-align: left; }
+ body.review-sidebar .sidebar-overview { margin: 0 0 1em; }
+ body.review-sidebar .sidebar-overview a { color: #d0d7db; }
  body.review-sidebar .sidebar-project-navigation .project-neighbour {
-  min-height: 5.25em;
-  text-align: right;
+  min-height: 4.75em;
+  text-align: left;
  }
- body.review-sidebar .sidebar-project-navigation .neighbour-label { color: #aeb8bf; }
+ body.review-sidebar .sidebar-project-navigation .neighbour-label { color: #aeb8bf; font-size: .9em; }
+ body.review-sidebar .sidebar-project-name { display: block; padding-left: 1.25em; }
  body.review-sidebar .sidebar-project-navigation .project-neighbour a {
   display: block;
-  min-height: 3em;
-  color: #c0c8cc;
+  min-height: 4em;
+  color: #d0d7db;
   border: 0;
  }
  body.review-sidebar .sidebar-project-navigation a:hover,
