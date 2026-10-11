@@ -150,3 +150,11 @@ body.review-subtle #main .project-return a { color: #757575; border: 0; }
 body.review-subtle .project-return .neighbour-label { color: #858585; }
 body.review-subtle #main .project-return a:hover,
 body.review-subtle #main .project-return a:focus-visible { color: #267d67; }
+
+/* A little more room above the desktop navigation, keeping space at the bottom. */
+@media screen and (min-width: 981px) {
+ body.review-experiment.review-subtle #main { padding-bottom: calc(4em - 20px); }
+}
+@media screen and (min-width: 981px) and (max-width: 1280px) {
+ body.review-experiment.review-subtle #main { padding-bottom: calc(3em - 20px); }
+}

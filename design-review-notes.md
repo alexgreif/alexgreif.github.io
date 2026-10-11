@@ -97,3 +97,7 @@ Zwei weitere Varianten ergänzen den Vergleich:
 Beide Varianten lassen sich mit `?sidebar=25` auf 25 % Sidebar-Breite statt 30 % umschalten; die Einstellung wird beim Wechsel zwischen Projekten und Übersicht mitgenommen. Im Vergleich gibt es dafür einen separaten Schalter. Unterhalb von 981 Pixeln ändert die Option das Layout nicht.
 
 Firefox-Aufnahmen bei 1866, 1280, 981 und 390 Pixeln sind geprüft. Die kompakte Zeile passt auch bei 981 Pixeln und 25 % Sidebar. Der Bachelorarbeitstitel bricht dort auf zwei Zeilen um, während das Jahr zusammen mit Kontexttext bleibt. In der schmaleren Startseiten-Sidebar stehen die Kontaktlinks teilweise auf zwei Zeilen; auch Credits umbrechen früher. Die schmalere Leiste ist daher eine eigenständige Abwägung. Lokale Links, Assets und Fragmente aller zwölf neuen Seiten sowie die Syntax des Breiten-Skripts sind geprüft.
+
+### Etwas tiefere dezente Desktop-Navigation
+
+Der untere Innenabstand des Hauptbereichs ist in der dezenten Variante auf Desktop um 20 Pixel reduziert. Bei kurzen Seiten rückt die Navigation dadurch 20 Pixel nach unten und es steht entsprechend mehr Platz oberhalb zur Verfügung. Die reservierte Navigationshöhe bleibt gleich, damit umbrochene Projekttitel die Position nicht verändern. Bei längeren Seiten bleibt der Mindestabstand zum Inhalt maßgeblich und die Seite wächst normal. Das schmale Layout bleibt unverändert. Firefox-Aufnahmen bei 981, 1280 und 1866 Pixeln einschließlich eines 720 Pixel hohen Fensters sind geprüft.
