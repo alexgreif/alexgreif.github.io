@@ -238,3 +238,12 @@ ANOVA-viewBox jetzt `100 490 570 325`, Vergleiche `90 90 580 395`, jeweils bezog
 Methodische Einschätzung nach Abgleich mit dem Methodenteil: leichte Präferenz für Tabelle 4 als Vorschau, weil geschätzte Unterschiede, 95%-Konfidenzintervalle, Teststatistiken, p-Werte und Cohen’s d gemeinsam berichtet werden. Vorzeichen, Intervalle und Signifikanzangaben sind beim sichtbaren Abgleich plausibel. Tabelle 3 ist als Überblick sinnvoll, enthält aber keine F-Werte oder genauen p-Werte. Dies ist keine vollständige Überprüfung der Analyse; Daten und R-Code wurden hier nicht nachgerechnet. Für eine vollständig eigenständige Darstellung von Tabelle 4 wären Kontrastrichtung, Standardisierung von d und Umgang mit Mehrfachvergleichen hilfreiche Zusatzangaben; ihr Fehlen in der Tabelle allein beweist keinen Analysefehler. Der Standard bleibt vorerst die Titel-/Autorenvorschau, da die endgültige Bildwahl offen ist.
 
 Firefox-Sichtprüfung bei 1866 × 947 und 390 × 1500 für beide Tabellen: vollständige Fußnoten bzw. Tabellenzeilen sichtbar, keine abgeschnittene Folgetabelle. Screenshots unter `/tmp/portfolio-published-table-previews`. SVG-XML geprüft. Ausschließlich Vergleichsassets auf `feature/design-review` geändert.
+
+
+### Bestätigte Einleitung, Tabelle 4 und gemeinsam klickbare Navigation
+
+Beide bevorzugten Startseiten verwenden die bestätigte Einleitung „Here you'll find a selection of my work in statistics, data analysis and software development.“ Tabelle 4 (paarweise Vergleiche) ist nach ausdrücklicher Auswahl des Nutzers der Standard der Artikelvorschau, auch im Designvergleich. Die alternativen Ausschnitte bleiben zum späteren Vergleich verfügbar.
+
+Auf allen zwölf bevorzugten Projektseiten sind Previous-/Next-Beschriftung und Projektname jeweils innerhalb eines gemeinsamen Links zusammengefasst. Die kleinere Beschriftung bleibt dezent; beim Hover oder Tastaturfokus übernimmt sie die Hervorhebungsfarbe des Links. Keine doppelten Links oder zusätzlichen Tabstopps. Layoutposition und Nachbarziele bleiben erhalten.
+
+Firefox-Screenshots: schlichte Startseite bei 1866 × 947, Bild-Startseite bei 390 × 1500, Anguilla-Navigation bei 390 × 1400, Survival-Navigation bei 1866 × 947. Einleitung ohne Überlappungen; gewählte Tabelle lädt ohne URL-Option; Survival-Navigation vollständig innerhalb des Desktopfensters. HTML-Struktur aller zwölf Navigationsbereiche geprüft. Ausschließlich Designvorschauen auf dem Feature-Branch geändert.

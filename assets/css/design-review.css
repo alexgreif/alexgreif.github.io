@@ -218,3 +218,9 @@ body.review-experiment .review-visually-hidden {
  body.review-subtle #footer .copyright a:hover,
  body.review-subtle #footer .copyright a:focus-visible { color: #267d67; }
 }
+
+/* Treat the direction label and project name as a single navigation link. */
+body:is(.review-subtle, .review-photos) #main .project-neighbour a { display: block; }
+body:is(.review-subtle, .review-photos) .project-neighbour .neighbour-name { display: block; }
+body:is(.review-subtle, .review-photos) #main .project-neighbour a:hover .neighbour-label,
+body:is(.review-subtle, .review-photos) #main .project-neighbour a:focus-visible .neighbour-label { color: inherit; }
