@@ -259,3 +259,17 @@ body.review-experiment.review-text-width .project-return { max-width: var(--revi
   margin-right: auto;
  }
 }
+
+/* Without the sidebar, navigation follows the content instead of filling the viewport. */
+@media screen and (max-width: 980px) {
+ body.review-experiment:is(.review-subtle, .review-photos):not(.review-home) { min-height: 0; }
+ body.review-experiment:is(.review-subtle, .review-photos):not(.review-home) #main {
+  flex: 0 0 auto;
+  gap: 1.5em;
+ }
+ body.review-experiment:is(.review-subtle, .review-photos):not(.review-home) .project-return {
+  margin-top: 0;
+  min-height: 0;
+  padding-top: 1em;
+ }
+}
