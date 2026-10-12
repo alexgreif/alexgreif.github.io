@@ -364,3 +364,12 @@ Mobile Header in Hybrid und Rechteck erhalten separate Fokuswerte: Fußballbild 
 ### Rechteckbild auch im schmalen Header
 
 Die Rechteckvariante erhält unterhalb von 981px einen rechteckigen Bildstreifen am rechten Header-Rand: clip-path aufgehoben, keine Rundung. Bildbreite, Fokus, Textzentrierung und Headerhöhe unverändert. Die Halbkreisvariante behält ihren gebogenen Rand. Firefox-Sichtprüfung Studienartikel bei 390×1500 und Anguilla bei 900×1030: gerade Kante, keine Textüberlagerung oder zusätzliche Bildhöhe. Screenshots /tmp/rectangle-mobile-straight.png und /tmp/rectangle-tablet-straight.png. Nur CSS-Vorschau auf feature/design-review.
+
+
+### Einheitliches Linkverhalten und stabile Desktop-Halbkreisgröße
+
+Auf Freigabe alle vier aktuellen Varianten (28 Seiten) vereinheitlicht. Endpunktlinks zur Übersicht ohne Links-/Rechtspfeil; Pfeile bleiben für echte vorherige/nächste Projekte. Interne Navigation im gleichen Tab, externe Links inklusive Kontaktprofilen und Credits sowie PDF-/HTML-Materialien in neuem Tab mit rel=noopener. E-Mail bleibt mailto. R-Skript, Excel-Daten und PowerPoint werden explizit heruntergeladen und entsprechend beschriftet; bestehender CV-Download bleibt erhalten. rel=prev/next der Projektverbindungen bleibt erhalten.
+
+Desktop-Halbkreis hat bevorzugten Radius 210px. Kopplung an 11vw entfällt; nur bei geringerer Fensterhöhe wird er für den reservierten Titel-/Creditbereich kleiner. Er passt auch bei kleinster angebotener Sidebarbreite (25% bei 981px) noch in den Seitenstreifen. Keine zusätzliche JavaScript-Positionierung.
+
+Firefox-Sichtprüfung: 1280×947 Bachelorarbeit (gleichbleibender Radius), 981×947 Brownian mit Sidebar 25%, 981×720 Studienartikel mit Sidebar 25%, 390×1500 letztes Projekt in Rechteckvariante. Keine Titel-/Creditüberlagerungen in den geprüften Ansichten; Übersichtslink ohne Pfeil sichtbar. Alle Linkattribute der 28 bevorzugten Seiten strukturell gegen die vereinbarten Regeln geprüft. Screenshots /tmp/fixed-circle-*.png und /tmp/unified-boundary-mobile.png. Nur Feature-Branch und Vorschauseiten geändert.
