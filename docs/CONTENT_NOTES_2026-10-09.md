@@ -1,3 +1,7 @@
+# Historischer Inhaltsentwurf
+
+Dieser Entwurf ist archiviert und beschreibt nicht die aktuelle Website. Maßgeblich sind die gewählten HTML-Seiten, TODO.md und DESIGN_HANDOFF.md.
+
 # Inhaltsentwurf für die Portfolio-Website
 
 Stand: 9. Oktober 2026. Arbeitsdokument; die Inhalte sind noch nicht ausformuliert oder zur Veröffentlichung freigegeben.
