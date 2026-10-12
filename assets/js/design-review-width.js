@@ -8,10 +8,10 @@ const studyPreviews = {
  anova: ['study-satisfaction-anova.svg', 'Detail of the factorial ANOVA results table'],
  comparisons: ['study-satisfaction-comparisons.svg', 'Detail of the estimated marginal means comparison table']
 };
-const hybridStudyImage = document.querySelector('[data-hybrid-study]');
-if (hybridStudyImage && reviewOptions.get('visual') === 'table') {
- hybridStudyImage.src = 'images/thumbs/study-satisfaction-comparisons.svg';
- document.body.classList.remove('review-hybrid-sport');
+const studyInsetImage = document.querySelector('[data-study-inset]');
+if (studyInsetImage && reviewOptions.get('visual') === 'table') {
+ studyInsetImage.src = 'images/thumbs/study-satisfaction-comparisons.svg';
+ document.body.classList.remove('review-sport-photo');
  document.querySelector('[data-study-image-credit]')?.remove();
 }
 const studyImage = document.querySelector('[data-study-preview]');
@@ -31,7 +31,7 @@ if (['70', '80', '96', 'full'].includes(textWidth)) {
 if (reviewOptions.get('align') === 'center') document.body.classList.add('review-centered-content');
 document.querySelectorAll('a[href]').forEach(link => {
  const url = new URL(link.href, location.href);
- if (url.origin === location.origin && /\/review-(row|subtle|photos|hybrid|rectangle)-[^/]+\.html$/.test(url.pathname)) {
+ if (url.origin === location.origin && /\/review-(row|subtle|photos|semicircle|rectangle)-[^/]+\.html$/.test(url.pathname)) {
   if (['25', '28', '30'].includes(sidebarWidth)) url.searchParams.set('sidebar', sidebarWidth);
   if (['70', '80', '96', 'full'].includes(textWidth)) url.searchParams.set('text', textWidth);
   if (reviewOptions.get('tone') === 'original') url.searchParams.set('tone', 'original');

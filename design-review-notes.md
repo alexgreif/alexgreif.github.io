@@ -414,3 +414,12 @@ Desktop-Halbkreiszoom auf Nutzerwunsch von 1.55 auf 1.85 erhöht. Linker Fokus u
 Nach Nutzervergleich Desktop-Fußballhalbkreis wieder auf 1.55 statt 1.85 gestellt; linker Fokus und Verschiebung bleiben. Der letzte Zoomversuch hatte bewusst nur Desktop geändert, daher war mobil keine Änderung sichtbar. Schmale Header in Halbkreis-/Rechteckvariante erhalten jetzt eigenen stärkeren Zoom 2.0 statt 1.3, weiterhin mit zentralem Fokus.
 
 Firefox-Sichtprüfung bei 390×1500 und 900×1030: Mittelkreis und Spielfelddetails größer, keine freien Bildränder oder Textüberlagerungen. Screenshots /tmp/field-mobile-zoom2.png und /tmp/field-tablet-zoom2.png. Desktop-Regel entspricht wieder der zuvor geprüften und bevorzugten Version. Nur Feature-Branch.
+
+
+### Dauerhafte Namen der Vergleichsvarianten
+
+Vergleichsstand liegt auf design/alternatives. Aktuelle Varianten heißen subtle, photos, semicircle und rectangle, im Auswahlmenü jeweils mit konkreter Beschreibung. Hybrid-Dateien heißen jetzt review-semicircle-*.html; alte URLs sind kleine Weiterleitungen und erhalten Queryparameter/Fragmente. Gemeinsame Klassen für Halbkreis und Rechteck heißen review-inset-image/inset-image, Sportfoto-Klasse review-sport-photo.
+
+DESIGN_VARIANTS.md erklärt alle aktuellen und historischen Präfixe und ihre Funktion. Frühere Varianten behalten ihre historischen Dateinamen, werden aber klar als vorherige Experimente bezeichnet. Ausgewählte Produktionsfassung heißt feature/semicircle-layout; deren project-image-Klassen und normale URLs waren bereits unabhängig vom Vergleichssystem.
+
+Alle lokalen Ziele der 28 aktuellen Varianten geprüft. JavaScript-Syntax geprüft und die sieben alten Weiterleitungen mit Parametern/Fragmenten ausgeführt. Firefox-Sichtprüfung der umbenannten Halbkreis-Seite bei 1280×720 und der Rechteck-Sportseite bei 390×1500: Aussehen und Fokus erhalten. Screenshots /tmp/named-semicircle-direct.png und /tmp/named-rectangle-final.png.
