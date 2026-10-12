@@ -1,6 +1,7 @@
 // Optional layout comparisons, propagated when browsing review pages.
 const reviewOptions = new URLSearchParams(location.search);
 if (reviewOptions.get('tone') === 'original') document.body.classList.add('review-original-images');
+if (reviewOptions.get('email') === 'visible') document.body.classList.add('review-visible-email');
 const sidebarWidth = reviewOptions.get('sidebar');
 const studyPreview = reviewOptions.get('article');
 const studyPreviews = {
@@ -34,6 +35,7 @@ document.querySelectorAll('a[href]').forEach(link => {
  if (url.origin === location.origin && /\/review-(row|subtle|photos|hybrid|rectangle)-[^/]+\.html$/.test(url.pathname)) {
   if (['25', '28', '30'].includes(sidebarWidth)) url.searchParams.set('sidebar', sidebarWidth);
   if (['70', '80', '96', 'full'].includes(textWidth)) url.searchParams.set('text', textWidth);
+  if (reviewOptions.get('email') === 'visible') url.searchParams.set('email', 'visible');
   if (reviewOptions.get('tone') === 'original') url.searchParams.set('tone', 'original');
   if (['sport', 'table'].includes(reviewOptions.get('visual'))) url.searchParams.set('visual', reviewOptions.get('visual'));
   if (reviewOptions.get('align') === 'center') url.searchParams.set('align', 'center');

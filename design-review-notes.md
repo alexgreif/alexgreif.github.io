@@ -382,3 +382,14 @@ Alle 28 aktuellen Vergleichsseiten zeigen © 2022-2026 Alexander Greif. Credits-
 Bevorzugter Desktop-Halbkreisradius von 210 auf 230px vergrößert (knapp 10%). Höhenbegrenzung behält nach Prüfung die bisherige Reserve von 460px: In kurzen Fenstern hat der Titelabstand Vorrang vor der Vergrößerung. Keine neue Kopplung an Fensterbreite. Die Rechteckgröße und mobilen Bildstreifen bleiben unverändert.
 
 Firefox-Sichtprüfung: Bachelorarbeit bei 1866×947; Studienartikel bei 981×720/Sidebar 25% (anschließend für mehr Titelabstand ursprüngliche Höhenreserve wiederhergestellt); Brownian bei 981×947/Sidebar 25% mit mehrzeiligem Bildcredit; Rechteck-Studienartikel bei 390×1500. Keine Überlappungen in den geprüften Ansichten. Copyright auf allen 28 Seiten strukturell geprüft. Screenshots /tmp/footer-circle-*.png. Nur Feature-Branch und Vergleichsseiten verändert.
+
+
+### Materialnamen, zentraler Fußballausschnitt und optionale E-Mail-Adresse
+
+Alle vier aktuellen Varianten: Materiallinks vereinfacht zu R script, Dataset (XLSX) und PowerPoint; download-Attribute bleiben erhalten. Simulation bleibt im erklärenden Fließtext transparent, muss im Materiallabel nicht wiederholt werden. Survival-Repositorium weiterhin als spätere Aufgabe vorgemerkt.
+
+Desktop-Fußballhalbkreis enger auf zentrale Spielfeldfläche gezoomt (1.55 statt 1.2), Mittelkreis bleibt im Bild; mobile und rechteckige Ausschnitte unverändert. Optionaler Startseitenvergleich email=visible zeigt die auswählbare Adresse alex@alexgreif.de klein unter den vorhandenen drei Kontaktlinks. Standarddarstellung bleibt ohne zusätzliche Zeile; Parameter wird beim Navigieren mitgeführt. Keine Kopierbuttons oder zusätzliche Bedienlogik.
+
+GitHub-Attribute aller 28 aktuellen Seiten erneut geprüft: neue Tabs mit noopener. Nutzer stellte klar, dass Anguilla gemeint war; nach Neuladen funktioniert der Link wie gewünscht, keine weitere Änderung nötig.
+
+Firefox-Prüfung: Fußballhalbkreis bei 1866×947, E-Mail-Vorschau bei 1280×720 und 390×1500, Survival-Materialnamen bei 1280×720. Keine Überlappungen; optionale E-Mail-Adresse gut lesbar, Kontaktzeile bleibt erhalten. Materiallabels, Downloadattribute, Adresse und JS-Syntax geprüft. Screenshots /tmp/field-close.png, /tmp/email-preview.png, /tmp/email-preview-mobile.png und /tmp/material-labels.png. Nur Feature-Branch verändert.
