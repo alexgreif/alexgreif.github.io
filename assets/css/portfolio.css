@@ -184,6 +184,7 @@ body.portfolio-home #footer .credits + .copyright {
 }
 
 .project-page #one > .major .project-summary {
+  color: #3f4b54;
   font-size: 1.25em;
   line-height: 1.5em;
   margin-bottom: 0;
@@ -206,6 +207,7 @@ body.portfolio-home #footer .credits + .copyright {
 }
 
 .project-links h3 {
+  color: #3f4b54;
   margin-bottom: .5em;
 }
 
