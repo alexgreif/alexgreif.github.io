@@ -22,7 +22,7 @@ Die bisherige Vorschau auf Port 8001 bleibt beim Vergleichsbranch. Die bereinigt
 
 ## Empfohlener nächster Git-Schritt
 
-Nach Sichtprüfung und Entscheidung zu den offenen Veröffentlichungspunkten einen Pull Request von `feature/semicircle-layout` nach `master` vorbereiten. Vorher origin/master aktualisieren und die bereits lokalen Inhaltscommits im Gesamtdiff berücksichtigen. Der Archivbranch kann später separat remote gesichert werden. Derzeit nichts gemergt oder gepusht.
+Nach Sichtprüfung und Entscheidung zu den offenen Veröffentlichungspunkten einen Pull Request von `feature/semicircle-layout` nach `master` vorbereiten. Vorher origin/master aktualisieren und die bereits lokalen Inhaltscommits im Gesamtdiff berücksichtigen. Der Archivbranch kann später separat remote gesichert werden. Master und veröffentlichte Website bleiben bis zur Freigabe des Pull Requests unverändert.
 
 ## Prüfstand
 

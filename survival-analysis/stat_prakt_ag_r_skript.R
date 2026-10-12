@@ -35,8 +35,8 @@ mean_sd <- function(x, mw_digits=2, sd_digits=2) {
 
 zeit_tabelle <- df %>%
   group_by(Gruppe, status) %>%
-  summarize(Zeit = mean_sd(Zeit, mw_digits=1)) %>% 
-  tidyr::pivot_wider(names_from=status, values_from=Zeit) %>% 
+  summarize(Zeit = mean_sd(Zeit, mw_digits=1)) %>%
+  tidyr::pivot_wider(names_from=status, values_from=Zeit) %>%
   rename("Zensierungszeitpunkt (n=5)" = "lebt",
          "Todeszeitpunkt (n=10)" = "tot")
 
@@ -48,9 +48,9 @@ left_join(zeit_tabelle, alter_tabelle) %>%
   write.csv(file.path(table_and_plot_dir, "deskriptive_tabelle_roh.csv"))
 
 # Boxplot
-df %>% 
+df %>%
   mutate(status=if_else(status_bool,
-                        "Todeszeitpunkt", "Zensierungszeitpunkt")) %>% 
+                        "Todeszeitpunkt", "Zensierungszeitpunkt")) %>%
   ggplot(aes(x=Gruppe, y=Zeit)) +
     geom_boxplot(outliers=F) +
     theme_bw() +
