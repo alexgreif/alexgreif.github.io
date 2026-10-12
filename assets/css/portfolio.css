@@ -91,6 +91,7 @@ body.portfolio-home #footer .credits + .copyright {
 
 /* Overview: fixed-height thumbnails, with complete figures inside their frame. */
 #two .project-grid {
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 2em;

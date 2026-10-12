@@ -2,11 +2,11 @@
 
 Stand: 12. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzusetzen.
 
-## Vor der Veröffentlichung prüfen
+## Vor oder nach der Veröffentlichung
 
-- [ ] **Lebenslauf aktualisieren:** Die eingebundene `CV_Alexander_Greif.pdf` ist eine ältere Version. Aktuelles Dokument auswählen, ersetzen und Download/Adresse prüfen. Alte deutsche PDF erst entfernen, wenn ihre Nutzung geklärt ist.
+- [ ] **Lebenslauf aktualisieren (späteres Update, kein PR-Blocker):** Die eingebundene `CV_Alexander_Greif.pdf` ist eine ältere Version. Aktuelles Dokument auswählen, ersetzen und Download/Adresse prüfen. Alte deutsche PDF erst entfernen, wenn ihre Nutzung geklärt ist.
 - [ ] **Projekt-Repositories prüfen:** Anguilla Search und Cyclistic hinsichtlich README, Projektstruktur, reproduzierbarer Anleitung, Datenquellen und mitgelieferter Dateien durchsehen. Keine fremden oder vertraulichen Daten veröffentlichen. Bestehende Links auf die richtigen Repositories prüfen.
-- [ ] **Survival-Repository anlegen:** Report, R-Skript und zulässige Beispieldaten sinnvoll bündeln; README mit Ausführung, Datenbeschreibung und Quellen ergänzen. Erst danach die drei einzelnen Materiallinks durch den Repository-Link ersetzen und neues Tab-Verhalten prüfen.
+- [ ] **Survival-Repository anlegen (späteres Update, kein PR-Blocker):** Report, R-Skript und zulässige Beispieldaten sinnvoll bündeln; README mit Ausführung, Datenbeschreibung und Quellen ergänzen. Erst danach die drei einzelnen Materiallinks durch den Repository-Link ersetzen und neues Tab-Verhalten prüfen.
 - [ ] **Bildquellen vervollständigen:** Für bestehende Unsplash-Fußball-, Fahrrad- und Lupenbilder genaue Fotografen-/Bildlinks recherchieren. Aktuelle Quellen und Lizenzbedingungen stehen in `docs/IMAGE_SOURCES.md`. Brownian-Credit mit Bearbeitungshinweis und CC BY-SA-Link erhalten.
 - [ ] **Letzte Inhaltsprüfung:** Eigene Beiträge, Projektjahre, Skilllisten, Veröffentlichungsreferenz und Dokumentversionen noch einmal ansehen. Wissenschaftliche Aussage zur Simulation bleibt im Survival-Fließtext; Dateilabel muss sie nicht wiederholen.
 - [ ] **Letzter Gerätecheck:** Tatsächliches Handy, Desktop und Tastaturbedienung prüfen; insbesondere Headerbilder, lange Titel, alle Materialien/Downloads und Projekt-Navigation. Lokale Browser-Screenshots sind ergänzende Prüfungen.
@@ -20,6 +20,8 @@ Stand: 12. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzuse
 - [ ] Alte Medien und `.DS_Store` nach vollständiger Referenzprüfung entfernen; historische Unterlagen und Berichtsdateien nicht pauschal löschen.
 
 ## Bewusst festgelegt
+
+- Übersicht mit höchstens drei Spalten und maximal 1200px Breite; links am Inhaltsrand. Projekte bewusst kuratiert statt nach Jahreszahl sortiert, mit Bachelorarbeit und veröffentlichter Studie zuerst.
 
 - Halbkreislayout mit 30 % Sidebar; keine URL-Schalter für Breite, Bilder oder Layout in der Produktionsfassung.
 - Links innerhalb der Website im gleichen Tab; Materialien zum Ansehen und externe Quellen in neuen Tabs; herunterladbare Dateien mit `download`.

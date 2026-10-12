@@ -17,7 +17,7 @@ Nur tatsächlich verwendete neue Bilddateien und Brownian-Originalquelle überno
 
 ## Lokaler Vergleich
 
-Die bisherige Vorschau auf Port 8001 bleibt beim Vergleichsbranch. Die bereinigte Fassung liegt in einem separaten Worktree, unter `/mnt/shared/Weiteres/alexgreif-hybrid-ready`, und wird auf Port 8002 bereitgestellt. Port 8002 muss für einen Handytest gegebenenfalls im lokalen WLAN erreichbar sein. In der fertigen Website sind keine Sidebar-Parameter nötig.
+Die bisherige Vorschau auf Port 8001 bleibt beim Vergleichsbranch. Die bereinigte Fassung liegt in einem separaten Worktree, unter `/mnt/shared/Weiteres/alexgreif-hybrid-ready`, und wird auf Port 8002 bereitgestellt. Port 8002 ist aktuell nur am Rechner unter 127.0.0.1 erreichbar; ein echter Handytest braucht eine bewusst freigegebene WLAN-Vorschau. In der fertigen Website sind keine Sidebar-Parameter nötig.
 
 ## Empfohlener nächster Git-Schritt
 
@@ -26,3 +26,5 @@ Nach Sichtprüfung und Entscheidung zu den offenen Veröffentlichungspunkten ein
 ## Prüfstand
 
 Statischer Check: sieben Seiten, 75 lokale Verweise, Reihenfolge, Rücklinks, Download-/Tab-Verhalten und lokale SVGs. JavaScript-Syntax geprüft. Firefox-Sichtprüfung der bereinigten Fassung bei 1866×947 und 390×1500 für die Bachelorarbeit, 1280×720 für Startseite/Studienartikel/Survival/Brownian und 390×1500 für Startseite/Anguilla/Cyclistic/Studienartikel. Screenshots `/tmp/ready-*.png` und `/tmp/hybrid-ready-*.png`. Vor Veröffentlichung bleibt ein echter Gerätecheck sinnvoll. HTML-Dateien behalten das bisherige CRLF-Format; der dokumentierte Whitespace-Check berücksichtigt dies.
+
+Übersicht nach abschließender Entscheidung auf 1200px und damit höchstens drei Spalten begrenzt; links am bisherigen Inhaltsrand. Reihenfolge bleibt kuratiert. Firefox-Prüfung bei 3840×1400 (drei Spalten, zwei Reihen) und 390×1500 (eine Spalte); Screenshots `/tmp/overview-capped-wide.png` und `/tmp/overview-capped-mobile.png`. Lebenslauf-Update und Survival-Repository sind ausdrücklich spätere Updates und keine PR-Blocker.
