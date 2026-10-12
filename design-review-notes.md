@@ -407,3 +407,10 @@ Firefox-Prüfung Fußball bei 1866×947 und 981×720 mit Sidebar 25%: kein freie
 ### Fußballhalbkreis nochmals näher gezoomt
 
 Desktop-Halbkreiszoom auf Nutzerwunsch von 1.55 auf 1.85 erhöht. Linker Fokus und Bildverschiebung bleiben; Mittelpunkt und Spieler sind größer sichtbar, mehr von den Spielfeldenden fällt aus dem Ausschnitt. Mobile und Rechteckdarstellungen unverändert. Firefox-Sichtprüfung bei 1866×947 und 981×720/Sidebar 25%: keine freien Bildränder oder Überlappungen. Screenshots /tmp/field-extra-zoom-wide.png und /tmp/field-extra-zoom-short.png. Nur Feature-Branch.
+
+
+### Bevorzugten Desktop-Zoom wiederhergestellt, mobilen Zoom erhöht
+
+Nach Nutzervergleich Desktop-Fußballhalbkreis wieder auf 1.55 statt 1.85 gestellt; linker Fokus und Verschiebung bleiben. Der letzte Zoomversuch hatte bewusst nur Desktop geändert, daher war mobil keine Änderung sichtbar. Schmale Header in Halbkreis-/Rechteckvariante erhalten jetzt eigenen stärkeren Zoom 2.0 statt 1.3, weiterhin mit zentralem Fokus.
+
+Firefox-Sichtprüfung bei 390×1500 und 900×1030: Mittelkreis und Spielfelddetails größer, keine freien Bildränder oder Textüberlagerungen. Screenshots /tmp/field-mobile-zoom2.png und /tmp/field-tablet-zoom2.png. Desktop-Regel entspricht wieder der zuvor geprüften und bevorzugten Version. Nur Feature-Branch.
