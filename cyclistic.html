@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 
 		<!-- Google tag (gtag.js) -->
@@ -19,21 +19,19 @@
 
 		<title>Bike Share</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/portfolio.css" />
 	</head>
-	<body class="is-preload">
+	<body class="is-preload portfolio-home project-page cyclistic-project">
 
 		<!-- Header -->
-		<style>
-		#header {
-			background-image: url("images/overlay.png"), url("../../cyclistic/bg.jpg");
-		}
-		</style>
-			<header id="header">
+		<header id="header">
 				<div class="inner">
-					<h1><strong>Chicago bike share analysis.</strong>
-						A case study from Google's Data Analytics Certificate.</h1>
+					<h1><strong>Chicago Bike Share Analysis</strong></h1>
+					<p class="project-context"><em>Capstone project · Google Data Analytics Certificate · 2022</em></p>
+					<div class="project-image" aria-hidden="true"><img src="cyclistic/bg.jpg" alt="" /></div>
+					<p class="project-back"><a href="index.html">Back to overview</a></p>
 				</div>
 			</header>
 
@@ -43,83 +41,44 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Chicago Bike Share Analysis</h2>
-							<h3>Analyzing historical trip data to inform a marketing strategy to convert casual users to members</h3>
+							<h2 class="project-summary">Analyzing historical trip data to inform a marketing strategy to convert casual users to members</h2>
+							<p class="project-tools">R · R Markdown · Tableau · Excel · PowerPoint</p>
 						</header>
-						<p>This is the final case study in Google's Data Analytics Certificate.
-							The aim is to help Cyclistic, a fictitious bike-share company based in Chicago, develop a marketing strategy to sell annual memberships to "casuals" (single-ride and day-pass users).
-							In order to do so, you are provided historical trip data which you are asked to analyze for differences between the casuals and members.<br /><br />
-							I documented my analysis thoroughly in two <b>R Markdown</b> produced HTML documents.
-							<a href="cyclistic/01_data_processing.html" target = "_blank" title="Cyclistic Data Processing">Part I</a> covers data processing and prepares the data for the actual analysis in <a href="cyclistic/02_data_analysis.html" target="_blank" title= "Cyclistic Data Analysis">Part II</a>.
-							Furthermore, I created a <b>PowerPoint presentation</b> which gives a more practical high level overview including final recommendations for stakeholders.
-							You can download it as a <a href="cyclistic/cyclistic.pptx" target = "_blank" title="cyclistic.pptx">PowerPoint</a> or <a href="cyclistic/cyclistic.pdf" target="_blank" title="cyclistic.pdf">PDF</a> file.
-							Finally, you can can find the <b>GitHub repository</b> containing the entire project <a href="https://github.com/alexgreif/Cyclistic_Case_Study" target="_blank" title="Cyclistic GitHub Repo">here</a>.
-							<header class="major">
-								<h3>Skills</h3>
-							</header>
-							<b>Methodological</b>: data cleaning, data mining, data visualization, data storytelling, data-driven decision making<br /><br />
-							<b>Technical</b>: R, Tableau, Excel, PowerPoint
-					  </p>
-						<ul class="actions">
-							<li><a href="index.html" class="button">Home</a></li>
-						</ul>
+						<p>In this capstone project for Google’s Data Analytics Certificate, I analysed real trip data published by Divvy, a Chicago-based bike-share service. I examined differences in usage patterns between casual riders and annual members and made recommendations for marketing annual memberships to casual riders.</p>
+                        <div class="project-links">
+                            <h3>Project materials</h3>
+                            <ul>
+                                <li><a href="cyclistic/01_data_processing.html" target="_blank" rel="noopener">Data processing</a>: Data cleaning and preparation for analysis. R Markdown report (HTML).</li>
+                                <li><a href="cyclistic/02_data_analysis.html" target="_blank" rel="noopener">Data analysis</a>: Comparison of usage patterns between casual riders and annual members. R Markdown report (HTML).</li>
+                                <li>Presentation (<a href="cyclistic/cyclistic.pdf" target="_blank" rel="noopener">PDF</a> / <a href="cyclistic/cyclistic.pptx" download>PowerPoint</a>): Summary of findings and marketing recommendations.</li>
+                                <li><a href="https://github.com/alexgreif/Cyclistic_Case_Study" target="_blank" rel="noopener">GitHub repository</a></li>
+                            </ul>
+                        </div>
 					</section>
 
-				<!-- Two -->
-					<section id="two">
-						<h2>Other projects</h2>
-						<div class="row">
-							<!--
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="cyclistic.html"><div class="image fit thumb">
-									<img src="images/thumbs/01.jpg" alt="" /></div></a>
-								<h3>Chicago Bike Share Analysis</h3>
-								<p>This is a case study from Google's Data Analytics Certificate.</p>
-							</article>
-						-->
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="thesis.html"><div class="image fit thumb">
-									<img src="images/thumbs/02.jpg" alt="Two football players in a duel" /></div></a>
-								<h3>My Bachelor Thesis</h3>
-								<p>A Multilevel analysis of GPS, heart rate and contextual match data to assess player readiness in football.</p>
-							</article>
-						</div>
-						<!--
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
-					-->
-					</section>
+                    <nav class="project-return" aria-label="Project navigation">
+                        <div class="project-neighbours">
+                            <div class="project-neighbour previous"><a href="brownian-motion.html" rel="prev"><span class="neighbour-label">Previous project</span><span class="neighbour-name"><span class="arrow-word">← Markov</span> Properties of Brownian Motion</span></a></div>
+                            <div class="project-neighbour next"><a href="index.html"><span class="neighbour-name">Back to overview</span></a></div>
+                        </div>
+                    </nav>
 
-				</div>
+			</div>
 
 			<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/alexgreif" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/alexgreif" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<!-- <li><a href="https://www.kaggle.com/alexandergreif" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li> -->
-						<li><a href="mailto: greif.alexander@web.de" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<ul class="copyright credits">
+						<li>Design: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a></li>
+						<li>Images: <a href="https://unsplash.com/" target="_blank" rel="noopener">Unsplash</a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; 2022 Alexander Greif</li>
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-					<ul class="copyright">
-						<li>Icons: <a target="_blank" href="https://fontawesome.com/">Font Awesome</a>, <a target="_blank" href="https://icons8.com">Icons8</a> and <a target="_blank" href="https://devicon.dev/">Devicon</a></li>
-						<li>Images: <a href="https://unsplash.com/">Unsplash</a></li>
+						<li>&copy; 2022-2026 Alexander Greif</li>
 					</ul>
 				</div>
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+	<script src="assets/js/portfolio.js"></script>
 	</body>
 </html>

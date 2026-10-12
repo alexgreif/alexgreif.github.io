@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 
 		<!-- Google tag (gtag.js) -->
@@ -19,149 +19,104 @@
 
 		<title>My Portfolio Website</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/portfolio.css" />
 	</head>
-	<body class="is-preload">
+	<body class="is-preload portfolio-home home-page">
 
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<img class="image avatar" src="images/avatar.png" alt="An ugly portrait of myself" />
-					<h1><strong>I am Alex.</strong> I am keen on all things data.
-						Currently pursuing an undergraduate degree in Maths and Computer Science.</h1>
+					<img class="image avatar" src="images/avatar.png" alt="Portrait of Alexander Greif" />
+					<h1><strong>Hi, I'm Alex.</strong><br />
+						Here you'll find a selection of my work in statistics, data analysis and software development.</h1>
+
+					<p class="cv-download">
+					<a href="CV_Alexander_Greif.pdf" class="button small" download>
+						Download CV
+					</a>
+					</p>
+					<ul class="contact-links">
+						<li><a href="https://www.linkedin.com/in/alexgreif/" target="_blank" rel="noopener"><span class="icon brands fa-linkedin" aria-hidden="true"></span><span>LinkedIn</span></a></li>
+						<li><a href="https://github.com/alexgreif" target="_blank" rel="noopener"><span class="icon brands fa-github" aria-hidden="true"></span><span>GitHub</span></a></li>
+						<li><a href="mailto:alex@alexgreif.de"><span class="icon solid fa-envelope" aria-hidden="true"></span><span>Email</span></a></li>
+					</ul>
 				</div>
 			</header>
 
 		<!-- Main -->
 			<div id="main">
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>About me</h2>
-						</header>
-						<p>After graduating school with a Maths and Physics focused
-							'Abitur', I studied Jazz drumming, got a B.Sc. in Sports Science and am
-							now coming full circle, pursuing a degree in
-							Maths and Computer Science. My interest in data analytics
-							developed during my undergraduate studies in Sports Science, which
-							were heavily focused on research methodolgy, and my internship at
-							Plymouth Argyle FC, where I learned about the role of data in
-							organizational success. I currently work as
-							a student assistant at the University of Münster, where I help with all things data, from
-							collection and management to processing and statistical analysis.
-							<br />
-						</p>
-						<header class="major">
-							<h3>Methodological skills</h3>
-						</header>
-						<ul>
-							<li>Statistical analysis</li>
-							<li>Data visualization</li>
-							<li>Data wrangling</li>
-							<li>Data storytelling</li>
-							<li>Research design</li>
-							<li>Questionnaire design and validation</li>
-							<li>Relational databases</li>
-						</ul>
-					<header class="major">
-							<h3>Technical skills</h3>
-						</header>
-						<img class="skills" src="images/software/icons8-python.svg" title="Python" />
-						<img class="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" title="R" />
-						<img class="skills" src="images/software/icons8-microsoft-excel.svg" title="Microsoft Excel" />
-						<img class="skills" src="images/software/icons8-postgresql.svg" title="PostgreSQL" />
-						<img class="skills" src="images/software/icons8-java-kaffeetassenlogo.svg" title="Java" />
-						<img class="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git" />
-						<img class="skills" src="images/software/icons8-tableau-software.svg" title="Tableau" />
-						<img class="skills" src="images/software/icons8-power-bi-2021.svg" title="Power BI" />
-						<img class="skills" src="images/software/bigquery.svg" title="Google BigQuery" />
-					<br /><br />
-						<ul class="actions">
-							<li><a href="CV_Alexander_Greif.pdf" target="_blank" class="button">Full CV</a></li>
-						</ul>
-
-						</section>
-
 				<!-- Two -->
 					<section id="two">
-						<h2>Projects</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="cyclistic.html"><div class="image fit thumb">
-									<img src="images/thumbs/01.jpg" alt="Wall painting of a bicycle" /></div></a>
-								<h3>Chicago Bike Share Analysis</h3>
-								<p>Developing a marketing strategy based on an analysis of historical trip data.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
+						<h2 id="projects" class="visually-hidden">Projects</h2>
+						<div class="project-grid">
+							<article class="work-item">
 								<a href="thesis.html"><div class="image fit thumb">
 									<img src="images/thumbs/02.jpg" alt="Two football players in a duel" /></div></a>
-								<h3>My Bachelor Thesis</h3>
-								<p>A Multilevel analysis of GPS, heart rate and contextual match data to assess player readiness in football.</p>
+								<h3><a href="thesis.html">Modelling Training Status in Football</a></h3>
+								<p><em>Bachelor’s thesis · Human Movement in Sports and Exercise · 2021</em></p>
+								<p>A multilevel analysis of GPS, heart rate and contextual match data to assess training status.</p>
+							</article>
+                            <article class="work-item">
+                                <a href="study-satisfaction.html" aria-label="View Study Satisfaction in PE Teacher Education"><div class="image fit thumb figure-thumbnail">
+                                    <img src="images/thumbs/study-satisfaction-comparisons.svg" alt="Detail of the estimated marginal means comparison table" />
+                                </div></a>
+                                <h3><a href="study-satisfaction.html">Satisfaction in Teacher Education</a></h3>
+                                <p><em>Research project · University of Münster · Published 2026</em></p>
+                                <p>Quantitative survey analysis for a published mixed-methods study.</p>
+                            </article>
+							<article class="work-item">
+								<a href="anguilla-search.html" aria-label="View Anguilla Search"><div class="image fit thumb figure-thumbnail">
+									<img src="images/previews/anguilla-original-graph.png" alt="Directed graph showing links between the websites crawled by Anguilla Search" />
+								</div></a>
+								<h3><a href="anguilla-search.html">Anguilla Search</a></h3>
+								<p><em>Course project · Software Development · 2025</em></p>
+								<p>A Java search engine combining web crawling, text indexing and relevance ranking.</p>
+							</article>
+							<article class="work-item">
+								<a href="survival-analysis.html" aria-label="View Survival Analysis"><div class="image fit thumb">
+									<img src="images/thumbs/survival-analysis-illustration.png" alt="Illustrative Kaplan-Meier curves with 95% confidence bands from an additional simulated dataset" />
+								</div></a>
+								<h3><a href="survival-analysis.html">Survival Analysis</a></h3>
+								<p><em>Course project · Mathematical Statistics · 2025</em></p>
+								<p>Kaplan-Meier estimation and log-rank testing of right-censored survival data using R.</p>
+							</article>
+							<article class="work-item">
+								<a href="brownian-motion.html" aria-label="View Markov Properties of Brownian Motion"><div class="image fit thumb">
+									<img src="images/thumbs/brownian-motion-preview.png" alt="Five simulated paths of Brownian motion from the seminar paper" />
+								</div></a>
+								<h3><a href="brownian-motion.html">Markov Properties of Brownian Motion</a></h3>
+								<p><em>Seminar project · Applied Probability · 2026</em></p>
+								<p>Exploring Markov properties and their consequences through mathematical proofs and illustrations.</p>
+							</article>
+							<article class="work-item">
+								<a href="cyclistic.html"><div class="image fit thumb">
+									<img src="images/thumbs/01.jpg" alt="Wall painting of a bicycle" /></div></a>
+								<h3><a href="cyclistic.html">Chicago Bike Share Analysis</a></h3>
+								<p><em>Capstone project · Google Data Analytics · 2022</em></p>
+								<p>Analysing bike-share usage patterns to inform marketing recommendations.</p>
 							</article>
 						</div>
-						<!--
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
-					-->
 					</section>
-
-				<!-- Three -->
-					<section id="three">
-						<h2>Get In Touch</h2>
-						<div class="col-4 col-12-small">
-							<ul class="labeled-icons">
-								<li>
-									<h3 class="icon brands fa-linkedin"><span class="label">LinkedIn</span></h3>
-									<a href="https://www.linkedin.com/in/alexgreif">https://www.linkedin.com/in/alexgreif</a>
-								</li>
-								<li>
-									<h3 class="icon brands fa-github"><span class="label">Github</span></h3>
-									<a href="https://github.com/alexgreif">https://github.com/alexgreif</a>
-								</li>
-								<!-- <li>
-									<h3 class="icon brands fa-kaggle"><span class="label">Kaggle</span></h3>
-									<a href="https://www.kaggle.com/alexandergreif">https://www.kaggle.com/alexandergreif</a>
-								</li> -->
-								<li>
-									<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-									<a href="mailto: greif.alexander@web.de">greif.alexander@web.de</a>
-								</li>
-							</ul>
-						</div>
-				</section>
 
 			</div>
 
 			<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/alexgreif" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/alexgreif" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<!-- <li><a href="https://www.kaggle.com/alexandergreif" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li> -->
-						<li><a href="mailto: greif.alexander@web.de" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<ul class="copyright credits">
+						<li>Design: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a></li>
+						<li>Images: <a href="https://unsplash.com/" target="_blank" rel="noopener">Unsplash</a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; 2022 Alexander Greif</li>
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-					<ul class="copyright">
-						<li>Icons: <a target="_blank" href="https://fontawesome.com/">Font Awesome</a>, <a target="_blank" href="https://icons8.com">Icons8</a> and <a target="_blank" href="https://devicon.dev/">Devicon</a></li>
-						<li>Images: <a href="https://unsplash.com/">Unsplash</a></li>
+						<li>&copy; 2022-2026 Alexander Greif</li>
 					</ul>
 				</div>
 			</footer>
 
 		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.poptrox.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
+	<script src="assets/js/portfolio.js"></script>
 	</body>
 </html>
