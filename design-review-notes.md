@@ -402,3 +402,8 @@ Auf Nutzerfeedback Desktop-Fußballhalbkreis weiter nach links blickend ausgeric
 Optionale sichtbare E-Mail-Adresse verworfen: zusätzliche HTML-Zeile, CSS und URL-Parameterlogik aus allen vier aktuellen Übersichten entfernt. Bestehende drei Kontaktlinks mit mailto bleiben.
 
 Firefox-Prüfung Fußball bei 1866×947 und 981×720 mit Sidebar 25%: kein freier Bildrand und keine Überlappungen, gewünschte Spielerhälfte sichtbar. Screenshots /tmp/field-left-focus-final.png und /tmp/field-left-focus-short.png. Entfernung der E-Mail-Vorschau und Erhalt der Mail-Links strukturell geprüft; JavaScript-Syntax geprüft. Ausschließlich Feature-Branch verändert.
+
+
+### Fußballhalbkreis nochmals näher gezoomt
+
+Desktop-Halbkreiszoom auf Nutzerwunsch von 1.55 auf 1.85 erhöht. Linker Fokus und Bildverschiebung bleiben; Mittelpunkt und Spieler sind größer sichtbar, mehr von den Spielfeldenden fällt aus dem Ausschnitt. Mobile und Rechteckdarstellungen unverändert. Firefox-Sichtprüfung bei 1866×947 und 981×720/Sidebar 25%: keine freien Bildränder oder Überlappungen. Screenshots /tmp/field-extra-zoom-wide.png und /tmp/field-extra-zoom-short.png. Nur Feature-Branch.

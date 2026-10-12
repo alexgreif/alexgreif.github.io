@@ -374,7 +374,7 @@ body.review-photos.survival-project #header { background-position: center, 35% c
 @media (min-width: 981px) {
  body.review-hybrid:not(.review-rectangle).thesis-project .hybrid-image img {
   object-position: 25% center;
-  transform: translateX(18%) scale(1.55);
+  transform: translateX(18%) scale(1.85);
  }
  body.review-hybrid:not(.review-rectangle).anguilla-project .hybrid-image img {
   object-position: 20% center;
