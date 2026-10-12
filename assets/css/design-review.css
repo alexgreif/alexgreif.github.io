@@ -391,3 +391,11 @@ body.review-photos.survival-project #header { background-position: center, 35% c
   object-position: 25% center;
  }
 }
+
+/* The rectangular variant also uses a straight inner edge in narrow headers. */
+@media (max-width: 980px) {
+ body.review-rectangle #header .hybrid-image {
+  clip-path: none;
+  border-radius: 0;
+ }
+}

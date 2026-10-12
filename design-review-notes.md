@@ -359,3 +359,8 @@ Firefox-Sichtprüfung beider Seiten bei 1866×947 und 390×1500. Im schmalen Hea
 ### Eigene schmale Ausschnitte für Feld und Lupe
 
 Mobile Header in Hybrid und Rechteck erhalten separate Fokuswerte: Fußballbild 30% näher gezoomt bei zentralem Fokus, sodass weniger dunkler Rand und mehr Mittelkreis/Rasen sichtbar sind. Lupenfokus auf 25% horizontal verschoben; Glas und Übergang zum Griff sind besser gemeinsam zu erkennen. Desktopregeln unverändert. Firefox-Screenshots beider Seiten bei 390×1500 und 900×1030 geprüft: keine Überlagerung, Text weiterhin zentriert, keine zusätzliche Headerhöhe. Aufnahmen /tmp/mobile-focal-field.png, /tmp/mobile-focal-lens.png und /tmp/mobile-focal-*-900.png. Reine CSS-Anpassung auf feature/design-review.
+
+
+### Rechteckbild auch im schmalen Header
+
+Die Rechteckvariante erhält unterhalb von 981px einen rechteckigen Bildstreifen am rechten Header-Rand: clip-path aufgehoben, keine Rundung. Bildbreite, Fokus, Textzentrierung und Headerhöhe unverändert. Die Halbkreisvariante behält ihren gebogenen Rand. Firefox-Sichtprüfung Studienartikel bei 390×1500 und Anguilla bei 900×1030: gerade Kante, keine Textüberlagerung oder zusätzliche Bildhöhe. Screenshots /tmp/rectangle-mobile-straight.png und /tmp/rectangle-tablet-straight.png. Nur CSS-Vorschau auf feature/design-review.
