@@ -393,3 +393,12 @@ Desktop-Fußballhalbkreis enger auf zentrale Spielfeldfläche gezoomt (1.55 stat
 GitHub-Attribute aller 28 aktuellen Seiten erneut geprüft: neue Tabs mit noopener. Nutzer stellte klar, dass Anguilla gemeint war; nach Neuladen funktioniert der Link wie gewünscht, keine weitere Änderung nötig.
 
 Firefox-Prüfung: Fußballhalbkreis bei 1866×947, E-Mail-Vorschau bei 1280×720 und 390×1500, Survival-Materialnamen bei 1280×720. Keine Überlappungen; optionale E-Mail-Adresse gut lesbar, Kontaktzeile bleibt erhalten. Materiallabels, Downloadattribute, Adresse und JS-Syntax geprüft. Screenshots /tmp/field-close.png, /tmp/email-preview.png, /tmp/email-preview-mobile.png und /tmp/material-labels.png. Nur Feature-Branch verändert.
+
+
+### Linke Spielhälfte und verworfene E-Mail-Zeile
+
+Auf Nutzerfeedback Desktop-Fußballhalbkreis weiter nach links blickend ausgerichtet: object-position 25% und Bildverschiebung nach rechts um 18% bei unverändertem Zoom 1.55. Mittelkreis liegt näher an der gedachten Mitte des vollständigen Kreises; linke Spielhälfte samt Spielern ist stärker sichtbar. Mobile und Rechteck-Ausschnitte bleiben unverändert.
+
+Optionale sichtbare E-Mail-Adresse verworfen: zusätzliche HTML-Zeile, CSS und URL-Parameterlogik aus allen vier aktuellen Übersichten entfernt. Bestehende drei Kontaktlinks mit mailto bleiben.
+
+Firefox-Prüfung Fußball bei 1866×947 und 981×720 mit Sidebar 25%: kein freier Bildrand und keine Überlappungen, gewünschte Spielerhälfte sichtbar. Screenshots /tmp/field-left-focus-final.png und /tmp/field-left-focus-short.png. Entfernung der E-Mail-Vorschau und Erhalt der Mail-Links strukturell geprüft; JavaScript-Syntax geprüft. Ausschließlich Feature-Branch verändert.

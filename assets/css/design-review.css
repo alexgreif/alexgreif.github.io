@@ -373,8 +373,8 @@ body.review-photos.survival-project #header { background-position: center, 35% c
 /* Refine the two remaining semicircle focal points without changing other layouts. */
 @media (min-width: 981px) {
  body.review-hybrid:not(.review-rectangle).thesis-project .hybrid-image img {
-  object-position: 45% center;
-  transform: scale(1.55);
+  object-position: 25% center;
+  transform: translateX(18%) scale(1.55);
  }
  body.review-hybrid:not(.review-rectangle).anguilla-project .hybrid-image img {
   object-position: 20% center;
@@ -407,12 +407,3 @@ body.review-experiment:is(.review-subtle, .review-photos).copyright-last #footer
 @media (min-width: 981px) {
  body.review-experiment:is(.review-subtle, .review-photos) #header { padding-bottom: 1.25em; }
 }
-
-/* Optional contact preview: a selectable address under the existing three links. */
-body.review-experiment #header .contact-email { display: none; }
-body.review-experiment.review-visible-email #header .contact-email {
- display: block;
- margin: .6em 0 0;
- font-size: .8em;
-}
-body.review-experiment #header .contact-email a { color: rgba(255,255,255,.7); user-select: text; }
