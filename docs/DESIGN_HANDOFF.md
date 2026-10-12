@@ -2,7 +2,7 @@
 
 ## Sicherung und Branches
 
-- `archive/design-review-2026-10-12` und `feature/design-review`: letzter vollständiger Vergleichsstand (`ea3b02b`). Alle vier Varianten und die früheren Experimente bleiben dort erhalten.
+- `design/alternatives` und `feature/design-review`: letzter vollständiger Vergleichsstand (`ea3b02b`). Alle vier Varianten und die früheren Experimente bleiben dort erhalten.
 - `feature/design-comparisons`: frühere Sicherung; nicht gelöscht.
 - `feature/hybrid-portfolio`: bereinigte Halbkreisfassung, aufgebaut auf dem aktuellen lokalen `master`. Keine Experimente in diesen Branch zusammenführen.
 - `master` und `origin/master` sind durch die Bereinigung nicht verändert worden. Lokaler Master war bereits drei Commits vor origin/master.

@@ -33,6 +33,6 @@ Also review the actual browser layout at phone, tablet and desktop widths. The r
 - [Design handoff and archived branches](docs/DESIGN_HANDOFF.md).
 - [Image sources and licenses](docs/IMAGE_SOURCES.md).
 
-The full comparison site is preserved on `archive/design-review-2026-10-12` and `feature/design-review`. This branch contains only the chosen version and existing historical pages/assets. It has not yet been merged or published.
+The full comparison site is preserved on `design/alternatives` and `feature/design-review`. This branch contains only the chosen version and existing historical pages/assets. It has not yet been merged or published.
 
 Template: Strata by HTML5 UP; original license and README remain in `LICENSE.txt` and `README.txt`. Image licenses and attribution are documented separately.
