@@ -345,12 +345,16 @@ body.portfolio-home #footer .credits + .copyright {
     max-width: none;
     padding-top: 4em;
   }
-  body.project-page #header {
-    padding-top: 3em;
+  /* Shared spacing and heading metrics keep both columns aligned. */
+  body.project-page #header, body.project-page #main {
+    padding-top: clamp(3rem, 2.25rem + 1.5vw, 3.75rem);
+  }
+  body.project-page #header h1 {
+    font-size: clamp(1.25rem, .9375rem + .625vw, 1.5625rem);
+    line-height: 1.5em;
   }
   body.project-page #main {
     min-height: 100svh;
-    padding-top: 3em;
     padding-bottom: 1.25em;
   }
   .project-return {
