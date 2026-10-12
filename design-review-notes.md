@@ -373,3 +373,12 @@ Auf Freigabe alle vier aktuellen Varianten (28 Seiten) vereinheitlicht. Endpunkt
 Desktop-Halbkreis hat bevorzugten Radius 210px. Kopplung an 11vw entfällt; nur bei geringerer Fensterhöhe wird er für den reservierten Titel-/Creditbereich kleiner. Er passt auch bei kleinster angebotener Sidebarbreite (25% bei 981px) noch in den Seitenstreifen. Keine zusätzliche JavaScript-Positionierung.
 
 Firefox-Sichtprüfung: 1280×947 Bachelorarbeit (gleichbleibender Radius), 981×947 Brownian mit Sidebar 25%, 981×720 Studienartikel mit Sidebar 25%, 390×1500 letztes Projekt in Rechteckvariante. Keine Titel-/Creditüberlagerungen in den geprüften Ansichten; Übersichtslink ohne Pfeil sichtbar. Alle Linkattribute der 28 bevorzugten Seiten strukturell gegen die vereinbarten Regeln geprüft. Screenshots /tmp/fixed-circle-*.png und /tmp/unified-boundary-mobile.png. Nur Feature-Branch und Vorschauseiten geändert.
+
+
+### Kompakterer Footer, Jahresspanne und etwas größerer Halbkreis
+
+Alle 28 aktuellen Vergleichsseiten zeigen © 2022-2026 Alexander Greif. Credits-/Copyright-Abstand von 1.5em auf 1em reduziert; Desktop-Abstand zum unteren Rand von 2em auf 1.25em verkleinert. Reihenfolge Design, Bildquelle, Copyright bleibt bestehen. Mobile Außenabstände bleiben unverändert; nur der innere Abstand ist kompakter.
+
+Bevorzugter Desktop-Halbkreisradius von 210 auf 230px vergrößert (knapp 10%). Höhenbegrenzung behält nach Prüfung die bisherige Reserve von 460px: In kurzen Fenstern hat der Titelabstand Vorrang vor der Vergrößerung. Keine neue Kopplung an Fensterbreite. Die Rechteckgröße und mobilen Bildstreifen bleiben unverändert.
+
+Firefox-Sichtprüfung: Bachelorarbeit bei 1866×947; Studienartikel bei 981×720/Sidebar 25% (anschließend für mehr Titelabstand ursprüngliche Höhenreserve wiederhergestellt); Brownian bei 981×947/Sidebar 25% mit mehrzeiligem Bildcredit; Rechteck-Studienartikel bei 390×1500. Keine Überlappungen in den geprüften Ansichten. Copyright auf allen 28 Seiten strukturell geprüft. Screenshots /tmp/footer-circle-*.png. Nur Feature-Branch und Vergleichsseiten verändert.

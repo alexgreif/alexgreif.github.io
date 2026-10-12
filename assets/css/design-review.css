@@ -308,7 +308,7 @@ body.review-hybrid.brownian-project .hybrid-image img { object-fit: cover; paddi
 @media (min-width: 981px) {
  body.review-hybrid #header { overflow: hidden; }
  body.review-hybrid #header .hybrid-image {
-  --hybrid-radius: clamp(100px, calc((100svh - 460px) / 2), 210px);
+  --hybrid-radius: clamp(100px, calc((100svh - 460px) / 2), 230px);
   display: block;
   position: absolute;
   right: 0;
@@ -398,4 +398,12 @@ body.review-photos.survival-project #header { background-position: center, 35% c
   clip-path: none;
   border-radius: 0;
  }
+}
+
+/* A compact page ending in all four current comparison variants. */
+body.review-experiment:is(.review-subtle, .review-photos).copyright-last #footer .credits + .copyright {
+ margin-top: 1em;
+}
+@media (min-width: 981px) {
+ body.review-experiment:is(.review-subtle, .review-photos) #header { padding-bottom: 1.25em; }
 }
