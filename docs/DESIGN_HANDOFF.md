@@ -20,9 +20,11 @@ Nur tatsächlich verwendete neue Bilddateien und Brownian-Originalquelle überno
 
 Die bisherige Vorschau auf Port 8001 bleibt beim Vergleichsbranch. Die bereinigte Fassung liegt in einem separaten Worktree, unter `/mnt/shared/Weiteres/alexgreif-hybrid-ready`, und wird auf Port 8002 bereitgestellt. Port 8002 ist aktuell nur am Rechner unter 127.0.0.1 erreichbar; ein echter Handytest braucht eine bewusst freigegebene WLAN-Vorschau. In der fertigen Website sind keine Sidebar-Parameter nötig.
 
-## Empfohlener nächster Git-Schritt
+## Pull Request
 
-Nach Sichtprüfung und Entscheidung zu den offenen Veröffentlichungspunkten einen Pull Request von `feature/semicircle-layout` nach `master` vorbereiten. Vorher origin/master aktualisieren und die bereits lokalen Inhaltscommits im Gesamtdiff berücksichtigen. Der Archivbranch kann später separat remote gesichert werden. Master und veröffentlichte Website bleiben bis zur Freigabe des Pull Requests unverändert.
+[PR #1](https://github.com/alexgreif/alexgreif.github.io/pull/1) wurde als Entwurf von `feature/semicircle-layout` nach `master` angelegt. `design/alternatives` und der ausgewählte Branch sind separat auf GitHub gesichert. Der PR enthält die drei bereits lokalen Inhaltscommits sowie die bereinigte gewählte Gestaltung. Der GitHub-Master wurde dabei nicht verändert.
+
+Nächster Schritt: finale PR-Sichtprüfung, dann als bereit markieren und nach Freigabe zusammenführen. Anschließend die veröffentlichte Website prüfen. Lebenslauf und Survival-Repository bleiben ausdrücklich spätere Updates.
 
 ## Prüfstand
 
