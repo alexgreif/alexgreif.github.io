@@ -10,7 +10,7 @@ Stand: 12. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzuse
 - [ ] **Bildquellen vervollständigen:** Für bestehende Unsplash-Fußball-, Fahrrad- und Lupenbilder genaue Fotografen-/Bildlinks recherchieren. Aktuelle Quellen und Lizenzbedingungen stehen in `docs/IMAGE_SOURCES.md`. Brownian-Credit mit Bearbeitungshinweis und CC BY-SA-Link erhalten.
 - [ ] **Letzte Inhaltsprüfung:** Eigene Beiträge, Projektjahre, Skilllisten, Veröffentlichungsreferenz und Dokumentversionen noch einmal ansehen. Wissenschaftliche Aussage zur Simulation bleibt im Survival-Fließtext; Dateilabel muss sie nicht wiederholen.
 - [ ] **Letzter Gerätecheck:** Tatsächliches Handy, Desktop und Tastaturbedienung prüfen; insbesondere Headerbilder, lange Titel, alle Materialien/Downloads und Projekt-Navigation. Lokale Browser-Screenshots sind ergänzende Prüfungen.
-- [ ] **Veröffentlichungsweg entscheiden:** Bereinigten `feature/hybrid-portfolio` prüfen, dann PR oder Merge nach `master` und Push bewusst ausführen. `master` enthält bereits drei lokale, noch nicht gepushte Inhaltscommits. Einen direkten Merge von `feature/design-review` vermeiden, weil er sämtliche Experimente übernehmen würde.
+- [ ] **Veröffentlichungsweg entscheiden:** Bereinigten `feature/semicircle-layout` prüfen, dann PR oder Merge nach `master` und Push bewusst ausführen. `master` enthält bereits drei lokale, noch nicht gepushte Inhaltscommits. Einen direkten Merge von `feature/design-review` vermeiden, weil er sämtliche Experimente übernehmen würde.
 
 ## Später, kein Veröffentlichungsblocker
 

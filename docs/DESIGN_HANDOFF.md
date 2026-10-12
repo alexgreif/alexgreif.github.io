@@ -2,9 +2,10 @@
 
 ## Sicherung und Branches
 
-- `design/alternatives` und `feature/design-review`: letzter vollständiger Vergleichsstand (`ea3b02b`). Alle vier Varianten und die früheren Experimente bleiben dort erhalten.
+- `design/alternatives`: vollständiger Vergleichsstand mit dauerhaft verständlichen Namen; `DESIGN_VARIANTS.md` erklärt aktuelle und historische Varianten.
+- `feature/design-review`: vorheriger vollständiger Arbeitsstand (`ea3b02b`), unverändert erhalten.
 - `feature/design-comparisons`: frühere Sicherung; nicht gelöscht.
-- `feature/hybrid-portfolio`: bereinigte Halbkreisfassung, aufgebaut auf dem aktuellen lokalen `master`. Keine Experimente in diesen Branch zusammenführen.
+- `feature/semicircle-layout`: bereinigte Halbkreisfassung, aufgebaut auf dem aktuellen lokalen `master`. Keine Experimente in diesen Branch zusammenführen.
 - `master` und `origin/master` sind durch die Bereinigung nicht verändert worden. Lokaler Master war bereits drei Commits vor origin/master.
 
 ## Bereinigung
@@ -21,10 +22,14 @@ Die bisherige Vorschau auf Port 8001 bleibt beim Vergleichsbranch. Die bereinigt
 
 ## Empfohlener nächster Git-Schritt
 
-Nach Sichtprüfung und Entscheidung zu den offenen Veröffentlichungspunkten einen Pull Request von `feature/hybrid-portfolio` nach `master` vorbereiten. Vorher origin/master aktualisieren und die bereits lokalen Inhaltscommits im Gesamtdiff berücksichtigen. Der Archivbranch kann später separat remote gesichert werden. Derzeit nichts gemergt oder gepusht.
+Nach Sichtprüfung und Entscheidung zu den offenen Veröffentlichungspunkten einen Pull Request von `feature/semicircle-layout` nach `master` vorbereiten. Vorher origin/master aktualisieren und die bereits lokalen Inhaltscommits im Gesamtdiff berücksichtigen. Der Archivbranch kann später separat remote gesichert werden. Derzeit nichts gemergt oder gepusht.
 
 ## Prüfstand
 
 Statischer Check: sieben Seiten, 75 lokale Verweise, Reihenfolge, Rücklinks, Download-/Tab-Verhalten und lokale SVGs. JavaScript-Syntax geprüft. Firefox-Sichtprüfung der bereinigten Fassung bei 1866×947 und 390×1500 für die Bachelorarbeit, 1280×720 für Startseite/Studienartikel/Survival/Brownian und 390×1500 für Startseite/Anguilla/Cyclistic/Studienartikel. Screenshots `/tmp/ready-*.png` und `/tmp/hybrid-ready-*.png`. Vor Veröffentlichung bleibt ein echter Gerätecheck sinnvoll. HTML-Dateien behalten das bisherige CRLF-Format; der dokumentierte Whitespace-Check berücksichtigt dies.
 
 Übersicht nach abschließender Entscheidung auf 1200px und damit höchstens drei Spalten begrenzt; links am bisherigen Inhaltsrand. Reihenfolge bleibt kuratiert. Firefox-Prüfung bei 3840×1400 (drei Spalten, zwei Reihen) und 390×1500 (eine Spalte); Screenshots `/tmp/overview-capped-wide.png` und `/tmp/overview-capped-mobile.png`. Lebenslauf-Update und Survival-Repository sind ausdrücklich spätere Updates und keine PR-Blocker.
+
+## Dauerhafte Designnamen
+
+Im Branch `design/alternatives` beschreibt `DESIGN_VARIANTS.md` alle aktuellen und historischen Varianten. Aktuelle Namen: `subtle`, `photos`, `semicircle`, `rectangle`. Das frühere `hybrid` heißt nun `semicircle`; alte Vorschau-URLs leiten weiter. Gemeinsame Bildausschnitt-Klassen heißen dort `review-inset-image`/`inset-image`, damit Rechteckbilder nicht als Halbkreise benannt sind. Die Produktionsfassung bleibt mit `project-image` unabhängig vom Vergleichssystem.
