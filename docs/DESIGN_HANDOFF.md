@@ -35,3 +35,5 @@ Statischer Check: sieben Seiten, 75 lokale Verweise, Reihenfolge, Rücklinks, Do
 ## Dauerhafte Designnamen
 
 Im Branch `design/alternatives` beschreibt `DESIGN_VARIANTS.md` alle aktuellen und historischen Varianten. Aktuelle Namen: `subtle`, `photos`, `semicircle`, `rectangle`. Das frühere `hybrid` heißt nun `semicircle`; alte Vorschau-URLs leiten weiter. Gemeinsame Bildausschnitt-Klassen heißen dort `review-inset-image`/`inset-image`, damit Rechteckbilder nicht als Halbkreise benannt sind. Die Produktionsfassung bleibt mit `project-image` unabhängig vom Vergleichssystem.
+
+Nach erneuter JavaScript-Prüfung liegt die Touch-Darstellung der Vorschaubilder direkt in CSS (`pointer: coarse`). `portfolio.js` übernimmt nur Footer-Platzierung und das Beenden des initialen Ladezustands. Die PR-Beschreibung fasst Ergebnis und Prüfungen zusammen; einzelne Spalten-/Textbreitenwerte bleiben in Code und Commits nachvollziehbar.

@@ -11,6 +11,5 @@
  }
  placeFooter();
  narrow.addEventListener('change', placeFooter);
- document.body.classList.toggle('is-touch', window.matchMedia('(pointer: coarse)').matches);
  requestAnimationFrame(() => document.body.classList.remove('is-preload'));
 })();

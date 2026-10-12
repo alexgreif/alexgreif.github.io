@@ -478,3 +478,13 @@ body.portfolio-home #footer .credits + .copyright {
     gap: 1em;
   }
 }
+
+/* Touch thumbnail presentation belongs in CSS rather than a JavaScript class. */
+@media (pointer: coarse) {
+  .image.thumb:before {
+    opacity: .5 !important;
+  }
+  .image.thumb:after {
+    display: none;
+  }
+}
