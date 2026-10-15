@@ -4,12 +4,13 @@ Stand: 15. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzuse
 
 ## Offen
 
-- [ ] **Bildquellen vervollständigen:** Die Bildlinks aller fünf bisher offenen Unsplash-Fotos sind zugeordnet; für die Cyclistic-Vorschau fehlt noch der Fotograf, da die verlinkte Bildseite beim Abruf nicht erreichbar war. Dokumentierte Quellen und Lizenzbedingungen stehen in `docs/IMAGE_SOURCES.md`. Brownian-Credit mit Bearbeitungshinweis und CC BY-SA-Link erhalten.
 - [ ] **LinkedIn aktualisieren:** Profil und Angaben zu Projekten, Erfahrung und Fähigkeiten durchsehen und aktualisieren.
 - [ ] **Abschließende Inhaltsprüfung:** Projekttexte und methodische Angaben wurden gemeinsam überarbeitet. Eine vollständige abschließende Prüfung aller eigenen Beiträge, Jahreszahlen, Skilllisten, Veröffentlichungsreferenzen und Materialien ist noch nicht dokumentiert.
 - [ ] **Abschließender Gerätecheck:** Desktop- und schmale Browseransichten wurden geprüft. Einen vollständigen Check am tatsächlichen Handy und mit Tastatur einschließlich aller Downloads und der Projekt-Navigation noch bestätigen.
 
 ## Erledigt
+
+- [x] **Bildquellen vervollständigen:** Alle fünf zuvor offenen Unsplash-Fotos sind mit Bildlinks und Fotografen in `docs/IMAGE_SOURCES.md` zugeordnet. Brownian-Credit mit Bearbeitungshinweis und CC BY-SA-Link bleibt erhalten.
 
 - [x] **Branch-Bereinigung:** Übernommene und separat gesicherte Arbeitsbranches sowie zusätzliche Worktrees entfernt. `master` und `design/alternatives` bleiben erhalten.
 - [x] **Website-Cleanup:** Alte Hilfsseite entfernt, alte Thesis-Seite durch Weiterleitung ersetzt, ungenutzte Template-Skripte, Sass-Quellen und Medien sowie doppelte Survival-Code-/Datendateien entfernt.

@@ -53,8 +53,9 @@
 - Bestehendes Bild mit dem Original abgeglichen; CSS-Ausschnitt und Farbdämpfung.
 - Lizenz: https://unsplash.com/license (auf der Bildseite bestätigt, 15. Oktober 2026).
 - Vorschau: `images/cyclistic/overview.jpg` (Fahrradsymbol auf türkisfarbener Wand).
-- Quelle der Vorschau (vom Nutzer zugeordnet): https://unsplash.com/photos/white-and-teal-concrete-house-with-graffiti-T8ikjMPopKU
-- Fotograf der Vorschau noch offen: Die verlinkte Unsplash-Seite ließ sich beim Abruf am 15. Oktober 2026 nicht laden. Der bisherige allgemeine Unsplash-Credit bleibt erhalten.
+- Fotografin der Vorschau: Heather Mount (@heathermount), Unsplash.
+- Quelle der Vorschau: https://unsplash.com/photos/white-and-teal-concrete-house-with-graffiti-T8ikjMPopKU
+- Bild, Fotografin und Unsplash-Lizenz anhand des vom Nutzer bereitgestellten Screenshots der Bildseite bestätigt (15. Oktober 2026).
 
 ## Anguilla Search
 
