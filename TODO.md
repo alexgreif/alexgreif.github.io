@@ -1,24 +1,33 @@
 # Portfolio: offene Aufgaben
 
-Stand: 12. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzusetzen.
+Stand: 15. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzusetzen.
 
-## Vor oder nach der Veröffentlichung
+## Offen
 
-- [x] **Lebenslauf aktualisieren (späteres Update, kein PR-Blocker):** Die eingebundene `CV_Alexander_Greif.pdf` ist eine ältere Version. Aktuelles Dokument auswählen, ersetzen und Download/Adresse prüfen. Alte deutsche PDF erst entfernen, wenn ihre Nutzung geklärt ist.
-- [ ] **Branch-Bereinigung** Lokal (und ggf. auch remote) Branches überprüfen und nicht mehr benötigte löschen.
-- [ ] **Projekt-Repositories prüfen:** Anguilla Search und Cyclistic hinsichtlich README, Projektstruktur, reproduzierbarer Anleitung, Datenquellen und mitgelieferter Dateien durchsehen. Keine fremden oder vertraulichen Daten veröffentlichen. Bestehende Links auf die richtigen Repositories prüfen.
-- [x] **Survival-Repository anlegen:** Report, R-Skript und Datensatz sind mit README und geprüfter Paketumgebung in [survival-analysis](https://github.com/alexgreif/survival-analysis) gebündelt. Die Projektseite verlinkt das Repository und behält den direkten PDF-Link; beide öffnen in einem neuen Tab.
-- [ ] **Bildquellen vervollständigen:** Für bestehende Unsplash-Fußball-, Fahrrad- und Lupenbilder genaue Fotografen-/Bildlinks recherchieren. Aktuelle Quellen und Lizenzbedingungen stehen in `docs/IMAGE_SOURCES.md`. Brownian-Credit mit Bearbeitungshinweis und CC BY-SA-Link erhalten.
-- [ ] **Letzte Inhaltsprüfung:** Eigene Beiträge, Projektjahre, Skilllisten, Veröffentlichungsreferenz und Dokumentversionen noch einmal ansehen. Wissenschaftliche Aussage zur Simulation bleibt im Survival-Fließtext; Dateilabel muss sie nicht wiederholen.
-- [ ] **Letzter Gerätecheck:** Tatsächliches Handy, Desktop und Tastaturbedienung prüfen; insbesondere Headerbilder, lange Titel, alle Materialien/Downloads und Projekt-Navigation. Lokale Browser-Screenshots sind ergänzende Prüfungen.
-- [ ] **Pull Request prüfen und veröffentlichen:** [PR #1](https://github.com/alexgreif/alexgreif.github.io/pull/1) liegt als Entwurf von `feature/semicircle-layout` nach `master` vor. Die drei bisherigen lokalen Master-Inhaltscommits sind darin enthalten. Nach Freigabe zusammenführen und die veröffentlichte Website prüfen. `design/alternatives` ist separat auf GitHub gesichert; keinen Vergleichsbranch in Master mergen.
+- [ ] **Branch-Bereinigung:** Lokale und gegebenenfalls entfernte Branches auf zusammengeführte oder überholte Arbeit prüfen. `design/alternatives` und noch nicht übernommene Änderungen erhalten; zusätzliche Worktrees berücksichtigen.
+- [ ] **Repository-Struktur diskutieren:** Prüfen, ob Projektseiten und Projektmaterialien in gemeinsamen Projektordnern übersichtlicher wären. Auch Root-Dateien, Dokumentation und alte Template-Bestandteile betrachten. Erst nach einer Entscheidung umstellen; bestehende URLs und relative Links berücksichtigen.
+- [ ] **Bildquellen vervollständigen:** Für bestehende Unsplash-Fußball-, Fahrrad- und Lupenbilder genaue Fotografen-/Bildlinks recherchieren. Dokumentierte Quellen und Lizenzbedingungen stehen in `docs/IMAGE_SOURCES.md`. Brownian-Credit mit Bearbeitungshinweis und CC BY-SA-Link erhalten.
+- [ ] **LinkedIn aktualisieren:** Profil und Angaben zu Projekten, Erfahrung und Fähigkeiten durchsehen und aktualisieren.
+- [ ] **Abschließende Inhaltsprüfung:** Projekttexte und methodische Angaben wurden gemeinsam überarbeitet. Eine vollständige abschließende Prüfung aller eigenen Beiträge, Jahreszahlen, Skilllisten, Veröffentlichungsreferenzen und Materialien ist noch nicht dokumentiert.
+- [ ] **Abschließender Gerätecheck:** Desktop- und schmale Browseransichten wurden geprüft. Einen vollständigen Check am tatsächlichen Handy und mit Tastatur einschließlich aller Downloads und der Projekt-Navigation noch bestätigen.
 
-## Später, kein Veröffentlichungsblocker
+## Erledigt
+
+- [x] **Website veröffentlichen:** Halbkreisfassung aus [PR #1](https://github.com/alexgreif/alexgreif.github.io/pull/1) zusammengeführt und veröffentlicht. Die späteren Korrekturen sind ebenfalls veröffentlicht. `design/alternatives` bleibt separat erhalten.
+- [x] **Eigene Domain einrichten:** GitHub Pages ist unter [portfolio.alexgreif.de](https://portfolio.alexgreif.de/) erreichbar. DNS, HTTPS, Weiterleitungen und Darstellung geprüft.
+- [x] **Lebenslauf aktualisieren:** Aktuelle PDF als `Alexander_Greif_CV.pdf` eingebunden; Download nach Veröffentlichung vom Nutzer geprüft. Die beiden bisherigen Lebenslaufdateien wurden entfernt.
+- [x] **Cyclistic und Anguilla Search prüfen und aufräumen:** README, Materialien, Abhängigkeiten und Ausführung geprüft und überarbeitet; PRs gemerged. Anguilla-Testumgebung zusätzlich lokal und privat gesichert.
+- [x] **Survival-Repository anlegen und verlinken:** Report, R-Skript und Datensatz liegen mit README und geprüfter Paketumgebung in [survival-analysis](https://github.com/alexgreif/survival-analysis). Die Website verlinkt das Repository und behält den direkten PDF-Link.
+- [x] **Survival-README nachprüfen:** Projektbeschreibung abgestimmt, Report in die Dateiliste integriert und Datensatzbeschreibung gestrafft; [PR #2](https://github.com/alexgreif/survival-analysis/pull/2) gemerged.
+- [x] **Brownian-Motion-Materialien festlegen:** Paper und Präsentation genügen. Für den kleinen Abbildungscode wird vorerst kein eigenes Repository angelegt.
+
+## Später, kein unmittelbarer Handlungsbedarf
 
 - [ ] Genaues Brownian-Motiv und Sportfoto bei Bedarf erneut vergleichen.
-- [ ] Ob und wann eine eigene Veröffentlichungsseite sinnvoll wird, bei weiteren Veröffentlichungen neu bewerten.
-- [ ] Ältere Template-/Hilfsseiten (`hilfe.html`, `thesis/index.html`) und deren separate JavaScript-/Sass-Dateien erst nach Klärung ihrer Nutzung entfernen oder umleiten; bestehende URLs nicht versehentlich brechen.
-- [ ] Alte Medien und `.DS_Store` nach vollständiger Referenzprüfung entfernen; historische Unterlagen und Berichtsdateien nicht pauschal löschen.
+- [ ] Bei weiteren Veröffentlichungen eine eigene Veröffentlichungsseite neu bewerten.
+- [ ] Ältere Template-/Hilfsseiten (`hilfe.html`, `thesis/index.html`) und deren separate JavaScript-/Sass-Dateien nach Klärung ihrer Nutzung entfernen oder umleiten; bestehende URLs nicht versehentlich brechen.
+- [ ] Unbenutzte Medien nach vollständiger Referenzprüfung entfernen; historische Unterlagen und Berichtsdateien nicht pauschal löschen. Aktuell sind keine `.DS_Store`-Dateien in Git erfasst.
+- [ ] Falls die Hochschul-Registry nicht mehr verfügbar ist, eine unabhängige öffentliche Anguilla-Testumgebung erwägen. Die bestehenden Intranet-Images sind bereits gesichert.
 
 ## Bewusst festgelegt
 

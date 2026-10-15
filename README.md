@@ -29,10 +29,10 @@ Also review the actual browser layout at phone, tablet and desktop widths. The r
 
 ## Design history and outstanding work
 
-- [Open tasks](TODO.md), including the CV update, repository checks and Survival repository.
+- [Open tasks and completed follow-ups](TODO.md).
 - [Design handoff and archived branches](docs/DESIGN_HANDOFF.md).
 - [Image sources and licenses](docs/IMAGE_SOURCES.md).
 
-The full comparison site is preserved on `design/alternatives` and `feature/design-review`. This branch contains only the chosen version and existing historical pages/assets. It has not yet been merged or published.
+The full comparison site is preserved on `design/alternatives` and `feature/design-review`. The `master` branch contains the published version and existing historical pages/assets. The live site is available at [portfolio.alexgreif.de](https://portfolio.alexgreif.de/).
 
 Template: Strata by HTML5 UP; original license and README remain in `LICENSE.txt` and `README.txt`. Image licenses and attribution are documented separately.

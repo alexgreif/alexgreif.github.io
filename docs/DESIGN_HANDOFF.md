@@ -1,5 +1,7 @@
 # Designstand und Übergabe
 
+Historischer Übergabestand vor der Veröffentlichung. PR #1 ist inzwischen gemerged; Lebenslauf, Domain und Survival-Verlinkung wurden anschließend aktualisiert. Branch-, Worktree-, Port- und Prüfstandsangaben unten beschreiben den damaligen Stand. Aktuelle Aufgaben und erledigte Nacharbeiten stehen in [TODO.md](../TODO.md).
+
 ## Sicherung und Branches
 
 - `design/alternatives`: vollständiger Vergleichsstand mit dauerhaft verständlichen Namen; `DESIGN_VARIANTS.md` erklärt aktuelle und historische Varianten.
