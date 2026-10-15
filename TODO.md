@@ -4,7 +4,7 @@ Stand: 15. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzuse
 
 ## Offen
 
-- [ ] **Bildquellen vervollständigen:** Für die Fußball-Vorschau und beide Cyclistic-Fotos genaue Fotografen-/Bildlinks bestätigen bzw. recherchieren. Fußballfeld und Lupe sind zugeordnet. Dokumentierte Quellen und Lizenzbedingungen stehen in `docs/IMAGE_SOURCES.md`. Brownian-Credit mit Bearbeitungshinweis und CC BY-SA-Link erhalten.
+- [ ] **Bildquellen vervollständigen:** Die Bildlinks aller fünf bisher offenen Unsplash-Fotos sind zugeordnet; für die Cyclistic-Vorschau fehlt noch der Fotograf, da die verlinkte Bildseite beim Abruf nicht erreichbar war. Dokumentierte Quellen und Lizenzbedingungen stehen in `docs/IMAGE_SOURCES.md`. Brownian-Credit mit Bearbeitungshinweis und CC BY-SA-Link erhalten.
 - [ ] **LinkedIn aktualisieren:** Profil und Angaben zu Projekten, Erfahrung und Fähigkeiten durchsehen und aktualisieren.
 - [ ] **Abschließende Inhaltsprüfung:** Projekttexte und methodische Angaben wurden gemeinsam überarbeitet. Eine vollständige abschließende Prüfung aller eigenen Beiträge, Jahreszahlen, Skilllisten, Veröffentlichungsreferenzen und Materialien ist noch nicht dokumentiert.
 - [ ] **Abschließender Gerätecheck:** Desktop- und schmale Browseransichten wurden geprüft. Einen vollständigen Check am tatsächlichen Handy und mit Tastatur einschließlich aller Downloads und der Projekt-Navigation noch bestätigen.

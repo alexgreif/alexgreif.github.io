@@ -38,13 +38,23 @@
 - Originalbild: https://images.unsplash.com/photo-1517747614396-d21a78b850e8
 - Lizenz: https://unsplash.com/license (geprüft 15. Oktober 2026).
 - Bestehendes Bild mit dem Original abgeglichen; CSS-Ausschnitt und Farbdämpfung.
-- Vorschau: `images/thesis/overview.jpg`. Genaue Zuordnung noch offen. Kandidat: https://unsplash.com/photos/man-in-blue-and-orange-jersey-shirt-running-on-green-grass-field-during-daytime-i8XiabUW3mw (Profil @janoschphotos). Noch nicht abschließend mit dem Originalbild abgeglichen.
+- Vorschau: `images/thesis/overview.jpg`.
+- Fotograf der Vorschau: Janosch Jost (@janoschphotos), Unsplash.
+- Quelle der Vorschau: https://unsplash.com/photos/man-in-blue-and-orange-jersey-shirt-running-on-green-grass-field-during-daytime-i8XiabUW3mw
+- Originalbild der Vorschau: https://images.unsplash.com/photo-1626248801379-51a0748a5f96
+- Vorschau mit dem Original abgeglichen; Unsplash-Lizenz auf der Bildseite bestätigt (15. Oktober 2026).
 
 ## Cyclistic
 
 - Seitenbild: `images/cyclistic/sidebar.jpg` (blaue Divvy-Fahrräder).
+- Fotograf: Jake Leonard (@jdleonardphoto), Unsplash.
+- Quelle: https://unsplash.com/photos/blue-and-black-motorcycle-on-road-during-night-time-RmPr1Gefy-M
+- Originalbild: https://images.unsplash.com/photo-1609765795195-bba7c94423d4
+- Bestehendes Bild mit dem Original abgeglichen; CSS-Ausschnitt und Farbdämpfung.
+- Lizenz: https://unsplash.com/license (auf der Bildseite bestätigt, 15. Oktober 2026).
 - Vorschau: `images/cyclistic/overview.jpg` (Fahrradsymbol auf türkisfarbener Wand).
-- Beide vorhandenen Bilder stammen laut Nutzer von Unsplash; genaue Bildlinks und Fotografen sind noch nicht ermittelt. Der bisherige allgemeine Unsplash-Credit bleibt erhalten.
+- Quelle der Vorschau (vom Nutzer zugeordnet): https://unsplash.com/photos/white-and-teal-concrete-house-with-graffiti-T8ikjMPopKU
+- Fotograf der Vorschau noch offen: Die verlinkte Unsplash-Seite ließ sich beim Abruf am 15. Oktober 2026 nicht laden. Der bisherige allgemeine Unsplash-Credit bleibt erhalten.
 
 ## Anguilla Search
 
