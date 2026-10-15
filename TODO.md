@@ -4,7 +4,8 @@ Stand: 12. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzuse
 
 ## Vor oder nach der Veröffentlichung
 
-- [ ] **Lebenslauf aktualisieren (späteres Update, kein PR-Blocker):** Die eingebundene `CV_Alexander_Greif.pdf` ist eine ältere Version. Aktuelles Dokument auswählen, ersetzen und Download/Adresse prüfen. Alte deutsche PDF erst entfernen, wenn ihre Nutzung geklärt ist.
+- [x] **Lebenslauf aktualisieren (späteres Update, kein PR-Blocker):** Die eingebundene `CV_Alexander_Greif.pdf` ist eine ältere Version. Aktuelles Dokument auswählen, ersetzen und Download/Adresse prüfen. Alte deutsche PDF erst entfernen, wenn ihre Nutzung geklärt ist.
+- [ ] **Branch-Bereinigung** Lokal (und ggf. auch remote) Branches überprüfen und nicht mehr benötigte löschen.
 - [ ] **Projekt-Repositories prüfen:** Anguilla Search und Cyclistic hinsichtlich README, Projektstruktur, reproduzierbarer Anleitung, Datenquellen und mitgelieferter Dateien durchsehen. Keine fremden oder vertraulichen Daten veröffentlichen. Bestehende Links auf die richtigen Repositories prüfen.
 - [x] **Survival-Repository anlegen:** Report, R-Skript und Datensatz sind mit README und geprüfter Paketumgebung in [survival-analysis](https://github.com/alexgreif/survival-analysis) gebündelt. Die Projektseite verlinkt das Repository und behält den direkten PDF-Link; beide öffnen in einem neuen Tab.
 - [ ] **Bildquellen vervollständigen:** Für bestehende Unsplash-Fußball-, Fahrrad- und Lupenbilder genaue Fotografen-/Bildlinks recherchieren. Aktuelle Quellen und Lizenzbedingungen stehen in `docs/IMAGE_SOURCES.md`. Brownian-Credit mit Bearbeitungshinweis und CC BY-SA-Link erhalten.
