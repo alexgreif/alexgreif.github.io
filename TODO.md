@@ -4,14 +4,15 @@ Stand: 15. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzuse
 
 ## Offen
 
-- [ ] **Branch-Bereinigung:** Lokale und gegebenenfalls entfernte Branches auf zusammengeführte oder überholte Arbeit prüfen. `design/alternatives` und noch nicht übernommene Änderungen erhalten; zusätzliche Worktrees berücksichtigen.
-- [ ] **Repository-Struktur diskutieren:** Prüfen, ob Projektseiten und Projektmaterialien in gemeinsamen Projektordnern übersichtlicher wären. Auch Root-Dateien, Dokumentation und alte Template-Bestandteile betrachten. Erst nach einer Entscheidung umstellen; bestehende URLs und relative Links berücksichtigen.
 - [ ] **Bildquellen vervollständigen:** Für bestehende Unsplash-Fußball-, Fahrrad- und Lupenbilder genaue Fotografen-/Bildlinks recherchieren. Dokumentierte Quellen und Lizenzbedingungen stehen in `docs/IMAGE_SOURCES.md`. Brownian-Credit mit Bearbeitungshinweis und CC BY-SA-Link erhalten.
 - [ ] **LinkedIn aktualisieren:** Profil und Angaben zu Projekten, Erfahrung und Fähigkeiten durchsehen und aktualisieren.
 - [ ] **Abschließende Inhaltsprüfung:** Projekttexte und methodische Angaben wurden gemeinsam überarbeitet. Eine vollständige abschließende Prüfung aller eigenen Beiträge, Jahreszahlen, Skilllisten, Veröffentlichungsreferenzen und Materialien ist noch nicht dokumentiert.
 - [ ] **Abschließender Gerätecheck:** Desktop- und schmale Browseransichten wurden geprüft. Einen vollständigen Check am tatsächlichen Handy und mit Tastatur einschließlich aller Downloads und der Projekt-Navigation noch bestätigen.
 
 ## Erledigt
+
+- [x] **Branch-Bereinigung:** Übernommene und separat gesicherte Arbeitsbranches sowie zusätzliche Worktrees entfernt. `master` und `design/alternatives` bleiben erhalten.
+- [x] **Website-Cleanup:** Alte Hilfsseite entfernt, alte Thesis-Seite durch Weiterleitung ersetzt, ungenutzte Template-Skripte, Sass-Quellen und Medien sowie doppelte Survival-Code-/Datendateien entfernt.
 
 - [x] **Website veröffentlichen:** Halbkreisfassung aus [PR #1](https://github.com/alexgreif/alexgreif.github.io/pull/1) zusammengeführt und veröffentlicht. Die späteren Korrekturen sind ebenfalls veröffentlicht. `design/alternatives` bleibt separat erhalten.
 - [x] **Eigene Domain einrichten:** GitHub Pages ist unter [portfolio.alexgreif.de](https://portfolio.alexgreif.de/) erreichbar. DNS, HTTPS, Weiterleitungen und Darstellung geprüft.
@@ -25,8 +26,7 @@ Stand: 15. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzuse
 
 - [ ] Genaues Brownian-Motiv und Sportfoto bei Bedarf erneut vergleichen.
 - [ ] Bei weiteren Veröffentlichungen eine eigene Veröffentlichungsseite neu bewerten.
-- [ ] Ältere Template-/Hilfsseiten (`hilfe.html`, `thesis/index.html`) und deren separate JavaScript-/Sass-Dateien nach Klärung ihrer Nutzung entfernen oder umleiten; bestehende URLs nicht versehentlich brechen.
-- [ ] Unbenutzte Medien nach vollständiger Referenzprüfung entfernen; historische Unterlagen und Berichtsdateien nicht pauschal löschen. Aktuell sind keine `.DS_Store`-Dateien in Git erfasst.
+- [ ] **Repository-Struktur erneut bewerten:** Bei weiteren Projekten einen gemeinsamen Projektordner mit Seiten und Materialien erwägen. Die derzeit sechs Projektseiten bleiben im Root; eine Umstrukturierung erfolgt separat vom Cleanup. Geänderte URLs sind dabei kein Hinderungsgrund.
 - [ ] Falls die Hochschul-Registry nicht mehr verfügbar ist, eine unabhängige öffentliche Anguilla-Testumgebung erwägen. Die bestehenden Intranet-Images sind bereits gesichert.
 
 ## Bewusst festgelegt
