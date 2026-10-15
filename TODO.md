@@ -5,10 +5,10 @@ Stand: 15. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzuse
 ## Offen
 
 - [ ] **LinkedIn aktualisieren:** Profil und Angaben zu Projekten, Erfahrung und Fähigkeiten durchsehen und aktualisieren.
-- [ ] **Abschließende Inhaltsprüfung:** Projekttexte und methodische Angaben wurden gemeinsam überarbeitet. Eine vollständige abschließende Prüfung aller eigenen Beiträge, Jahreszahlen, Skilllisten, Veröffentlichungsreferenzen und Materialien ist noch nicht dokumentiert.
-- [ ] **Abschließender Gerätecheck:** Desktop- und schmale Browseransichten wurden geprüft. Einen vollständigen Check am tatsächlichen Handy und mit Tastatur einschließlich aller Downloads und der Projekt-Navigation noch bestätigen.
 
 ## Erledigt
+
+- [x] **Abschließende Inhalts- und Bedienungsprüfung:** Nutzer hat am 15. Oktober 2026 bestätigt, dass Inhalt und Bedienung ausreichend geprüft sind, einschließlich Prüfung am tatsächlichen Handy.
 
 - [x] **Bildquellen vervollständigen:** Alle fünf zuvor offenen Unsplash-Fotos sind mit Bildlinks und Fotografen in `docs/IMAGE_SOURCES.md` zugeordnet. Brownian-Credit mit Bearbeitungshinweis und CC BY-SA-Link bleibt erhalten.
 
