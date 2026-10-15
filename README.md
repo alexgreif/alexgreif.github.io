@@ -17,7 +17,7 @@ Open `http://localhost:8001/`. To test from a phone on the same trusted WLAN, bi
 - Page content: `index.html` and the six project HTML files.
 - Selected layout: `assets/css/portfolio.css`.
 - HTML5 UP base styles: `assets/css/main.css`. Styles are edited directly; no Sass build is required.
-- Images: `images/<project>/overview.*` and `sidebar.*`; source originals in the project’s `source/` directory. The portrait stays in `images/`, template imagery in `images/template/`.
+- Images: `images/<project>/overview.*` and `sidebar.*`; source originals in the project’s `source/` directory. The portrait stays in `images/`.
 - Current page behavior: `assets/js/portfolio.js` (footer placement and initial loading state).
 
 ```sh

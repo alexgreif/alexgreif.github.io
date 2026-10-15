@@ -72,4 +72,4 @@ Die angezeigten Fotos sind für ihre Darstellung verkleinert und individuell als
 ## Weitere Bilder
 
 - Porträt: vorhandenes persönliches Foto (`images/avatar.webp`).
-- `images/template/background.jpg` und `assets/css/images/overlay.png`: verbliebene Template-Bilder, die in `main.css` referenziert werden. Die aktuelle Gestaltung überschreibt den Header-/Footer-Hintergrund. Der Template-Hintergrund ist keinem konkreten Fotografen zugeordnet.
+- `assets/css/images/overlay.png`: Template-Textur für Bild-Overlays in `main.css`.
