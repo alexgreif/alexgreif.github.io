@@ -71,5 +71,5 @@ Die angezeigten Fotos sind für ihre Darstellung verkleinert und individuell als
 
 ## Weitere Bilder
 
-- Porträt: vorhandenes persönliches Foto (`images/avatar.webp`).
+- Porträt (`images/avatar.webp`): persönliche Aufnahme für Gesicht und Haare, kombiniert mit einer vom Inhaber bereitgestellten GenAI-Vorlage für Shirt und unteren Hals; hellgrauer Hintergrund und lokal korrigierter Halsanschluss. Auswahl vom 22. Oktober 2026. Im CV-PDF wurde ausschließlich das Porträt aktualisiert; der Textstand bleibt erhalten.
 - `assets/css/images/overlay.png`: Template-Textur für Bild-Overlays in `main.css`.

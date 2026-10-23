@@ -1,10 +1,18 @@
 # Portfolio: offene Aufgaben
 
-Stand: 15. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzusetzen.
+Stand: 23. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzusetzen.
 
 ## Offen
 
+- [ ] **Website-Aktualisierung veröffentlichen:** Arbeitsbranch `update/portfolio-refresh` mit neuem Porträt, angepasstem PDF-Download, Artikel-DOI und dokumentierter Branch-/PR-Arbeitsweise prüfen und nach Freigabe über einen Pull Request nach `master` zusammenführen. Noch nicht veröffentlicht.
+
 - [ ] **LinkedIn aktualisieren:** Profil und Angaben zu Projekten, Erfahrung und Fähigkeiten durchsehen und aktualisieren.
+
+## Im aktuellen Arbeitsbranch umgesetzt
+
+- [x] **Porträt und CV-PDF:** Ausgewähltes neues Foto lokal übernommen; übriger CV-Textstand zunächst erhalten.
+- [x] **Artikel-DOI:** Auf der Studienzufriedenheitsseite den bisherigen Heftlink durch den vollständigen Artikel-DOI am Ende des Eintrags ersetzt; im angebotenen CV-PDF ausschließlich den DOI ergänzt. Nur die DOI-URL ist innerhalb des Publikationseintrags verlinkt. Artikelquelle: https://openjournals.fachportal-paedagogik.de/bzh/article/view/192, DOI: https://doi.org/10.58069/bzh.2026.2.192; am 23. Oktober 2026 geprüft.
+- [x] **Arbeitsweise dokumentiert:** Branches und Pull Requests sind in `AGENTS.md` verbindlich beschrieben; die README verweist darauf.
 
 ## Erledigt
 
