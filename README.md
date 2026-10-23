@@ -2,6 +2,10 @@
 
 Static portfolio with an overview and six project pages. The selected design uses a 30% sidebar, semicircle project images on desktop and an image segment at the edge of the narrow header.
 
+## Git workflow
+
+Make changes on a topic branch and submit a pull request against `master`; do not commit or push changes directly to the published branch. Merge and publication are separate steps. See [AGENTS.md](AGENTS.md) for the working rules used by coding agents.
+
 ## Local preview
 
 Run from the repository root:
