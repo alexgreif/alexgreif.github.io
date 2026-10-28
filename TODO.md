@@ -1,8 +1,10 @@
 # Portfolio: offene Aufgaben
 
-Stand: 23. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzusetzen.
+Stand: 28. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzusetzen.
 
 ## Offen
+
+- [ ] **Projektpfade veröffentlichen und live prüfen:** Branch `update/project-urls` stellt die Übersicht auf `/` und Projektseiten auf `/<projekt>/` um; Projektbilder, Originale und Materialien liegen beim jeweiligen Projekt. Alte `<projekt>.html`-Seiten entfallen ohne Weiterleitungen. Lokal geprüft: sieben Seiten, 73 lokale Verweise, alle sechs Slash-Weiterleitungen funktionieren, Altadressen liefern 404, Materialien sind erreichbar; visuelle Kontrolle von Übersicht und Bachelorarbeitsseite bei Desktop-/Mobilbreite, Übersicht zusätzlich bei Tabletbreite. Alle sechs Projektseiten bei Mobilbreite ohne horizontalen Überlauf und mit geladenen Bildern geprüft. Seitentexte unverändert, 13 verschobene Bild-/Quelldateien bytegleich. Nach Merge Slash-Weiterleitungen und Downloads auf GitHub Pages prüfen.
 
 - [ ] **Website-Aktualisierung veröffentlichen:** Arbeitsbranch `update/portfolio-refresh` mit neuem Porträt, angepasstem PDF-Download, Artikel-DOI und dokumentierter Branch-/PR-Arbeitsweise prüfen und nach Freigabe über einen Pull Request nach `master` zusammenführen. Noch nicht veröffentlicht.
 
@@ -35,7 +37,7 @@ Stand: 23. Oktober 2026. Diese Liste ist kein Auftrag, alle Punkte sofort umzuse
 
 - [ ] Genaues Brownian-Motiv und Sportfoto bei Bedarf erneut vergleichen.
 - [ ] Bei weiteren Veröffentlichungen eine eigene Veröffentlichungsseite neu bewerten.
-- [ ] **Repository-Struktur erneut bewerten:** Bei weiteren Projekten einen gemeinsamen Projektordner mit Seiten und Materialien erwägen. Die derzeit sechs Projektseiten bleiben im Root; eine Umstrukturierung erfolgt separat vom Cleanup. Geänderte URLs sind dabei kein Hinderungsgrund.
+- [ ] **Repository-Struktur erneut bewerten:** Bei weiteren Projekten einen gemeinsamen Projektordner mit Seiten und Materialien erwägen. Die sechs Projektseiten werden im Branch `update/project-urls` mit ihren Bildern und Materialien je Projekt gebündelt. Ein zusätzlicher übergeordneter Projektordner ist derzeit nicht vorgesehen.
 - [ ] Falls die Hochschul-Registry nicht mehr verfügbar ist, eine unabhängige öffentliche Anguilla-Testumgebung erwägen. Die bestehenden Intranet-Images sind bereits gesichert.
 
 ## Bewusst festgelegt

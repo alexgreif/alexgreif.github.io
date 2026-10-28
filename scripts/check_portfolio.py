@@ -1,7 +1,7 @@
 """Check the selected static portfolio's local references and navigation."""
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import unquote, urlsplit
+from urllib.parse import unquote, urljoin, urlsplit
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,18 +25,33 @@ class Page(HTMLParser):
         if tag == 'a':
             self.links.append(attrs)
 
-pages = {name: Page((ROOT / f'{name}.html').read_text()) for name in PAGES}
+PAGE_URLS = {name: '/' if name == 'index' else f'/{name}/' for name in PAGES}
+
+
+def resolve_target(page_url, ref):
+    path = unquote(urlsplit(urljoin(page_url, ref)).path)
+    target = (ROOT / path.lstrip('/')).resolve()
+    assert target.is_relative_to(ROOT), f'Reference escapes site root: {ref}'
+    if target.is_dir():
+        target = target / 'index.html'
+    return target
+
+
+pages = {name: Page(resolve_target(PAGE_URLS[name], '').read_text()) for name in PAGES}
+for name in PROJECTS:
+    assert not (ROOT / f'{name}.html').exists(), f'Obsolete project page: {name}.html'
+    assert not (ROOT / 'images' / name).exists(), f'Project images outside project: {name}'
 count = 0
 for name, page in pages.items():
     for ref in page.refs:
         url = urlsplit(ref)
         if url.scheme or url.netloc:
             continue
-        target = ROOT / unquote(url.path or f'{name}.html')
+        target = resolve_target(PAGE_URLS[name], ref)
         assert target.is_file(), f'{name}: missing local target {ref}'
         assert not target.name.startswith(('review-', 'preview-')), f'{name}: experiment link {ref}'
         if url.fragment and target.suffix == '.html':
-            target_page = pages.get(target.stem) or Page(target.read_text())
+            target_page = Page(target.read_text())
             assert url.fragment in target_page.ids, f'{name}: missing fragment {ref}'
         count += 1
     for link in page.links:
@@ -44,23 +59,23 @@ for name, page in pages.items():
         path = urlsplit(href).path
         if href.startswith(('https://', 'http://')):
             assert link.get('target') == '_blank' and 'noopener' in link.get('rel', ''), f'{name}: external link behavior {href}'
-        elif path.endswith('.html') and path.rsplit('/', 1)[-1].removesuffix('.html') in PAGES:
+        elif path in PAGE_URLS.values():
             assert 'target' not in link, f'{name}: internal link opens new tab {href}'
         if path.lower().endswith(('.r', '.xlsx', '.pptx')):
             assert 'download' in link, f'{name}: missing download attribute {href}'
         if path.lower().endswith('.pdf') and 'download' not in link:
             assert link.get('target') == '_blank', f'{name}: document replaces page {href}'
-    for svg in {ROOT / urlsplit(ref).path for ref in page.refs if ref.endswith('.svg') and not urlsplit(ref).scheme and not urlsplit(ref).netloc}:
+    for svg in {resolve_target(PAGE_URLS[name], ref) for ref in page.refs if urlsplit(ref).path.endswith('.svg') and not urlsplit(ref).scheme and not urlsplit(ref).netloc}:
         ET.parse(svg)
 
 for i, name in enumerate(PROJECTS):
     directions = {link.get('rel'): link.get('href') for link in pages[name].links if link.get('rel') in ('prev', 'next')}
     expected = {}
     if i:
-        expected['prev'] = PROJECTS[i - 1] + '.html'
+        expected['prev'] = PAGE_URLS[PROJECTS[i - 1]]
     if i + 1 < len(PROJECTS):
-        expected['next'] = PROJECTS[i + 1] + '.html'
+        expected['next'] = PAGE_URLS[PROJECTS[i + 1]]
     assert directions == expected, f'{name}: navigation {directions}, expected {expected}'
-    assert any(link.get('href') == 'index.html' for link in pages[name].links), f'{name}: missing overview return'
+    assert any(link.get('href') == '/' for link in pages[name].links), f'{name}: missing overview return'
 
 print(f'OK: {len(pages)} pages, {count} local references, project sequence, link behavior and SVG assets.')

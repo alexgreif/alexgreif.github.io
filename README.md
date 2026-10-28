@@ -18,10 +18,10 @@ Open `http://localhost:8001/`. To test from a phone on the same trusted WLAN, bi
 
 ## Editing and checks
 
-- Page content: `index.html` and the six project HTML files.
+- Page content: `index.html` and `<project>/index.html` for the six projects. Public page URLs are `/` and `/<project>/`; use root-relative internal links.
 - Selected layout: `assets/css/portfolio.css`.
 - HTML5 UP base styles: `assets/css/main.css`. Styles are edited directly; no Sass build is required.
-- Images: `images/<project>/overview.*` and `sidebar.*`; source originals in the project’s `source/` directory. The portrait stays in `images/`.
+- Images: `<project>/images/overview.*` and `sidebar.*`; image source originals stay together under `<project>/images/source/`. The portrait stays in `images/`. Project reports and downloads live alongside `<project>/index.html`; shared CSS, scripts and fonts stay in `assets/`.
 - Current page behavior: `assets/js/portfolio.js` (footer placement and initial loading state).
 
 ```sh
@@ -41,3 +41,7 @@ Also review the actual browser layout at phone, tablet and desktop widths. The r
 The full comparison site is preserved on `design/alternatives`. The `master` branch contains the published version. The live site is available at [portfolio.alexgreif.de](https://portfolio.alexgreif.de/).
 
 Template: Strata by HTML5 UP; original license and README remain in `LICENSE.txt` and `README.txt`. Image licenses and attribution are documented separately.
+
+## Page URLs
+
+Project pages use directory indexes (`/<project>/index.html`) with preferred URLs `/<project>/`. The overview uses `/`. Previous root-level `<project>.html` pages are removed without compatibility redirects. HTML analysis reports in `cyclistic/` remain standalone documents with their extensions. Canonical links identify the preferred public page URLs. Check slashless project requests on GitHub Pages after publication; the local preview also redirects directory requests to their trailing-slash URLs.
